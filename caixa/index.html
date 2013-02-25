@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Caixa</title>
+		<meta charset="utf-8" />
+
+		<style type="text/css">
+			* { margin: 0px; padding: 0px; }
+
+			section {
+				width: 500px;
+				margin: 50px auto 0px;
+			}
+
+			.box_section { width: 500px; height: 500px; text-align: center; overflow: hidden; border: 1px solid red; }
+  			.box_container { vertical-align: middle; display: inline-block;   -webkit-perspective: 5000px;  -webkit-perspective-origin: 50% 50%; }
+
+  			.verticalAlign { vertical-align: middle; display: inline-block; width: 1px; height: 500px; }
+
+  			.box_main_X { -webkit-transform-style: preserve-3d; -webkit-transform: rotateY(0deg) rotateX(-15deg) rotateZ(0deg); }
+  			.box_main_Y { -webkit-transform-style: preserve-3d; -webkit-transform: rotateY(-45deg) rotateX(0deg) rotateZ(0deg); }
+  			.box_main { position: relative; }  			 
+  			
+			.box_side { position: absolute; background-position:center center; background-size: 100% 100%; background-repeat: no-repeat; }
+			.box_side.front { background-image: url('box_front.png'); }
+			.box_side.right { background-image: url('box_sides.png'); }
+			.box_side.top { background-image: url('box_top.png'); }
+
+			/* Form */
+			.form {	margin-top: 50px; }
+			fieldset { padding: 25px; }
+
+			/* Error */
+			.error {
+				border: 1px solid red;
+				display: none;
+				margin-top: 15px;
+			}
+
+			.error .msg { text-align: center; line-height: 30px; font-size: 25px; font-family: verdana; color: red; }
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var limite = 250;
+				function error(msg) {
+					$(".error .msg").text(msg);
+					$(".error").fadeIn();
+				}
+
+				function createBox(l, a, p){
+					var ALTURA_MAX = 105; // todas as medidas em cm
+					var LARGURA_MAX = 105;
+					var COMPRIMENTO_MAX = 105;
+					var ALTURA_MIN = 2;
+					var LARGURA_MIN = 11;
+					var COMPRIMENTO_MIN = 16;
+
+        			if(a > ALTURA_MAX){
+        				error("Altura maior do que o correio aceita");
+					} else if(l > LARGURA_MAX){
+						error("Largura maior do que o correio aceita");
+					} else if(p > COMPRIMENTO_MAX){
+						error("Comprimento maior do que o correio aceita");
+					} else if(a < ALTURA_MIN){
+						error("Altura menor do que o correio aceita");
+					} else if(l < LARGURA_MIN){
+						error("Largura menor do que o correio aceita");
+					} else if(p < COMPRIMENTO_MIN){
+						error("Comprimento menor do que o correio aceita");
+					} else if((parseInt(l) + parseInt(a) + parseInt(p)) > 200) {
+						error("Maior do que o correio aceita");
+					}
+
+					var n = [parseInt(l), parseInt(a), parseInt(p)];
+
+					var w, y, z;
+					
+					var maior;
+					for(var i = 0; i < n.length; i++) {
+						if(i == 0) maior = n[i];
+						else if(n[i] > maior) maior = n[i];
+					}
+
+					w = ((1 / ((maior * 100) / 250)) * 100) * n[0];
+					y = ((1 / ((maior * 100) / 250)) * 100) * n[1];
+					z = ((1 / ((maior * 100) / 250)) * 100) * n[2];
+
+					// Container
+					$(".box_container").css({
+						width: w,
+						height: y
+					});
+
+					// Main
+					$(".box_main").width(w).height(y);
+
+					// Front
+					$(".box_side.front").css({
+						width: w,
+						height: y,
+						'-webkit-transform': 'translateZ('+z/2+'px)' 
+					});
+
+					// Left
+					$(".box_side.right").css({
+						width: z,
+						height: y,
+						'-webkit-transform': 'rotateY(-90deg) translateZ(-'+z/2+'px)'
+					});
+
+					// Top
+					$(".box_side.top").css({
+						width: w,
+						height: z,
+						'-webkit-transform': 'rotateX(90deg) translateZ('+z/2+'px)'
+					});
+				}			
+
+				$(".form input").keyup(function(){
+					$(".error").hide();
+					createBox($("#axis_x").val(), $("#axis_y").val(), $("#axis_z").val());
+				});
+
+				$(".form input").focusout(function(){
+					createBox($("#axis_x").val(), $("#axis_y").val(), $("#axis_z").val());
+				});
+
+				// (1 / ((800 * 100) / 250)) * 100
+			});
+		</script>
+	</head>
+	<body>
+		<section>
+
+		<div class="box_section">	
+			<div class="box_container">
+				<div class="box_main_X">
+					<div class="box_main_Y">
+						<div class="box_main">
+							<div class="box_side front"></div>
+							<div class="box_side right"></div>
+							<div class="box_side top"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="verticalAlign"></div>
+		</div>
+
+		<div class="form">
+			<fieldset>
+				<legend>Medidas</legend>
+
+				<dl>
+					<dt>X</dt>
+					<dd><input type="number" id="axis_x" /></dd>
+
+					<dt>Y</dt>
+					<dd><input type="number" id="axis_y" /></dd>
+
+					<dt>Z</dt>
+					<dd><input type="number" id="axis_z" /></dd>
+				</dl>
+			</fieldset>
+		</div>
+
+		<div class="error">
+			<p class="msg"></p>
+		</div>
+		</section>
+	</body>
+</html>

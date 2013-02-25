@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Drag</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link type="text/css" href="css/smoothness/jquery-ui-1.8.24.custom.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.24.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+		
+		<style type="text/css">
+			* { 
+				margin: 0px; 
+				margin: 0px; 
+			}
+
+			body { 
+				font-family: Arial; 
+				background-color: #f7f7f7;
+				background-position: left top;
+				background-repeat: no-repeat;
+				background-image: url('img/wizard.png');
+			}
+
+			#geral {
+
+			}
+
+			#commandButtons {
+
+			}
+
+			#commandButtons button { 
+				margin-right: 10px; 
+			}
+
+			#drag_container { 
+				height: 110px;
+				width: 226px;
+				text-align: center;
+				background-color: #efefef;
+				color: #949494; 
+				font-size: 10px;
+				text-transform: uppercase;
+				font-weight: bold;
+				position: absolute;
+				top: 176px;
+				left: 271px;
+			}
+
+			#drag_container .label {
+				display: block;
+				height: 110px;
+				width: 226px;
+				line-height: 110px;
+			}
+
+			.drag_item { 
+				cursor: move; 
+				z-index: 2;
+			}
+
+			.ui-draggable-dragging { 
+				-webkit-box-shadow: 0px 2px 1px 0px #D9D9D9;
+			}
+
+			#drop_container {
+				display: none;
+				width: 679px;
+				height: 196px;
+				line-height: 200px;
+				text-align: center;
+				font-size: 14px;
+				color: #949494;
+				font-weight: bold;
+				text-transform: uppercase;
+				background-color: #fff;
+				position: absolute;
+				left: 274px;
+				top: 390px;
+				z-index: 1;
+				opacity: 0.8;
+				border: 1px dashed #cbcbcb;
+			}
+
+			.drag-state-hover {
+				background-color: #8cc63f;
+			}
+
+			#sampleBox { margin-top: 50px; }
+			#sampleBox .boxNoResult { display: none; }
+
+			.boxNoResult {
+				border: 1px dashed #cbcbcb;
+				background-color: #fff;
+				width: 226px;
+				height: 110px;
+			}
+
+			.boxNoResult strong,
+			.boxNoResult span {
+				text-align: center;
+				display: block;
+			}
+
+			.boxNoResult strong { 
+				font-size: 14px;
+				color: #949494;
+				margin-top: 40px; 
+			}
+			
+			.boxNoResult span { 
+				font-size: 11px;
+				color: #bebebe;
+			}
+
+			#result {
+				position: absolute;
+				top: 390px;
+				left: 274px;
+			}
+
+			#result table {
+				width: 680px;
+				border-spacing: 0px;
+			}
+
+			#result table thead {
+				background-color: #fff;
+			}
+
+			#result table thead tr {
+
+			}
+
+			#result table thead tr th {
+				color: #7b8a90;
+				text-align: center;
+				font-size: 14px;
+				line-height: 35px;
+			}
+
+			#result table tbody tr td {
+				background-color: #f3f3f3;
+			}
+
+			#result table tbody tr:nth-child(2n+2) td {
+				background-color: #fff;	
+				vertical-align: middle;
+			} 
+
+			#result .resultItem {
+				display: none;
+			}
+
+			#result .resultItem .img {
+				width: 60px;
+				height: 50px;
+				border: 1px solid #ebebeb;
+				background-color: #fff;
+				vertical-align: middle;
+				margin: 10px;
+			}
+
+			#result .resultItem .info {
+				display: inline-block;
+				margin-left: 15px;
+				vertical-align: middle;
+			}
+
+			#result .resultItem .descricao,
+			#result .resultItem .barcode {
+				display: block;
+				color: #7b8a90;
+				font-size: 14px;
+				line-height: 25px;
+			}
+
+			#result .resultItem .descricao {}
+			#result .resultItem .barcode {
+				background: url('img/barcode.gif') no-repeat left center;
+				padding-left: 25px;
+			}
+		</style>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var json = {
+					'success': true, 
+					'products':[
+						{
+							'id':0, 
+							'source':'mktup', 
+							'barcode':'7897876106614', 
+							'descricao':'Escalimetro 7830/1', 
+							'srcImg':'', 
+							'custo': 0, 
+							'venda': 0, 
+							'estoque': 0, 
+							'ds_code':'', 
+							'cat': null, 
+							'subcat': null, 
+							'unit': 1 
+						}
+					]
+				}
+
+				function tr(item){
+					var tr = ''+
+						'<tr data-id="'+item.id+'" class="resultItem">'+
+							'<td>'+		
+								'<img class="img" src="img/'+item.srcImg+'" alt="' + item.descricao +'" title="' + item.descricao +'" />'+
+								'<span class="info">'+
+									'<span class="descricao">' + item.descricao +'</span>' +
+									'<span class="barcode">' + item.barcode +'</span>' +
+								'</span>'+						
+							'</td>'+
+							'<td>'+
+								'<input type="text" value="'+item.custo+'" />' +				
+							'</td>'+
+							'<td>'+	
+								'<input type="text" value="'+item.venda+'" />' +					
+							'</td>'+
+							'<td>'+
+								'<input type="text" value="'+item.estoque+'" />' +					
+							'</td>'+
+							'<td>'+		
+								'<butto type="button">Salvar</button>'+						
+							'</td>'+
+						'</tr>'+
+					'';
+
+					return tr;
+				}
+
+				$("#drop_container").droppable({
+		            activeClass: "drag-state-default",
+		            hoverClass: "drag-state-hover",
+		            drop: function( event, ui ) {
+		                $(ui.draggable).appendTo(this);
+		                $(ui.draggable).css({
+		                	'top': 0,
+		                	'left': 0
+		                });
+
+		                $(ui.draggable).removeClass("drag_item");
+		                $("#drag_container .label").show();
+		                
+		                if(json.success){
+		                	$(json.products).each(function(i, item){
+		                		$("#result table tbody").prepend(tr(item));
+		                	});
+
+		                	setTimeout(function(){
+		                		$("#result table tbody tr").eq(0).show("slow");                		
+		                	}, 750);
+		                }
+		            }
+		        });
+
+		        $("#btNoResult").click(function(){
+		        	$("#drag_container .label").hide();
+		        	$("#drag_container").append($(".boxNoResult"));
+		        	$(".boxNoResult").addClass("drag_item");
+		        	
+		        	$(".drag_item").draggable({
+						appendTo: "body",
+						revert: "invalid",
+						start: function( event, ui ) {
+							$("#drop_container").show("slow");	
+						},
+						stop: function( event, ui ) {
+							$("#drop_container").hide("slow");
+						}
+					});
+		        });
+
+		        
+			});
+		</script>
+	</head>
+	<body>
+		<div id="geral">
+			<div id="commandButtons">
+				<button type="button" id="btNoResult">Sem Resultado</button>
+			</div>
+
+			<div id="drag_container">
+				<span class="label">Nenhuma busca realizada</span>				
+			</div>
+
+			<div id="drop_container">Solte Aqui</div>
+
+			<div id="result">
+				<table>
+					<thead>
+						<tr>
+							<th>Descrição</th>
+							<th>Custo (R$)</th>
+							<th>Venda (R$)</th>
+							<th>Estoque</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+
+			<div id="sampleBox">
+				<div class="boxNoResult">
+					<strong>PRODUTO NÃO ENCONTRADO</strong>
+					<span>ARRASTE E CADASTRE MANUALMENTE</span>
+				</div>
+			</div>	
+		</div>
+	</body>	
+</html>

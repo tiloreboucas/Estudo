@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Scroll</title>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<style type="text/css">
+			* { margin: 0px; padding: 0px; }
+			.bloco { height: 5500px; background-color: red; }
+		</style>
+
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript">
+			function ActionOnScroll(top, bottom){
+				$(window).scroll(function(){
+					if($(window).scrollTop() == 0) top();
+					else if ($(window).scrollTop() == $(document).height() - $(window).height()) bottom();
+				});
+			}
+
+			$(document).ready(function(){
+				ActionOnScroll(function(){
+					console.log('top');
+				},function(){
+					console.log('bottom');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="bloco"></div>
+	</body>
+</html>

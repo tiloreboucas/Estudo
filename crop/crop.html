@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset=utf-8>
+    <title>Crop</title>
+    <link rel="stylesheet" href="">
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        var upload = document.getElementsByTagName('input')[0],
+        holder = document.getElementById('holder');
+
+        if (typeof window.FileReader === 'undefined') {
+          console.log('fail');
+        } else {
+          console.log('success');
+        }
+
+        upload.onchange = function (e) {
+        e.preventDefault();
+
+        var file = upload.files[0],
+        reader = new FileReader();
+        
+        reader.onload = function (event) {
+          var img = new Image();
+
+          img.src = event.target.result;
+
+          img.width = 300;
+          
+          holder.innerHTML = '';
+          holder.appendChild(img);
+        };
+
+        reader.readAsDataURL(file);
+
+        return false;
+        };
+      });
+    </script>
+  </head>
+  <body>
+    <input type=file>
+    <div id="holder"></div>
+  </body>
+</html>

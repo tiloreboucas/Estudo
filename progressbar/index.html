@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ProgressBar</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body.body-loading * { visibility: hidden; }
+            body.body-loading .loading-screen { visibility: visible; width: 200px; height: 140px; margin: 10% auto; text-align: center; font: normal 12px/18px Verdana; }
+            body.body-loading .loading-screen * { visibility: visible; } 
+            body.body-loading .loading-screen p { margin-top: 10px; }
+            .loading-screen .ldl1 { width: 200px; background-color: #ddd; position: relative; height: 20px; border-radius: 5px; overflow: hidden; }
+            .loading-screen .ldl2 { height: 20px; width: 200px; background-color: #c8c8c8; position: absolute; left: -90%; top: 0; border-radius: 5px 0 0 5px; }
+        </style>
+    </head>
+    <body class="body-loading">
+        <div class="loading-screen">
+            <div class="ldl1"><div class="ldl2"></div></div>
+        </div>
+
+        <style type="text/css">.body-loading div.loading-screen div.ldl2 { left: -70%; }</style>
+
+        <!-- Scripts -->
+
+        <style type="text/css">.body-loading div.loading-screen div.ldl2 { left: -50%; }</style>
+
+        <!-- Scripts -->
+
+        <style type="text/css">body.body-loading div.loading-screen div.ldl2 { left: -30%; }</style>
+
+        <!-- Scripts -->
+
+        <script type="text/javascript">
+            function FinishLoading() {
+                $('.ldl2').css({ left: '-10%' });
+                setTimeout(function () { $('body').removeClass('body-loading'); $('.loading-screen').remove(); }, 1);
+            }
+        </script>
+        <script type="text/javascript">
+            FinishLoading();
+        </script>
+    </body>    
+</html>
