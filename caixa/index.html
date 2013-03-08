@@ -19,7 +19,7 @@
 
   			.box_main_X { -webkit-transform-style: preserve-3d; -webkit-transform: rotateY(0deg) rotateX(-15deg) rotateZ(0deg); }
   			.box_main_Y { -webkit-transform-style: preserve-3d; -webkit-transform: rotateY(-45deg) rotateX(0deg) rotateZ(0deg); }
-  			.box_main { position: relative; }  			 
+  			.box_main { position: relative; }
   			
 			.box_side { position: absolute; background-position:center center; background-size: 100% 100%; background-repeat: no-repeat; }
 			.box_side.front { background-image: url('box_front.png'); }
@@ -74,7 +74,7 @@
 
 					var n = [parseInt(l), parseInt(a), parseInt(p)];
 
-					var w, y, z;
+					var w, y, z, leftZ, topZ, frontZ;
 					
 					var maior;
 					for(var i = 0; i < n.length; i++) {
@@ -82,38 +82,46 @@
 						else if(n[i] > maior) maior = n[i];
 					}
 
-					w = ((1 / ((maior * 100) / 250)) * 100) * n[0];
-					y = ((1 / ((maior * 100) / 250)) * 100) * n[1];
-					z = ((1 / ((maior * 100) / 250)) * 100) * n[2];
+					l = parseInt(((1 / ((maior * 100) / 250)) * 100) * n[0]);
+					a = parseInt(((1 / ((maior * 100) / 250)) * 100) * n[1]);
+					p = parseInt(((1 / ((maior * 100) / 250)) * 100) * n[2]);
 
 					// Container
 					$(".box_container").css({
-						width: w,
-						height: y
+						width: l,
+						height: a
 					});
 
 					// Main
-					$(".box_main").width(w).height(y);
+					$(".box_main").width(l).height(a);
+					
+					frontZ = p / 2;
+					topZ = p / 2;
+
+					if(l > p) { leftZ = ((p / 2) + (l - p)) * -1; } 
+					else if(p > l){ 
+						leftZ = ((p / 2) - (p - l)) * -1;
+					} else { leftZ = (l / 2) * -1; }
 
 					// Front
 					$(".box_side.front").css({
-						width: w,
-						height: y,
-						'-webkit-transform': 'translateZ('+z/2+'px)' 
+						width: l,
+						height: a,
+						'-webkit-transform': 'translateZ('+frontZ+'px)' 
 					});
 
 					// Left
 					$(".box_side.right").css({
-						width: z,
-						height: y,
-						'-webkit-transform': 'rotateY(-90deg) translateZ(-'+w/2+'px)'
+						width: p,
+						height: a,
+						'-webkit-transform': 'rotateY(-90deg) translateZ('+leftZ+'px)'
 					});
 
 					// Top
 					$(".box_side.top").css({
-						width: w,
-						height: z,
-						'-webkit-transform': 'rotateX(90deg) translateZ('+z/2+'px)'
+						width: l,
+						height: p,
+						'-webkit-transform': 'rotateX(90deg) translateZ('+topZ+'px)'
 					});
 				}			
 
@@ -125,8 +133,6 @@
 				$(".form input").focusout(function(){
 					createBox($("#axis_x").val(), $("#axis_y").val(), $("#axis_z").val());
 				});
-
-				// (1 / ((800 * 100) / 250)) * 100
 			});
 		</script>
 	</head>
@@ -153,13 +159,13 @@
 				<legend>Medidas</legend>
 
 				<dl>
-					<dt>X</dt>
+					<dt>Largura</dt>
 					<dd><input type="number" id="axis_x" /></dd>
 
-					<dt>Y</dt>
+					<dt>Altura</dt>
 					<dd><input type="number" id="axis_y" /></dd>
 
-					<dt>Z</dt>
+					<dt>Profundidade</dt>
 					<dd><input type="number" id="axis_z" /></dd>
 				</dl>
 			</fieldset>
