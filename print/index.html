@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NF</title>
+		<meta charset="UTF-8" />
+
+		<style type="text/css">
+			* { margin: 0px; padding: 0px; }
+
+			@page {
+	            size: A4;
+	            margin: 0mm;
+	            padding: 0cm;
+	        }
+
+			body {
+				font-size: 5pt;
+				background: #ccc;
+			}
+
+			#page {
+				width: 200mm;
+				height: 280mm;
+				margin: auto;
+				/*background: transparent url('bg.jpg') no-repeat center top;*/
+				background-size: 200mm;
+			}
+
+			.page-break { page-break-before:always; }
+
+			table { border-collapse:collapse; }
+
+			/* Bordas */
+			.b { border: 0.3mm solid #000; border-collapse:collapse; }
+			.bl { border-left: 0.3mm solid #000; border-collapse:collapse; }
+			.br { border-right: 0.3mm solid #000; border-collapse:collapse; }
+			.bb { border-bottom: 0.3mm solid #000; border-collapse:collapse; }
+
+			/* Posições */
+			.fl { float: left; }
+			.fr { float: right; }
+
+			/* Tipo */
+			.db { display:  block; }
+			.dib { display: inline-block; }
+
+			/* Blocos */
+			.linha { height: 7mm; }
+
+			/* Medidas */
+			.w165 { width: 163mm; }
+			.w35 { width: 35mm; }
+
+			/* Margin e Preenchimento */
+			.mb { margin-bottom: 0.5mm; }
+
+			/* Titulos */
+			h2 { font-size: 5pt; }
+
+			/* Tabelas */
+			#page > table { width: 200mm; }
+			#page > table dt { font-weight: bold; padding: 0.2mm; }
+			#page > table dd { height: 3mm; }
+
+
+			/* Blocos */
+			#header_info { overflow: hidden; margin-bottom: 1mm; height: 12mm; }
+			
+			#header_info > .col_a { width: 164.2mm; }
+			#header_info > .col_a > .lin_1 { padding: 1mm; }
+			#header_info > .col_a > .lin_2 {}
+			#header_info > .col_a > .lin_2 > div { padding: 1mm; font-weight: bold; height: 6mm; }
+			#header_info > .col_a > .lin_2 > div:first-child { width: 28mm; }
+
+			#header_info > .col_b { font-size: 7pt; }
+			#header_info > .col_b > strong { display: block; text-align: center; padding: 1mm; }
+			#header_info > .col_b > .num_nf { padding: 0mm 3mm; display: block; }
+			#header_info > .col_b > .serie_nf { padding: 1mm 3mm; display: block; }
+
+			#emitente_info { height: 30mm; margin-bottom: 0.2mm; }
+			#emitente_info > div { height: 30mm; float: left; }
+			#emitente_info > .logo { width: 30mm; }
+			#emitente_info > .logo > img { width: 30mm; height: 30mm; }
+			#emitente_info > .ident { width: 51.7mm; }
+			#emitente_info > .danfe { width: 35mm; }
+			#emitente_info > .barcode { width: 82mm; }
+		</style>
+
+		<style type="text/css" type="screen">
+			body { padding: 10px 0 20px;}
+			#page {
+				background-color: white;
+				box-shadow: 0px 0px 10px #A1A1A1;
+				padding: 5mm;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header_info" class="b">
+				<div class="col_a fl w163">
+					<div class="lin_1 bb">RECEBEMOS DE <span id="emit_cab_ds_issuer_name"></span>OS PRODUTOS E SERVIÇOS CONSTANTES NA NOTA FISCAL INDICADA AO LADO</div>
+					<div class="lin_2">
+						<div class="dib br">DATA DE RECEBIMENTO</div>
+						<div class="dib">IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR</div>
+					</div>
+				</div>
+				<div class="col_b fr bl w35">
+					<strong>NF-e</strong>
+					<span class="num_nf">N. <span>000359861</span></span>
+					<span class="serie_nf">SÉRIE <span>1</span>
+				</div>
+			</div>
+
+			<div id="emitente_info" class="b">
+				<div class="logo"><img src="" alt="logo" /></div>
+				<div class="ident br"></div>
+				<div class="danfe br"></div>
+				<div class="barcode"></div>
+			</div>
+			<div id="nat_oper" class="linha mb b"></div>
+			<div id="incs_est" class="linha mb b"></div>
+
+			<h2> DESTINATÁRIO/REMETENTE </h2>
+			<table cellpadding="0" cellspacing="0" border="1">
+			    <tr>
+			        <td colspan="3">
+			            <dl class="campo">
+			                <dt>NOME/RAZÃO SOCIAL </dt>
+			                <dd id="dest_receiver_name">
+			                </dd>
+			            </dl>
+			        </td>
+			        <td>
+			            <dl class="campo">
+			                <dt>CNPJ/CPF </dt>
+			                <dd id="dest_nu_cnpj_cpf">
+			                </dd>
+			            </dl>
+			        </td>
+			        <td>
+			            <dl class="campo">
+			                <dt>DATA DE EMISSÃO </dt>
+			                <dd id="dadosnfe_dt_invoice_issue">
+			                </dd>
+			            </dl>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			            <dl class="campo">
+			                <dt>ENDEREÇO </dt>
+			                <dd>
+			                    <span id="dest_ds_address"></span><span id="dest_nu_number"></span>
+			                </dd>
+			            </dl>
+			        </td>
+			        <td colspan="2">
+			            <dl class="campo">
+			                <dt>BAIRRO/DISTRITO </dt>
+			                <dd id="dest_ds_neighborhood">
+			                </dd>
+			            </dl>
+			        </td>
+			        <td>
+			            <dl class="campo">
+			                <dt>CEP </dt>
+			                <dd id="dest_nu_cep">
+			                </dd>
+			            </dl>
+			        </td>
+			        <td>
+			            <dl class="campo">
+			                <dt>DATA DE ENTR./SAÍDA </dt>
+			                <dd id="dadosnfe_dt_input_output">
+			                </dd>
+			            </dl>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			            <dl class="campo">
+			                <dt>MUNICÍPIO </dt>
+			                <dd id="dest_ds_city_name">
+			                </dd>
+			            </dl>
+			        </td>
+			        <td>
+			            <dl class="campo">
+			                <dt>FONE/FAX </dt>
+			                <dd id="dest_nl_phone_number">
+			                </dd>
+			            </dl>
+			        </td>
+			        <td>
+			            <dl class="campo">
+			                <dt>UF </dt>
+			                <dd id="dest_ds_uf">
+			                </dd>
+			            </dl>
+			        </td>
+			        <td>
+			            <dl class="campo">
+			                <dt>INSCRIÇÃO ESTADUAL </dt>
+			                <dd>
+			                    <span id="dest_nu_ie"></span>&nbsp;
+			                </dd>
+			            </dl>
+			        </td>
+			        <td>
+			            <dl class="campo">
+			                <dt>HORA ENTR./SAÍDA </dt>
+			                <dd>
+			                    &nbsp;
+			                </dd>
+			            </dl>
+			        </td>
+			    </tr>
+			</table>
+
+
+		</div>
+		<div class="page-break"></div>
+	</body>
+</html>
