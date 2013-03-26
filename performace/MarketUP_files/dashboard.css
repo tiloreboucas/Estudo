@@ -1,0 +1,520 @@
+﻿/* Dashboard */
+
+/*
+	Amarelo Padrão: #ebfd86;
+*/
+
+div.dashboard { min-height: 40px; height: 153px; background-color: #9dbac5; width: 992px; -webkit-transition: all 0.4s; overflow: hidden; position: relative; z-index: 1; }
+
+.dashboard .dashboardContent {}
+
+.dashboard .dashboardContent .boxInfo { background-repeat: no-repeat; background-position: center left; }
+.dashboard .dashboardContent .boxInfo > ul { padding: 0 10px; text-align: right; height: 153px; }
+.dashboard .dashboardContent .boxInfo > ul > li { display: inline-block; vertical-align: middle; padding: 10px 5px; text-align: center; }
+
+.dashboard .dashboardContent .boxInfo > ul > li.boxInfoOne {}
+.dashboard .dashboardContent .boxInfo > ul > li.boxInfoTwo {}
+.dashboard .dashboardContent .boxInfo > ul > li.boxInfoThree {}
+.dashboard .dashboardContent .boxInfo > ul > li.boxInfoFour {}
+
+.dashboard .dashboardContent .boxInfo strong { color: #ebfd86; font-size: 14px; }
+.dashboard .dashboardContent .boxInfo strong span { color: #fff; font-size: 14px; display: block; }
+
+.dashboard .dashboardContent .boxInfo table { width: 240px; }
+.dashboard .dashboardContent .boxInfo table thead tr th span { color: #ebfd86; }
+.dashboard .dashboardContent .boxInfo table thead { background-color: #abc4ce; }
+.dashboard .dashboardContent .boxInfo table tbody td { font: bold 11px/11px 'Arial' Sans-serif; padding: 5px 2px 2px 10px; }
+.dashboard .dashboardContent .boxInfo table tbody tr td { color: #fff; }
+.dashboard .dashboardContent .boxInfo table thead tr th { font: bold 11px/11px 'Arial' Sans-serif; padding: 5px 2px 2px 10px; }
+.dashboard .dashboardContent .boxInfo table tbody { background-color: #8dafbc; }
+.dashboard .dashboardContent .boxInfo table thead tr,
+.dashboard .dashboardContent .boxInfo table tbody tr { -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; }
+.dashboard .dashboardContent .boxInfo table tr td:first-child span { width: 132px; display: block; white-space: nowrap; overflow: hidden; text-align:left; }
+
+.dashboard .dashboardContent .boxInfo .titleBoxInfo { font-size: 14px; line-height: 14px; font-weight: bold; color: #ebfd86; margin-bottom: 7px; text-align: center; }
+.dashboard .dashboardContent .boxInfo .boxInfoTwo p { color:#fff; font-weight: bold; font-size: 34px; margin-top: 25px; margin-bottom: 10px;}
+
+.dashboard .dashboardContent .boxInfo .boxInfoOne:not(.sale),
+.dashboard .dashboardContent .boxInfo .boxInfoOne.bill1 p,
+.dashboard .dashboardContent .boxInfo .boxInfoThree.sale2 p,
+.dashboard .dashboardContent .boxInfo .boxInfoThree.bill2 p,
+.dashboard .dashboardContent .boxInfo .boxInfoOne.bill1 p,
+.dashboard .dashboardContent .boxInfo p,
+.dashboard .dashboardContent .boxInfo .boxInfoOne.sale1 p { color:#fff; font-weight: bold; font-size: 30px; }
+
+.dashboard.headerDashboard.open  .dashboardContent.dashboardSales .boxInfo .boxInfoOne:not(.sale) {width: 200px;} 
+
+.dashboard.headerDashboard.open  .dashboardContent.dashboardBilling .boxInfo .boxInfoThree {width: 200px;} 
+.dashboard.headerDashboard.open  .dashboardContent.dashboardBilling .boxInfo .boxInfoFour {width: 245px;} 
+
+.dashboard .dashboardContent .boxInfo li.boxInfoFour h6 { font-size: 16px; color: #ebfd86; }
+
+.dashboard .dashboardContent .boxInfo li .tit { color: #ebfd86; }
+
+/* Shopping */
+.dashboard .dashboardShopping {}
+.dashboard .dashboardShopping li.boxInfoOne { width: 230px; }
+.dashboard .dashboardShopping li.boxInfoOne h6 span { display: block; }
+.dashboard .dashboardShopping li.boxInfoTwo { width: 210px; }
+.dashboard .dashboardShopping li.boxInfoThree { width: 210px; }
+.dashboard .dashboardShopping li.boxInfoFour { width: 240px; }
+
+.dashboard .dashboardShopping .boxInfo .boxInfoThree strong span { font-size: 24px; }
+
+/* Sales */
+.dashboard .dashboardSales {}
+.dashboard .dashboardSales li.boxInfoOne { width: 240px; }
+.dashboard .dashboardSales li.boxInfoOne h6 span { display: block; }
+.dashboard .dashboardSales li.boxInfoTwo { width: 240px; }
+.dashboard .dashboardSales li.boxInfoThree { width: 200px; }
+.dashboard .dashboardSales li.boxInfoFour { width: 240px; }
+
+/* Billing */
+.dashboard .dashboardBilling {}
+.dashboard .dashboardBilling li.boxInfoOne { width: 200px; }
+.dashboard .dashboardBilling li.boxInfoOne h6 span { display: block; }
+.dashboard .dashboardBilling li.boxInfoTwo { width: 240px; }
+.dashboard .dashboardBilling li.boxInfoThree { width: 230px; }
+.dashboard .dashboardBilling li.boxInfoFour { width: 250px; }
+
+.dashboard .dashboardBilling .boxInfo .boxInfoFour ul { width: 250px; }
+.dashboard .dashboardBilling .boxInfo .boxInfoFour ul li { width: 250px; text-align: left; }
+
+.dashboard .dashboardBilling .boxInfo .boxInfoFour ul li span { text-align: right; display: inline-block; }
+.dashboard .dashboardBilling .boxInfo .boxInfoFour ul li span:first-child { display: inline-block; width: 40px; text-align: right; }
+.dashboard .dashboardBilling .boxInfo .boxInfoFour ul li span {  text-align: center; }
+.dashboard .dashboardBilling .boxInfo .boxInfoFour ul li span:nth-child(2) { width: 95px; color: #fff; }
+.dashboard .dashboardBilling .boxInfo .boxInfoFour ul li span:nth-child(3) { width: 95px; color: #fff; }
+.dashboard .dashboardBilling .boxInfo .boxInfoFour ul li:first-child span { color: #ebfd86;}
+
+/* Header */
+.dashboard.headerDashboard.open {}
+.dashboard.headerDashboard .dashboardContent { display: inline-block; vertical-align: middle; }
+.dashboard.headerDashboard .dashboardReading { width: 18px; height: 128px; display: inline-block; vertical-align: middle; position: relative; }
+.dashboard.headerDashboard .dashboardReading .dashboardReadingButton { width: 18px; height: 19px; display: inline-block; background: url('../img/arrowOpenDashboard.png') no-repeat left top; position: absolute; left: 1px; top: 113px; border: none; cursor: pointer; }
+.ipad .dashboard.headerDashboard .dashboardReading .dashboardReadingButton { display: none; }
+.dashboard.headerDashboard .dashboardReading p { font: bold 16px/16px 'Arial', Sans-serif; color: #b4cdd7; text-transform: uppercase; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); position: absolute; left: -43px; top: 46px; letter-spacing: 0px; }
+.dashboard.headerDashboard.open .dashboardContent .boxInfo .boxInfoThree p { color:#fff; font-weight: bold; font-size: 30px; }
+
+.dashboard.headerDashboard.open .dashboardSales li.boxInfoThree { width: 205px; }
+.dashboard.headerDashboard.open .dashboardBilling li.boxInfoOne { width:; }
+.dashboard.headerDashboard.open .dashboardShopping li.boxInfoOne { width: 225px; }
+
+/* Close */
+.MainSection.DashboardClose .MainContent { margin-top: 130px; }
+.ipad .MainSection.DashboardClose .MainContent ,
+.mac .MainSection.DashboardClose .MainContent { margin-top: 150px; }
+.dashboard.headerDashboard.close { height: 40px; text-align: right; }
+.dashboard.headerDashboard.close .dashboardContent .boxInfo > ul { height: 40px; -webkit-transition: all 0.4s; }
+.dashboard.headerDashboard.close .dashboardContent { width: 952px; text-align: right; margin-right: 15px; }
+.dashboard.headerDashboard.close .dashboardContent .boxInfo ul li:first-child { border: none; }
+.dashboard.headerDashboard.close .dashboardContent .boxInfo > ul > li { line-height: 15px; font-size: 14px; display: inline-block; padding: 0 10px; border-left: 2px solid #fff; height: 15px; margin-top: 12px; vertical-align: middle; }
+
+.dashboard.headerDashboard.close .dashboardContent .boxInfo ul li * { -webkit-margin: 0px; white-space: nowrap; margin: 0px; color: #fff; display: inline-block; float: none; line-height: 14px; height: 15px; font-size: 14px; vertical-align: middle; text-align: left; }
+.dashboard.close .dashboardContent .boxInfo ul li .horizontalGraphBoxInfo { display: none; }
+
+/* Shopping */
+.dashboard.close .dashboardShopping {}
+.dashboard.headerDashboard.close .dashboardContent.dashboardShopping .boxInfo ul li { line-height: 14px; font-size: 14px; width: auto; }
+.dashboard.close .dashboardShopping li.boxInfoOne h6 span:first-child:after {
+	content: " em ";
+	margin-right: 5px;
+}
+.dashboard.close .dashboardShopping li.boxInfoOne h6 span:last-child { text-transform: lowercase; }
+.dashboard.close .dashboardShopping li.boxInfoOne h6 span:last-child:after {
+	content: ":";
+	margin-right: 5px;
+}
+.dashboard.headerDashboard.close .dashboardContent.dashboardShopping .boxInfo ul li.boxInfoOne strong { display: none; }
+
+.dashboard.close .dashboardShopping li.boxInfoTwo 	{ width: auto; }
+.dashboard.close .dashboardShopping li.boxInfoTwo h6:after {
+	content: ":";
+}
+
+.dashboard.headerDashboard.close .dashboardContent.dashboardShopping .boxInfo ul li.boxInfoTwo strong { display: none; }
+
+.dashboard.close .dashboardShopping li.boxInfoThree { width: auto; }
+.dashboard.headerDashboard.close .dashboardContent.dashboardShopping .boxInfo ul li.boxInfoThree .first { margin-top: -4px; }
+.dashboard.headerDashboard.close .dashboardContent.dashboardShopping .boxInfo ul li.boxInfoThree .first .tit { margin-right: 5px; } 
+.dashboard.headerDashboard.close .dashboardContent.dashboardShopping .boxInfo ul li.boxInfoThree .first .val { margin-right: 5px; } 
+
+.dashboard.headerDashboard.close .dashboardContent.dashboardShopping .boxInfo ul li.boxInfoFour { display: none; }
+
+/* Sales */
+.dashboard.close .dashboardSales {}
+.dashboard.close .dashboardSales li.boxInfoOne { width: auto; }
+.dashboard.close .dashboardSales .boxInfo ul li.boxInfoOne h6.titleBoxInfo { display: inline-block; vertical-align: middle; float: none; margin-bottom: 0px; }
+.dashboard.close .dashboardSales .boxInfo ul li.boxInfoOne h6 span + span { display: none; }
+.dashboard.close .dashboardSales li.boxInfoOne h6 > span:first-child:after {
+	content: " em ";
+}
+.dashboard.close .dashboardSales .boxInfo li.boxInfoOne p { display: none; }
+.dashboard.close .dashboardSales li.boxInfoOne strong { vertical-align: middle; color: #fff; }
+.dashboard.close .dashboardSales li.boxInfoOne strong .tit:after {
+	content: ":";
+	margin-right: 5px;
+}
+.dashboard.headerDashboard.close .dashboardContent.dashboardSales .boxInfo ul li.boxInfoTwo { display: none; }
+.dashboard.close .dashboardSales li.boxInfoThree { width: auto; }
+.dashboard.close .dashboardSales .boxInfo ul li.boxInfoThree h6 > span:first-child:after {
+	content: " HOJE: ";
+}
+.dashboard.close .dashboardSales .boxInfo ul li.boxInfoThree h6 span + span { display: none; }
+.dashboard.close .dashboardSales .boxInfo ul li.boxInfoThree p { font-weight: bold; }
+.dashboard.close .dashboardSales .boxInfo ul li.boxInfoThree > strong {
+	border-left: 2px solid #fff;
+	margin-left: 5px; padding-left: 10px;
+}
+
+.dashboard.close .dashboardSales .boxInfo ul li.boxInfoThree > strong:before {
+	content: "Vendas em ";
+}
+
+.dashboard.close .dashboardSales .boxInfo ul li.boxInfoThree > strong span.tit:after {
+	content: ": ";
+}
+
+.dashboard.headerDashboard.close .dashboardContent.dashboardSales .boxInfo ul li.boxInfoFour { display: none; }
+
+
+/* Billing */
+.dashboard.close .dashboardBilling {}
+.dashboard.close .dashboardBilling li.boxInfoOne { width: auto; }
+.dashboard.close .dashboardBilling .boxInfo ul li.boxInfoOne h6.titleBoxInfo { display: inline-block; vertical-align: middle; float: none; margin-bottom: 0px; }
+.dashboard.close .dashboardBilling .boxInfo ul li.boxInfoOne h6 span + span { display: none; }
+.dashboard.close .dashboardBilling li.boxInfoOne h6 > span:first-child:after {
+	content: " em ";
+}
+.dashboard.close .dashboardBilling .boxInfo li.boxInfoOne p { display: none; }
+.dashboard.close .dashboardBilling li.boxInfoOne strong { vertical-align: middle; color: #fff; }
+.dashboard.close .dashboardBilling li.boxInfoOne strong .tit:after {
+	content: ":";
+	margin-right: 5px;
+}
+.dashboard.headerDashboard.close .dashboardContent.dashboardBilling .boxInfo ul li.boxInfoTwo { display: none; }
+.dashboard.close .dashboardBilling li.boxInfoThree { width: auto; }
+.dashboard.close .dashboardBilling .boxInfo ul li.boxInfoThree h6:after {
+	content: ": ";
+}
+.dashboard.close .dashboardBilling .boxInfo ul li.boxInfoThree h6 + p { font-weight: bold; }
+.dashboard.close .dashboardBilling .boxInfo ul li.boxInfoThree h6 + p + strong { display: none; }
+.dashboard.close .dashboardBilling li.boxInfoTwo { width: auto; }
+.dashboard.close .dashboardBilling li.boxInfoThree { width: auto; }
+.dashboard.close .dashboardBilling li.boxInfoFour { width: auto; }
+
+.dashboard .dashboardBilling li.boxInfoFour .payablesToday { display: none; }
+.dashboard .dashboardBilling .boxInfo ul li.boxInfoFour ul li { width: 250px; }
+.dashboard .dashboardBilling li.boxInfoFour .payablesToday span:first-child { margin-right: 5px; }
+.dashboard .dashboardBilling li.boxInfoFour .payablesToday span:nth-child(2):before { content: "R$ "; }
+.dashboard.close .dashboardBilling .boxInfo ul li.boxInfoFour ul { display: none; }
+
+
+.dashboard.headerDashboard.close .dashboardReading { width: 18px; float: right; position: relative; }
+.dashboard.headerDashboard.close .dashboardReading .dashboardReadingButton { background: url('../img/arrowCloseDashboard.png') no-repeat left top; left: -13px; top: 13px; }
+.dashboard.headerDashboard.close .dashboardReading p { display: none; }
+
+
+/*
+.dashboard.headerDashboard.close ul li.boxInfoOne p { color:#fff; font-size: 14px; font-weight: bold; float: left; margin-left: 5px; }
+
+.dashboard.headerDashboard.close ul li.boxInfoOne strong { display: none; }
+.dashboard.headerDashboard.close ul li.boxInfoOne strong span { color:#fff; }
+
+.dashboard.headerDashboard.close ul li.boxInfoTwo .horizontalGraphBoxInfo { display: none; }
+.dashboard.headerDashboard.close ul li.boxInfoTwo h6 { float: left; }
+.dashboard.headerDashboard.close ul li.boxInfoThree p { color:#fff; font-size: 14px; font-weight: bold; float: left; margin-left: 5px; }
+.dashboard.headerDashboard.close ul li.boxInfoTwo strong { display: none; }
+
+
+.dashboard.headerDashboard.close .boxInfoBuy ul li.boxInfoTwo p,
+.dashboard.headerDashboard.close .boxInfoBuy ul li.boxInfoTwo strong { display: none; }
+
+.dashboard.headerDashboard.close ul li.boxInfoThree p { color:#fff; font-size: 14px; font-weight: bold; float: left; margin-left: 5px; }
+.dashboard.headerDashboard.close ul li.boxInfoThree strong { display: none; }
+.dashboard.headerDashboard.close ul li.boxInfoThree strong span { color: #fff; }
+.dashboard.headerDashboard.close .boxInfoFinancial ul li.boxInfoThree { width: 200px; }
+.dashboard.headerDashboard.close .boxInfoFinancial ul li.boxInfoFour .titleBoxInfo { display: block; }
+.dashboard.headerDashboard.close .boxInfoFinancial ul li.boxInfoFour .titleBoxInfo,
+.dashboard.headerDashboard.close ul li.boxInfoFour table { display: none; }*/
+
+
+
+
+
+/* Página */
+.dashboard.dashboardPage { margin-bottom: 20px; }
+.dashboard.dashboardPage .dashboardShopping .boxInfo { background-image: url('../img/bgDashboardPurchase2.png'); }
+.dashboard.dashboardPage .dashboardSales .boxInfo { background-image: url('../img/bgDashboardSale2.png'); }
+.dashboard.dashboardPage .dashboardBilling .boxInfo { background-image: url('../img/bgDashboardFinancial2.png'); }
+
+
+
+/* Background */
+
+/* Vendas */
+.coupon_item .MainHeader .headerDashboard,
+.coupon_payment .MainHeader .headerDashboard,
+.current_account_client .MainHeader .headerDashboard,
+.custom_item_combo .MainHeader .headerDashboard,
+.custom_item_group .MainHeader .headerDashboard,
+.default_value .MainHeader .headerDashboard,
+.document_person .MainHeader .headerDashboard,
+.education .MainHeader .headerDashboard,
+.item_image .MainHeader .headerDashboard,
+.item_subgroup .MainHeader .headerDashboard,
+.item_unit .MainHeader .headerDashboard,
+.itens_custom_item_group .MainHeader .headerDashboard,
+.operation_type_pdv .MainHeader .headerDashboard,
+.payment_condition .MainHeader .headerDashboard,
+.pdv_operation_detail .MainHeader .headerDashboard,
+.printer_attribute .MainHeader .headerDashboard,
+.sale_order_products_query .MainHeader .headerDashboard,
+.selling_commission_closing .MainHeader .headerDashboard,
+.sale_budget .MainHeader .headerDashboard,
+.sale_order .MainHeader .headerDashboard,
+.client .MainHeader .headerDashboard,
+.seller_commission .MainHeader .headerDashboard,
+.pdv_operation .MainHeader .headerDashboard,
+.coupon .MainHeader .headerDashboard,
+.employee .MainHeader .headerDashboard { background-image: url('../img/bgDashboardSale.png'); background-repeat: no-repeat; background-position: center left; }
+.seller_commission_closing .MainHeader .headerDashboard { background-image: url('../img/bgDashboardSale.png'); background-repeat: no-repeat; background-position: center left;}
+
+/* Compra */
+.purchase_order_product .MainHeader .headerDashboard,
+.purchase_order_products_query .MainHeader .headerDashboard,
+.scope_query .MainHeader .headerDashboard,
+.stock_location_query .MainHeader .headerDashboard,
+.stock_movement .MainHeader .headerDashboard,
+.stock_movement_item .MainHeader .headerDashboard,
+.stock_movement_type .MainHeader .headerDashboard,
+.stock_source .MainHeader .headerDashboard,
+.supplier_type .MainHeader .headerDashboard,
+.purchase_budget .MainHeader .headerDashboard,
+.purchase_order .MainHeader .headerDashboard,
+.supplier .MainHeader .headerDashboard,
+.item .MainHeader .headerDashboard,
+.item_group .MainHeader .headerDashboard,
+.stock_room_query .MainHeader .headerDashboard,
+.stock_room .MainHeader .headerDashboard,
+.purchase_order_query .MainHeader .headerDashboard,
+.sale_order_query .MainHeader .headerDashboard,
+.stock_location .MainHeader .headerDashboard,
+.scope .MainHeader .headerDashboard { background-image: url('../img/bgDashboardPurchase.png'); background-repeat: no-repeat; background-position: center left; }
+
+/* Financeiro */
+.fin_entry_event .MainHeader .headerDashboard,
+.fin_event .MainHeader .headerDashboard,
+.fin_trransfer .MainHeader .headerDashboard,
+.general_value .MainHeader .headerDashboard,
+.history .MainHeader .headerDashboard,
+.home .MainHeader .headerDashboard,
+.invoice_item .MainHeader .headerDashboard,
+.invoice_tax .MainHeader .headerDashboard,
+.other_invoice_item .MainHeader .headerDashboard,
+.person_bank .MainHeader .headerDashboard,
+.tax_cfop .MainHeader .headerDashboard,
+.user .MainHeader .headerDashboard,
+.fin_cash_flow .MainHeader .headerDashboard,
+.fin_receivable .MainHeader .headerDashboard,
+.fin_payable .MainHeader .headerDashboard,
+.fin_entry .MainHeader .headerDashboard,
+.fin_operation .MainHeader .headerDashboard,
+.fin_account .MainHeader .headerDashboard,
+.fin_account_management .MainHeader .headerDashboard,
+.fin_account_management .MainHeader .headerDashboard,
+.payment_type .MainHeader .headerDashboard,
+.invoice .MainHeader .headerDashboard,
+.invoice_nfe_control .MainHeader .headerDashboard,
+.other_invoice .MainHeader .headerDashboard,
+.tax_calc .MainHeader .headerDashboard,
+.transaction_nature .MainHeader .headerDashboard {  background-image: url('../img/bgDashboardFinancial.png'); background-repeat: no-repeat; background-position: center left; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dashboard */
+/*
+.MainHeader .headerDashboard ul li.boxInfoOne { width: 232px; }
+.MainHeader .headerDashboard ul li.boxInfoTwo { width: 242px; }
+.MainHeader .headerDashboard ul li.boxInfoThree { width: 202px; }
+.MainHeader .headerDashboard ul li.boxInfoFour { width: 241px; }
+*/
+/* Dashboard Aberto */
+.MainSection.DashboardOpen .MainContent { margin-top: 237px; }
+.ipad .MainSection.DashboardOpen .MainContent { margin-top: 20px; }
+.mac .MainSection.DashboardOpen .MainContent { margin-top: 257px; }
+/*
+.dashboard .Main .MainSection.noDashboard .MainContent .boxInfo,
+.MainHeader .headerDashboard { background-color: #9dbac5; display: none; width: 952px; border-radius: 0 0 ; padding: 10px 20px 18px 20px; -webkit-transition: all 0.4s; overflow: hidden; position: relative; z-index: 1; }
+*/
+
+
+
+
+
+
+
+.MainHeader .headerDashboard.open  .boxInfoSales{}
+.MainHeader .headerDashboard.open ul {}
+/*.MainHeader .headerDashboard.open ul li { float: left; font-family: 'Arial', Sans-serif; }
+.MainHeader .headerDashboard.open ul li .titleBoxInfo { font: bold 14px/14px 'Arial', Sans-serif; color: #ebfd86; margin-bottom: 7px; text-align: center; }
+.MainHeader .headerDashboard.open ul li.boxInfoOne p { color:#fff; font-size: 18px; font-weight: bold; }*/
+.MainHeader .headerDashboard.open ul li.boxInfoOne p span { font-size: 30px; }
+/*.MainHeader .headerDashboard.open ul li.boxInfoOne strong,
+.MainHeader .headerDashboard.open ul li.boxInfoThree strong { color:#fff; font-size: 14px; }
+.MainHeader .headerDashboard.open ul li.boxInfoThree strong span { color:#ebfd86; }
+.MainHeader .headerDashboard.open ul li.boxInfoTwo .horizontalGraphBoxInfo { width: 178px; height: 110px; }*/
+/*.MainHeader .headerDashboard.open .boxInfoBuy ul li.boxInfoTwo p { color: white; font-size: 18px; font-weight: bold; }
+.MainHeader .headerDashboard.open .boxInfoBuy ul li.boxInfoTwo p span { font-size: 30px; }*/
+.MainHeader .headerDashboard.open .boxInfoBuy ul li.boxInfoTwo strong { color: #EBFD86; }
+.MainHeader .headerDashboard.open ul li.boxInfoTwo .horizontalGraphBoxInfo img {}
+.MainHeader .headerDashboard.open ul li.boxInfoThree { text-align: center; }
+.MainHeader .headerDashboard.open ul li.boxInfoThree > p { color:#fff; font-size: 56px; font-weight: bold; }
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoThree > p { font-size: 18px; }
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoThree > p span { font-size: 30px; }
+.MainHeader .headerDashboard.open .boxInfoBuy ul li.boxInfoThree p { font-size: 20px; }
+.MainHeader .headerDashboard.open ul li.boxInfoThree strong {}
+.MainHeader .headerDashboard.open ul li.boxInfoThree strong span {}
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoFour .titleBoxInfo { display: block; }
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoFour .titleBoxInfo span:first-child { color: #ef2535; float: left; }
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoFour .titleBoxInfo span:last-child { color: #1753a9; float: right; }
+.MainHeader .headerDashboard.open ul li.boxInfoFour table,
+.MainHeader .headerDashboard.open ul li.boxInfoFour table thead,
+.MainHeader .headerDashboard.open ul li.boxInfoFour table thead tr,
+.MainHeader .headerDashboard.open ul li.boxInfoFour table thead tr td,
+.MainHeader .headerDashboard.open ul li.boxInfoFour table tbody,
+.MainHeader .headerDashboard.open ul li.boxInfoFour table tbody tr,
+.MainHeader .headerDashboard.open ul li.boxInfoFour table tbody tr td { -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; }
+.MainHeader .headerDashboard.open ul li.boxInfoFour table { width: 240px; }
+.MainHeader .headerDashboard.open ul li.boxInfoFour table thead { background-color: #abc4ce; }
+.MainHeader .headerDashboard.open ul li.boxInfoFour table thead tr th { font: bold 11px/11px 'Arial' Sans-serif; padding: 5px 2px 2px 10px; }
+/*.MainHeader .headerDashboard.open ul li.boxInfoFour table thead tr th span { color: #fff; }*/
+.MainHeader .headerDashboard.open ul li.boxInfoFour table tbody { background-color: #8dafbc; }
+.MainHeader .headerDashboard.open ul li.boxInfoFour table tbody tr td { font: bold 11px/11px 'Arial' Sans-serif; padding: 5px 2px 2px 10px; color: #fff}
+.MainHeader .headerDashboard.open ul li.boxInfoFour table tbody tr td:last-child  span { width: 65px; }
+.MainHeader .headerDashboard.open ul li.boxInfoFour table tbody tr td span { color: #fff; }
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoFour table { margin-top: 15px; }
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoFour table tbody tr:first-child td { border-top: none; }
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoFour table tbody tr td { height: 20px; border-top: 1px solid #fff; }
+.MainHeader .headerDashboard.open .boxInfoFinancial ul li.boxInfoFour table tbody tr td:first-child span { color: #ebfd86; }
+/* dashboard aberto fim */
+
+
+
+
+
+/* dashboard fim */
+
+
+.dashboard {}
+.dashboard .Main .MainContent { margin-top: 87px; }
+.ipad .dashboard .Main .MainContent { margin-top: 20px; }
+.mac .dashboard .Main .MainContent { margin-top: 107px; }
+.dashboard .dashboardSidebar { width: 520px; float: left; }
+.dashboard .dashboardSidebar h2 { text-transform: uppercase; font-weight: bold; letter-spacing: -1px; font-size: 16px; color: #7B8A90; display: inline-block; margin-bottom: 10px; }
+.dashboard .dashboardSidebar .dashboard_block { width: 520px; height: 310px; background: #fff; position: relative; float: left; margin-top: 20px; }
+.dashboard .dashboardSidebar .dashboard_block .content { -webkit-box-shadow: 0px 0px 0px 1px #e9e9e9; overflow: hidden; height: 270px; }
+.dashboard .dashboardSidebar .dashboard_block .header { background: #f7f7f7; width: inherit; padding: 7px 0 7px 15px; font: bold 21px "Arial"; color: #7b8a90; position: relative; margin-bottom: 1px; }
+.dashboard .dashboardSidebar .dashboard_block .title { font-size: 14px; color: #CE8E04; font-weight: bold; margin-bottom: 10px; }
+.dashboard .dashboardSidebar .dashboard_block .title span { font-size: 16px; }
+
+.dashboard .dashboardSidebar .dashboard_block .sale_block { float: left; text-align: center; padding: 10px;  width: 240px; color: #7b8a90; font-weight: bold; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block em { font-style: normal; font-size: 18px; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block em + span { font-size: 25px; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block table {}
+.dashboard .dashboardSidebar .dashboard_block .sale_block table tr {}
+.dashboard .dashboardSidebar .dashboard_block .sale_block table tr th { background-color: #ebebeb; text-align: left; color: #000; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block table tr th span { font-size: 10px; display: inline-block; padding: 0 3px; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block table tr td { color: #7b8a90; text-align: left; padding: 0 3px; font-size: 10px; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block table tr td span { display: inline-block; color: #B4B4B4; white-space: nowrap; width: 120px; overflow: hidden; }
+
+.dashboard .dashboardSidebar .dashboard_block .sale_block #buy_block_2 .first { font-size: 36px; color: #7b8a90; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block #buy_block_2 .second { font-size: 18px; color: #7b8a90; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block #buy_block_2 .last { display: block; }
+
+.dashboard .dashboardSidebar .dashboard_block .sale_block #fin_block_2_vl_cash,
+.dashboard .dashboardSidebar .dashboard_block .sale_block #fin_block_2_vl_cash span,
+.dashboard .dashboardSidebar .dashboard_block .sale_block #fin_block_2_vl_cash em { font-size: 12px; margin-top: 10px; }
+
+.dashboard .dashboardSidebar .dashboard_block .sale_block #fin_block_2_vl_bank,
+.dashboard .dashboardSidebar .dashboard_block .sale_block #fin_block_2_vl_bank span,
+.dashboard .dashboardSidebar .dashboard_block .sale_block #fin_block_2_vl_bank em { font-size: 12px;}
+
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position {}
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position .title {  }
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position .title .pags { color: #FF3939; font-size: 12px; margin-right: 20px; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position .title .recs { color: #3478BD; font-size: 12px; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position p { border-top: 1px solid #B4B4B4; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position p span { font-size: 12px; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position p span:nth-child(1) {  }
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position p span:nth-child(2) { color: #FF3939; }
+.dashboard .dashboardSidebar .dashboard_block .sale_block.financial_position p span:nth-child(3) { color: #3478BD; }
+
+
+/*
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardShopping .boxInfo .boxInfoTwo { width: 240px; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoThree { width: 202px; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoFour { width: 241px; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoOne { width: 232px; float: left; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardShopping .boxInfo .boxInfoOne { width: 195px; float: left; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardShopping .boxInfo .boxInfoTwo { width: 240px; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardShopping .boxInfo .boxInfoThree { width: 240px; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoTwo,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoThree,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoFour { float: left; font-family: 'Arial', Sans-serif; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoThree.bill2 { text-align: center; margin-left: 8px; }
+*/
+
+/*Pagina Dashboard*/
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo h2 { font-family: Arial; font-size: 20px; letter-spacing: -1px; font-weight: bold; color: #7b8a90; display: inline-block; -webkit-font-smoothing: antialiased; line-height: 25px; height: 25px; text-transform: uppercase; margin-bottom: 5px; }
+/*.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo p { text-align: center; } */
+/*.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo { text-align: center; } */
+
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo ul li .boxInfoFour.sale3,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoFour ul li .boxInfoFour.buy4  { height: 130px; overflow: hidden; width: 245px; }
+/*.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoThree p { color:#fff; font-size: 33px; font-weight: bold; overflow: hidden; }*/
+
+/*.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoThree { text-align: center; }*/
+
+
+
+
+/*.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoFour.bill4 ul li.titleBoxInfo span.pags { color: #ebfd86; display: inline-block; text-align: right; margin-left: 30px; }*/
+/*.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoFour.bill4 ul li.titleBoxInfo span.recs { color: #ebfd86; display: inline-block; width: 80px; text-align: right; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoFour.bill4 ul li.titleBoxInfo span:first-child(1) { width: 30px; display: inline-block; }
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoFour.bill4 span:nth-child(2) { width: 80px; display: inline-block; margin: 3px; color: #ffffff;}
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoFour.bill4 ul li.titleBoxInfo span:nth-child(3) { width: 80px; display: inline-block; margin: 3px; color: #ffffff; }*/
+/*
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoOne.bill1 p,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoThree.sale2 p,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoOne.bill1 p,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .boxInfo .boxInfoOne.sale1 p { color:#fff; font-weight: bold; font-size: 34px; margin-top: px; margin-bottom: px;} */
+
+/*.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardShopping .boxInfo .boxInfoTwo.buy3 strong,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardSales .boxInfo .boxInfoOne.sale1 strong,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardSales .boxInfo .boxInfoOne.sale1 h6,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardSales .boxInfo  .boxInfoThree.sale2 strong,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardSales .boxInfo  .boxInfoThree.sale2 h6,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoOne.bill1 strong,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoOne.bill1 h6,
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardBilling .boxInfo .boxInfoOne.bill2 h6 { line-height: 22px; }*/
+.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardShopping .boxInfo .boxInfoThree.buy1 h6 { line-height: 18px; }
+/*.dashboard .Main .MainSection.noDashboard .MainContent .dashboardInfo .dashboardShopping .boxInfo .boxInfoTwo.buy3 strong { line-height: 25px; }*/

@@ -1,0 +1,85 @@
+/* Botões */
+body.supplier .buttonArea { width: 100%; margin-top: 15px; }
+
+.buttonArea { width: 100%; margin-top: 0px; }
+
+.buttonArea .left { text-align: left; float: left; }
+.buttonArea .left button { margin-right: 4px;}
+
+.buttonArea .right { text-align: right; float: right; }
+.buttonArea .right button { margin:  0 8px;}
+
+.buttonArea .center { text-align: center; }
+.buttonArea .center button { margin:  0 8px; }
+
+.container_32 + .container_32.table + .buttonArea { margin-top: 10px; }
+
+.button { 
+	-webkit-box-sizing: border-box; 
+	-webkit-appearance: none; 
+	color: #fff; 
+	font-family: Arial;
+	font-weight: bold; 
+	font-size: 16px; 
+	background-color: #ededed; 
+	border: none;
+	border-radius: 2px; 
+	text-align: center; 
+	line-height: 30px; 
+	height: 30px; 
+	display: inline-block;
+	text-decoration: none; 
+	padding: 0 10px; 
+	-webkit-box-shadow: 2px 2px 1px 0px #b9b8b8; 
+	text-transform: uppercase; 
+	margin-bottom: 2px; 
+	margin-right: 2px; 
+	cursor: pointer; 
+	transition: all 1s;
+}
+
+/*.button:hover { -webkit-box-shadow: none; position: relative; }*/
+
+.button.defaultButton { background-color: #000000; }
+.button.mainButton { background-color: #8cc63f; margin-right: 5px; }
+.button.redButton {background-color: #D33131; margin: 0px 5px 0px 5px; }
+
+.button.button1 { background-color: #87949a; } /* Cinza Escuro */
+.button.button2 { background-color: #84a9b7; } /* Azul Escuro Opaco */
+.button.button3 { background-color: #3b839f; } /* Azul Escuro */
+.button.button4 { background-color: #8cc63f; } /* Verde */ 
+.button.button5 { background-color: #ffffff; color: #87949a; } /* Branco */ 
+.button.button6 { background-color: #a2afb4; } /* Cinza Claro */
+.button.button7 { background-color: #ededed; color: #87949a; } /* Cinza Bem Claro */
+
+button.button.disableButton { opacity: 0.5; cursor: default; }
+button.addNew.disableButton, .actionBar button.addNew.disableButton { opacity: 0.5; cursor: default; }
+
+.button.defaultButton.disableButton { color: #ccc; background-color: #999; }
+.button.mainButton.disableButton { color: #c9e2a8; }
+
+.button.btGrid {font-size: 11px; line-height: 25px; height: 25px; margin:  0 4px; margin-top: 5px; font-weight: normal;padding: 1px 4px;}
+
+/* Botões de Contexto */
+.actionButton { background-position: center center; background-repeat: no-repeat; background-color: transparent; display: inline-block; width: 25px; height: 25px; border-width: 0px; cursor: pointer; vertical-align: middle; }
+.actionButton.addActionButton { background-image: url('../img/addActionButton.png');  }
+.actionButton.backActionButton { background-image: url('../img/ico_secure_download.png'); }
+.actionButton.copyActionButton { background-image: url('../img/copyActionButton.png'); }
+.actionButton.printActionButton { background-image: url('../img/printActionButton.png'); }
+.actionButton.exportActionButton { background-image: url('../img/exportActionButton.png'); }
+.actionButton.delActionButton { background-image: url('../img/delActionButton.png'); }
+.actionButton.confActionButton { background-image: url('../img/confActionButton.png'); }
+
+.actionButton.addActionButton:hover,
+.actionButton.copyActionButton:hover,
+.actionButton.printActionButton:hover,
+.actionButton.exportActionButton:hover,
+.actionButton.delActionButton:hover,
+.actionButton.confActionButton:hover { opacity: 0.7; }
+
+/*.button.mktup_autocomplete { width: 13px; height: 13px; background: url('../img/ico_salvar_input.png') no-repeat; padding: 0; border-radius: 0; color: transparent; box-shadow: none; margin: 0; position: absolute; bottom: 7px; rigth: 10px; }
+
+.sale_order .button.mktup_autocomplete,
+.sale_budget .button.mktup_autocomplete,
+.purchase_order .button.mktup_autocomplete,
+.purchase_budget .button.mktup_autocomplete { width: 144px; height: 26px; background: url('../img/bt_salvar_cliente.png') no-repeat; padding: 0; border-radius: 0; color: transparent; box-shadow: none; margin: 0; position: absolute; bottom: 3px; right: 1px; }*/

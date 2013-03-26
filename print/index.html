@@ -10,7 +10,7 @@
 			@page {
 	            size: A4;
 	            margin: 0mm;
-	            padding: 0cm;
+	            padding: 0mm;
 	        }
 
 			body {
@@ -58,10 +58,10 @@
 			h2 { font-size: 5pt; }
 
 			/* Tabelas */
-			#page > table { width: 200mm; }
+			#page > table { border: 0.3mm solid #000; border-collapse: collapse; width: 200mm; }
+			#page > table tr > td { border: 0.3mm solid #000; border-collapse: collapse; }
 			#page > table dt { font-weight: bold; padding: 0.2mm; }
 			#page > table dd { height: 3mm; }
-
 
 			/* Blocos */
 			#header_info { overflow: hidden; margin-bottom: 1mm; height: 12mm; }
@@ -122,7 +122,7 @@
 			<div id="incs_est" class="linha mb b"></div>
 
 			<h2> DESTINATÁRIO/REMETENTE </h2>
-			<table cellpadding="0" cellspacing="0" border="1">
+			<table cellpadding="0" cellspacing="0" border="0">
 			    <tr>
 			        <td colspan="3">
 			            <dl class="campo">

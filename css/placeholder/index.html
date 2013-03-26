@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="normalize.css" type="text/css" media="all" />
+		<style type="text/css">
+			[placeholder]:focus::-webkit-input-placeholder {
+				transition: opacity 0.5s 0.5s ease; 
+				opacity: 0;
+			}
+
+			.example-two:focus::-webkit-input-placeholder {
+				transition: text-indent 0.5s 0.5s ease; 
+				text-indent: -100%;
+				opacity: 1;
+			}
+
+			body {
+				background: #f06d06;
+				text-align: center;
+			}
+
+			form {
+				display: inline-block;
+				margin-top: 20px;
+			}
+
+			label {
+				display: block;
+				text-align: left;
+				font: bold 0.8em Sans-Serif;
+				text-transform: uppercase;
+			}
+
+			.left-label {
+				float: left;
+				padding: 8px 5px 0 0;
+			}
+
+			input[type=text] {
+				padding: 5px;
+				text-indent: 0;
+			}
+
+			form div {
+				margin: 20px;
+				clear: both;
+				text-align: left;
+			}
+		</style>
+
+		<script src="prefixfree.min.js" async="" type="text/javascript"></script>
+	</head>	
+	<body>
+		<form>
+			<div>
+				<label for="name">Your Name</label>
+				<input type="text" placeholder="John Smith" id="name" name="name" />
+			</div>
+
+			<div>
+				<label for="name" class="left-label">Your Name</label>
+				<input type="text" class="example-two" placeholder="John Smith" id="name" name="name" />
+			</div>
+		</form>
+	</body>
+</hmtl>
