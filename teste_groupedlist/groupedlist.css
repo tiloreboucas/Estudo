@@ -1,0 +1,60 @@
+.gl_container {}
+
+.gl_group { 
+	position: relative; 
+	padding-top: 30px;
+}
+
+.gl_title { 
+	background-color: #f0f0f0;
+	position: absolute;
+	top: 320px;
+	height: 30px;
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #afafaf;
+}
+
+.gl_title h2 {
+	text-indent: 10px;
+	font-size: 14px;
+	cursor: default;
+	line-height: 30px;
+	font-weight: bold;
+	color: #7b8a90;
+}
+
+.cf_leftside .gl_title h2 { border-right: 10px solid #bdbdbd; }
+.cf_rightside .gl_title h2 { 
+	border-left: 10px solid #bdbdbd;
+	text-align: right;
+	padding-right: 10px; 
+}
+
+.gl_title[data-position=top]{
+	position: fixed;
+	top: 290px;
+	z-index: 1;
+}
+
+.gl_title[data-position=bottom]{
+	position: fixed;
+	bottom: 70px;
+	top: auto;	
+	z-index: 1;
+}
+
+.gl_title.active[data-position=bottom] { 
+	position: absolute;
+	top: 0px;
+}
+
+.gl_title.lock[data-position=bottom] { 
+	position: fixed;
+	top: 320px;
+	bottom: auto;
+}
+
+.cf_leftside .gl_title { width: 247px; }
+.cf_main .gl_title { width: 630px; }
+.cf_rightside .gl_title { width: 115px; }
