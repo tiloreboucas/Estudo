@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Drag Hover</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+    <style type="text/css">
+      #in,
+      #out { margin: 50px; }
+
+      #in { border: 1px solid red; }
+      #out { border: 1px solid blue; }
+
+      button { display: inline-block; height: 25px; width: 75px; margin: 5px; }
+
+      .sortable-placeholder {}
+      .nav:hover { background-color: red; }
+    </style>
+  </head>
+  <body>
+    <div id="in" class="conect">
+      <button type="button" class="nav">botão</button>
+      <button class="item">item</button>
+      <button class="item">item</button>
+      <button class="item">item</button>
+      <button type="button" class="nav">botão</button>
+    </div>
+
+    <div id="out" class="conect">
+      <button type="button" class="nav">botão</button>
+      <button type="button" class="nav">botão</button>
+    </div>
+
+    <script type="text/javascript">
+      $( "#in, #out" ).sortable({
+        connectWith: ".conect",
+        cancel: ".nav",
+
+        placeholder: "sortable-placeholder",
+        revert: true
+      }).disableSelection();
+
+      var nav = document.querySelectorAll('.nav');
+      
+      for (var i = 0; i < nav.length; i++) {
+        $(nav[i]).click(function(){ console.log('click'); });
+        nav[i].onmouseover = function(){ $(this).click(); }
+      };
+
+      $(".nav").hover(function(){ console.log('hover'); });
+    </script>
+  </body>
+</html>

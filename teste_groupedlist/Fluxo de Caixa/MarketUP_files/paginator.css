@@ -1,0 +1,6 @@
+.paginator { text-align: center; }
+.paginator a { text-decoration: none; font-size: 14px; font-family: Arial; width: 27px; height: 25px; text-align: center; display: inline-block; line-height: 25px; font-weight: bold; border-radius: 2px; vertical-align: middle; }
+.paginator a.paginatorPrev { background: url('../img/arrow_left.png') no-repeat center center; }
+.paginator a.paginatorItem { color: #bebebe; background-color: #fff; -webkit-box-shadow: 2px 2px 1px 0px #d9d9d9; }
+.paginator a.paginatorItem:hover { color: #fff; background-color: #95a1a6; }
+.paginator a.paginatorNext { background: url('../img/arrow_right.png') no-repeat center center; }

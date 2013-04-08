@@ -1,0 +1,39 @@
+﻿/* Usuários */
+.contentUser .boxContent { overflow: hidden; }
+.wizard .wizardContent .contentUser .boxContent { padding: 0; }
+.contentUser .boxContent .userItem { cursor: pointer; float: left; width: 313.5px; padding: 20px; border-right: 1px solid rgb(235, 235, 235); border-bottom: 1px solid rgb(235, 235, 235); position: relative; }
+.contentUser .boxContent .userItem .mask { position: absolute; background-color: transparent; opacity: 1; top: 0px; left: 0px; height: 192px; width: 354px;}
+.contentUser .boxContent .userItem .mask .overlay { position: absolute; background-color: #000; opacity: 0.5; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 1;}
+.contentUser .boxContent .userItem .mask p { height: 57px; color: #ff4c5d; background-color: #fff; font-size: 18px; margin-top: 65px; text-align: center; line-height: 57px; font-weight: bold; z-index: 2; position: relative;}
+.contentUser .boxContent .userItem .buttonArea { position: absolute; right: 10px; top: 10px; width: 53px; z-index: 1; }
+.contentUser .boxContent .userItem .buttonArea .customradio_content.false { box-shadow: 2px 2px 2px #000; }
+.contentUser .boxContent .userItem .buttonArea .btRadio.on { background: transparent url('../img/wizard/btLicenseOn.png') no-repeat center center; }
+.contentUser .boxContent .userItem .buttonArea .btRadio.off { background: transparent url('../img/wizard/btLicenseOff.png') no-repeat center center; }
+.contentUser .boxContent .userItem .userItem_Content {}
+.contentUser .boxContent .userItem .userItem_Content .userItem_Info { margin-bottom: 15px; height: 58px; }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Info .foto { width: 50px; height: 50px; vertical-align: top; }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Info .info { vertical-align: top; color: #7b8a90; display: inline-block; padding-left: 10px;  }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Info .info .nome { font-weight: bold; overflow: hidden; width: 200px; line-height: 20px; height: 20px; }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Info .info .telefone { background: url('../img/ico_user_tel.gif') no-repeat left center;	padding-left: 20px; }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Info .info .email { background: url('../img/ico_user_email.gif') no-repeat left center; padding-left: 20px; overflow: hidden; width: 220px; line-height: 20px; height: 20px;}
+.contentUser .boxContent .userItem .userItem_Content .userItem_Permissoes {}
+.contentUser .boxContent .userItem .userItem_Content .userItem_Permissoes .title { color: #7b8a90; font-size: 12px; }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Permissoes .userItem_PermissoesContent { background-color: #b1c8d1; }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Permissoes .userItem_PermissoesContent li { color: #fff; display: inline-block; width: 48.5%; padding: 10px 0; }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Permissoes .userItem_PermissoesContent li strong { display: block; text-align: center; }
+.contentUser .boxContent .userItem .userItem_Content .userItem_Permissoes .userItem_PermissoesContent li span { display: block; text-align: center; overflow: hidden; width: 150px; line-height: 20px; height: 20px; }
+.contentUser .boxContent .userNewItem { float: left; width: 313.5px; padding: 20px; border-right: 1px solid #E0E0E0; border-bottom: 1px solid #E0E0E0; position: relative; }
+.contentUser .boxContent .userNewItem .userNewItem_Content { height: 149px; line-height: 149px; border: 1px dashed #ccc; text-align: center; cursor: pointer; }
+.contentUser .boxContent .userNewItem .userNewItem_Content p { text-transform: uppercase; font-size: 14px; color: #949494; }
+
+
+/* Modal */
+.user_panel_lbl {display: inline-block; width: inherit; vertical-align: middle; width: 110px;  margin: 5px;}
+.user_panel_name {display: inline-block; width: inherit; vertical-align: middle; width: 300px; margin: 5px;}
+.user_panel_email {display: inline-block; width: inherit; vertical-align: middle; width: 300px; margin: 5px;}
+.user_panel_profile {display: inline-block; width: inherit; vertical-align: middle; margin: 5px;}
+.user_panel_login {display: inline-block; width: inherit; vertical-align: middle; width: 250px; margin: 5px;}
+.user_panel_pass {display: inline-block; width: inherit; vertical-align: middle; width: 100px; margin: 5px;}
+.user_panel_repass {display: inline-block; width: inherit; vertical-align: middle; width: 100px; margin: 5px;}
+.user_panel_pdv {display: inline-block; width: inherit; vertical-align: middle; margin: 5px;}
+.user_panel_valid_image {display: inline-block; vertical-align: middle; margin: 5px; padding-left:5px; padding-bottom:5px; display:none;}

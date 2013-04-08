@@ -1,0 +1,434 @@
+/* geral */
+.MainHeader { width: 992px; position: fixed; top: 0px; z-index: 2000; }
+
+.ipad .MainHeader { position: relative; }
+
+.MainHeader .headerTop {
+	background-color: #000;
+	position: relative;
+	z-index: 2;
+}
+
+.MainHeader .headerTop .headerFirstPart {
+	font-family: 'Arial', Sans-serif;
+	font-size: 12px;
+	color: #fff;
+	padding-top: 10px;
+	height: 28px;
+}
+
+.MainHeader .headerTop .headerFirstPart .headerLogo {
+	padding-left: 10px;
+	float: left;
+	margin-top: -5px;
+	margin-right: 25px;
+}
+
+.MainHeader .headerTop .headerFirstPart .headerLogo h1 {
+	width: 86px;
+	height: 22px;
+	text-indent: -999999px;
+	background: url('../img/logoHeader.png') no-repeat left top;
+}
+
+.MainHeader .headerTop .headerFirstPart .headerLogo span { font-size: 10px; display: none; } /* excluir */
+
+.MainHeader .headerTop .headerFirstPart .headerDate { float: left; }
+
+.MainHeader .headerTop .headerFirstPart .headerTime { float: left; background: url('../img/bgHours.png') no-repeat left center; padding-left: 15px; margin-left: 20px; }
+
+.MainHeader .headerTop .headerFirstPart .headerUser { height: 12px; float: left; margin-right: 10px; }
+.MainHeader .headerTop .headerFirstPart .headerUser .imgUser { float: left; display: none; }
+.MainHeader .headerTop .headerFirstPart .headerUser .nameUser {  }
+
+.MainHeader .headerTop .headerFirstPart .headerOffline { float:left;  margin-left: 15px; font-size: 11px; background: url('../img/icoOffLineHeader.png') no-repeat left; padding-left: 24px; }
+
+.MainHeader .headerTop .headerFirstPart .holdings { height: 15px; margin-right: 5px; float: left; border-left: 1px solid #505050; padding-left: 5px; }
+.MainHeader .headerTop .headerFirstPart .holdings .nameHolding {}
+
+.MainHeader .headerTop .headerFirstPart .btHelp {
+	border: none;
+	cursor: pointer;
+	background: url('../img/btHelpHeader.png') no-repeat center;
+	width: 24px;
+	height: 15px;
+	margin-left: 3px;
+	border-left: 1px solid #505050;
+	float: left;
+}
+
+.MainHeader .headerTop .headerFirstPart .btConfiguration {
+	border: none;
+	cursor: pointer;
+	background: url('../img/confActionButtonHeader.png') no-repeat center;
+	width: 24px;
+	height: 15px;
+	border-left: 1px solid #505050;
+	float: left;
+    }
+
+.MainHeader .headerTop .headerFirstPart .btExit {
+	border: none;
+	color: #868686;
+	cursor: pointer;
+	background: url('../img/btCloseHeader.png') no-repeat center;
+	width: 24px;
+	height: 15px;
+    text-indent: -999999px;
+    border-left: 1px solid #505050;
+    float: left;
+}
+
+.MainHeader .headerTop .headerFirstPart .btExit span {}
+
+.MainHeader .headerTop .headerSecondtPart { height: 50px; }
+
+.MainHeader .headerTop .headerSecondtPart .menu {
+	border-radius: 0 0 0 3px; 	
+	float: left;
+    width: 777px;
+	height: 45px;
+	padding-top: 5px;
+	background-color: #222;
+}
+
+/* Marcação para quando estiver na Home */
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu.lstActive {
+	border-bottom: 4px solid #98b7c3;
+	height: 19px;
+}
+/* Marcação para quando estiver na Home fim */
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu { height: 45px; }
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li {
+	float: left;
+	padding: 3px 12.5px 0;
+	position: relative;
+	height: 42px;
+}
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu li:last-child { margin-right: 30px; }
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu li a {
+	text-transform: uppercase;
+	display: block;	
+}
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a {
+    color: #575757;
+	font: bold 11px 'Arial', Sans-serif;
+	height: 42px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a span { width: 21px; height: 17px; margin: 0 auto; display: block; opacity: 0.3; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu261 span { width: 17px; background: url('../img/bgMenuProduct.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 span { width: 21px; background: url('../img/bgMenuSale.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu2 span { width: 17px; background: url('../img/bgMenuShop.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 span { width: 22px; background: url('../img/bgMenuStock.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu235 span { width: 17px; background: url('../img/bgMenuPdv.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 span { width: 12px; background: url('../img/bgMenuFinan.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 span { width: 13px; background: url('../img/bgMenuBilling.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu236 { width: 35px; text-align: center; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu236 span { width: 11px; background: url('../img/bgMenuRh.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 span { width: 16px; background: url('../img/bgMenuReport.png') no-repeat; }
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li a.lkActive { border-bottom: 4px solid #9DBAC5; }
+
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.active,
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li:hover > a { color: #fff; }
+
+
+.report{}
+
+/*PRODUTOS*/
+.item .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu261 { color: #fff; }
+.item .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu261 > span { opacity: 100; }
+
+.item_group .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu261 { color: #fff; }
+.item_group .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu261 > span { opacity: 100; }
+
+/*VENDAS*/
+.sale_budget .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 { color: #fff; }
+.sale_budget .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 > span { opacity: 100; }
+
+.sale_order .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 { color: #fff; }
+.sale_order .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 > span { opacity: 100; }
+
+.client .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 { color: #fff; }
+.client .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 > span { opacity: 100; }
+
+.seller_commission .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 { color: #fff; }
+.seller_commission .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 > span { opacity: 100; }
+
+.seller_commission_closing .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 { color: #fff; }
+.seller_commission_closing .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu1 > span { opacity: 100; }
+
+/*COMPRAS*/
+.purchase_budget .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu2 { color: #fff; }
+.purchase_budget .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu2 > span { opacity: 100; }
+
+.purchase_order .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu2 { color: #fff; }
+.purchase_order .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu2 > span { opacity: 100; }
+
+.supplier .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu2 { color: #fff; }
+.supplier .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu2 > span { opacity: 100; }
+
+/*ESTOQUE*/
+.stock_room_query .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 { color: #fff; }
+.stock_room_query .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 > span { opacity: 100; }
+
+.stock_movement .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 { color: #fff; }
+.stock_movement .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 > span { opacity: 100; }
+
+.stock_room .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 { color: #fff; }
+.stock_room .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 > span { opacity: 100; }
+
+.purchase_order_query .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 { color: #fff; }
+.purchase_order_query .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 > span { opacity: 100; }
+
+.sale_order_query .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 { color: #fff; }
+.sale_order_query .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 > span { opacity: 100; }
+
+.stock_location .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 { color: #fff; }
+.stock_location .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 > span { opacity: 100; }
+
+.scope .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 { color: #fff; }
+.scope .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu4 > span { opacity: 100; }
+
+/*PDV*/
+.pdv_operation .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu235 { color: #fff; }
+.pdv_operation .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu235 > span { opacity: 100; }
+
+.coupon .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu235 { color: #fff; }
+.coupon .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu235 > span { opacity: 100; }
+
+/*FINANCEIRO*/
+.fin_cash_flow .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_cash_flow .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_entry .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_entry .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_revenue .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_revenue .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_operation .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_operation .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_receivable:not(.report) .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_receivable:not(.report) .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_event .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_event .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_payable:not(.report) .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_payable:not(.report) .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_account .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_account .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_expenditure .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_expenditure .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.fin_account_management .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.fin_account_management .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+.payment_type .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 { color: #fff; }
+.payment_type .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu3 > span { opacity: 100; }
+
+
+
+/*FATURAMENTO*/
+.invoice .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 { color: #fff; }
+.invoice .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 > span { opacity: 100; }
+
+.invoice_nfe_control .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 { color: #fff; }
+.invoice_nfe_control .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 > span { opacity: 100; }
+
+.other_invoice .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 { color: #fff; }
+.other_invoice .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 > span { opacity: 100; }
+
+.tax_calc .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 { color: #fff; }
+.tax_calc .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 > span { opacity: 100; }
+
+.transaction_nature .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 { color: #fff; }
+.transaction_nature .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu6 > span { opacity: 100; }
+
+/*RH*/
+.employee .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu236 { color: #fff; }
+.employee .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu236 > span { opacity: 100; }
+
+/*RELATORIOS*/
+.dashboard .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.dashboard .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.sale_by_seller .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.sale_by_seller .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.sale_by_payment .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.sale_by_payment .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.profit_by_product .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.profit_by_product .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.fin_payable .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.fin_payable .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.fin_receivable .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.fin_receivable .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.purchase_by_period .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.purchase_by_period .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.stock_location .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.stock_location .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.stock_kardex .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.stock_kardex .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.stock_low_itens .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.stock_low_itens .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+.report.sale_item_price .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 { color: #fff; }
+.report.sale_item_price .MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li > a.menu7 > span { opacity: 100; }
+
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li a.active > span,
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu > li:hover a > span { opacity: 100; }
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu li:hover a + .subMenu { display: block; }
+
+.menu .lstMenu li .subMenu {
+	display: none;
+	position: absolute;
+	top: 45px;
+	left: 0px; 
+	background-color: #fff;
+	width: 522px;
+	border: 1px solid #dedede;
+	box-shadow: 1px 1px 2px 0px #D9D9D9;
+	}
+
+.menu .lstMenu li.toleft .subMenu {
+	left: inherit;
+	right: -120px;
+}
+
+.menu .lstMenu li.toleft .subMenu > ul { float: right; width: 212px; height: 100%; background-color: whiteSmoke; min-height: 120px; }
+.menu .lstMenu li.toleft .subMenu > ul li { position:relative; width: 212px; line-height: 40px; background-color: #f5f5f5; }
+.menu .lstMenu li.toleft .subMenu > ul li a { color: #7b8a90; font-family: Arial; font-size: 11px; padding-left: 20px; white-space: nowrap; overflow: hidden; }
+
+.menu .lstMenu li.toleft .subMenu > ul li a.active,
+.menu .lstMenu li.toleft .subMenu > ul li a:hover { color: #fff; background: url('../img/bgHoverSubMenuLeft.png') no-repeat; width: 220px; margin-left: 0; margin-left: -6px; text-indent: 5px; }
+.menu .lstMenu li.toleft .subMenu .hasChild > a.active,
+.menu .lstMenu li.toleft .subMenu .hasChild > a:hover { background: #dde0e1; width: 192px; color: #7b8a90; margin-left: 0px; text-indent: 0px; }
+.menu .lstMenu li.toleft .subMenu .hasChild > a.active span,
+.menu .lstMenu li.toleft .subMenu .hasChild > a:hover span { background: url('../img/bgMenu.png') no-repeat -5px -5px; }
+.menu .lstMenu li.toleft .subMenu .hasChild .subcategoryMenu li > a.active span,
+.menu .lstMenu li.toleft .subMenu .hasChild .subcategoryMenu li > a:hover span { background: none; }
+
+.menu .lstMenu li.toleft .subMenu .boxHelpMenu {}
+
+.menu .lstMenu li .subMenu > ul { float: left; width: 212px; height: 100%; background-color: whiteSmoke; min-height: 120px; }
+.menu .lstMenu li .subMenu > ul li { width: 212px; line-height: 40px; background-color: #f5f5f5; }
+.menu .lstMenu li .subMenu > ul li a { color: #7b8a90; font-family: Arial; font-size: 11px; padding-left: 20px; white-space: nowrap; overflow: hidden; }
+.menu .lstMenu li .subMenu > ul li a:hover { color: #fff; background: url('../img/bgHoverSubMenu.png') no-repeat; width: 220px; }
+.menu .lstMenu li .subMenu .hasChild > a { background-color: #dde0e1; font-weight: bold; }
+.menu .lstMenu li .subMenu .hasChild > a span { background: url('../img/bgMenu.png') no-repeat -5px -5px; display: inline-block; width: 17px; height: 21px; vertical-align: middle; margin-right: 10px; }
+.menu .lstMenu li .subMenu .hasChild > a:hover { background: #dde0e1; width: 192px; color: #7b8a90; }
+.menu .lstMenu li .subMenu .hasChild > a:hover span { background: url('../img/bgMenu.png') no-repeat -5px -5px; }
+.menu .lstMenu li .subMenu .hasChild .subcategoryMenu { background-color: Red; width: 212px; }
+.menu .lstMenu li .subMenu .hasChild .subcategoryMenu li {}
+.menu .lstMenu li .subMenu .hasChild .subcategoryMenu li > a { vertical-align: middle; padding-left: 0; line-height: 8px; }
+.menu .lstMenu li .subMenu .hasChild .subcategoryMenu li > a span { display: inline-block; width: 19px; height: 40px; background: url('../img/bgSubcategory.png') no-repeat left top; vertical-align: middle; margin-right: 10px; }
+
+/* Backgroud dos sub-menus */
+
+.menu .lstMenu li .subMenu .hasChild.img_27 > a span { background: url('../img/bgFiscal.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_27 > a:hover span { background: url('../img/bgFiscal.png') no-repeat; }
+
+.menu .lstMenu li .subMenu .hasChild.img_395 > a span { background: url('../img/bgReceipts.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_395 > a:hover span { background: url('../img/bgReceipts.png') no-repeat; }
+
+.menu .lstMenu li .subMenu .hasChild.img_396 > a span { background: url('../img/bgPayments.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_396 > a:hover span { background: url('../img/bgPayments.png') no-repeat; }
+
+.menu .lstMenu li .subMenu .hasChild.img_404 > a span { background: url('../img/bgCadastre.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_404 > a:hover span { background: url('../img/bgCadastre.png') no-repeat; }
+
+.menu .lstMenu li .subMenu .hasChild.img_526 > a span { background: url('../img/bgBilling.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_526 > a:hover span { background: url('../img/bgBilling.png') no-repeat; }
+
+
+.menu .lstMenu li .subMenu .hasChild.img_695 > a span { background: url('../img/bgSales.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_695 > a:hover span { background: url('../img/bgSales.png') no-repeat; }
+
+.menu .lstMenu li .subMenu .hasChild.img_696 > a span { background: url('../img/bgShopping.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_696 > a:hover span { background: url('../img/bgShopping.png') no-repeat; }
+
+.menu .lstMenu li .subMenu .hasChild.img_697 > a span { background: url('../img/bgDollar.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_697 > a:hover span { background: url('../img/bgDollar.png') no-repeat; }
+
+.menu .lstMenu li .subMenu .hasChild.img_698 > a span { background: url('../img/bgStock2.png') no-repeat; }
+.menu .lstMenu li .subMenu .hasChild.img_698 > a:hover span { background: url('../img/bgStock2.png') no-repeat; }
+
+/* Backgroud dos sub-menus fim */
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu li .subMenu .boxHelpMenu {
+	width: 265px;
+    height: 100%;
+    min-height: 88px;
+	float: left;
+	padding: 16px 18px 16px 18px;
+}
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu li .subMenu .boxHelpMenu h5 {
+	color: #7b8a90;
+	font: bold 11px/11px 'Arial', Sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+}
+
+.MainHeader .headerTop .headerSecondtPart .menu .lstMenu li .subMenu .boxHelpMenu p {
+	color: #7b8a90;
+	font: 12px/12px 'Arial', Sans-serif;
+	margin-bottom: 16px;
+}
+
+.MainHeader .headerTop .headerSecondtPart .statusPDV { background: url('../img/bgStatusPDV.gif') no-repeat left top; width: 215px; height: 50px; float: left; position: relative; }
+.MainHeader .headerTop .headerSecondtPart .statusPDV button { cursor: pointer; text-transform: uppercase; font-weight: bold; background-color: #535353; color: #fff; border: 1px solid #4d4d4d; border-radius: 3px; position: absolute; right: 13px; top: 13px; font-size: 12px; font-family: Arial; padding: 3px 7px; }
+
+
+.MainHeader .headerTop .headerSecondtPart .statusPDV button.active-coupon { background-color: #8a843e; border-color: #64602d; }
+.MainHeader .headerTop .headerSecondtPart .statusPDV button.closed-coupon { background-color: #232323; border-color: #222222; }
+.MainHeader .headerTop .headerSecondtPart .statusPDV button.open-coupon { background-color: #658459; border-color: #3e5735; }
+.MainHeader .headerTop .headerSecondtPart .statusPDV button.locked-coupon { background-color: #683e3e; border-color: #4c2323; }
+.MainHeader .headerTop .headerSecondtPart .statusPDV button.unavailable-coupon { background-color: #666666; border-color: #535353; }
+
+/* noDashboard */
+.MainSection.noDashboard .MainContent { margin-top: 87px; }
+.mac .MainSection.noDashboard .MainContent { margin-top: 107px; }
+
+/* geral fim */
+
+
+/*Header blackBar*/
+
+
+header.MainHeader .overlay {
+	position: absolute;
+	bottom: -14px;
+	background: url('../img/mainHeader.png') repeat-x;
+	height: 15px;
+	width: 992px;
+	left: 0;
+    }
+
+/*header.MainHeader .blackBar {}
+*/
+
+.fin_cash_flow .MainSection.noDashboard .MainContent { margin-top: 101px; }
+/* geral fim */
