@@ -1,0 +1,161 @@
+.content .container_slideshow {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.content .container_slideshow span,
+.content .container_slideshow span {
+	width: 14px;
+	height: 78px;
+	position: absolute;
+	top: 13px;
+	cursor: pointer;
+}
+
+.content .container_slideshow .scroll_left {
+	background: url("../img/bgArrowLeft.png") no-repeat;
+	left: -2px;
+}
+
+.content .container_slideshow .scroll_right {
+	background: url("../img/bgArrowRight.png") no-repeat;
+	right: -2px;
+}
+
+.content .slideshow {
+	width: 534px;
+	height: 93px;
+	margin: 0 auto;
+	background-color: #fff;
+	overflow: hidden;
+	border: 6px solid #dedede;
+	border-radius: 5px;
+	position: relative;
+}
+
+.content .slideshow .container_items {
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.content .slideshow .container_items a:first-child { margin-left: 42px; }
+
+.content .slideshow .container_items a {
+	display: inline-block;
+	width: 125px;
+}
+
+.content .comece {
+	width: 553px;
+	margin: 0 auto;
+}
+
+/* página sobre */
+#sobre .content { padding-top: 50px; }
+.ie #sobre .content { background-color: #f2f2f2; }
+/* página sobre fim */
+
+/* página Perguntas Frequêntes */
+#faq .content { padding-top: 40px; }
+.ie #faq .content { background-color: #f2f2f2; }
+
+#faq .content h5 {
+    font-size: 18px;
+    color: #8CC63F;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+    }
+
+#faq .content .faqItem + h5 { margin-top: 40px; }
+#faq .content .faqItem { margin-bottom: 10px; }
+#faq .content .faqItem .questions a {
+    font-size: 13px;
+    color: #99999A;
+    text-transform: uppercase;
+    }
+
+#faq .content .faqItem .boxResponses{
+    margin: 20px 0 60px 30px;
+    display: none;
+    }
+#faq .content .faqItem .boxResponses ul { margin-left: 45px; list-style: disc; }
+#faq .content .faqItem .boxResponses ul li {
+    margin-bottom: 10px;
+    color: #8CC63F;
+    }
+#faq .content .faqItem .boxResponses ul li span { color: #99999A; font: 11px "Verdana", Arial; }
+
+/* página Perguntas Frequêntes fim */
+
+/* página Política de Privacidade */
+#politicaPrivacidade .content { padding-top: 50px; }
+.ie #politicaPrivacidade .content { background-color: #f2f2f2; }
+#politicaPrivacidade .content ul { margin: 0 0 20px 50px; list-style: disc; }
+#politicaPrivacidade .content ul li {
+    font: 11px "Verdana", Arial;
+    color: #8CC63F;
+    margin-bottom: 10px;
+    line-height: 17px;
+    }
+#politicaPrivacidade .content ul li span { color: #99999A; }
+#politicaPrivacidade .content p a {
+    font: 11px "Verdana", Arial;
+    color: #99999A;
+    text-decoration: underline;
+    }
+
+/* página Política de Privacidade fim */
+/* página Termos de Uso */
+#termosDeUso {}
+#termosDeUso .content { padding-top: 50px; }
+
+/* página Termos de Uso fim */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

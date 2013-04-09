@@ -1,0 +1,71 @@
+.customradio_content {
+	box-shadow: 3px 3px 3px #d9d9d9;
+	width: 48px;
+	height: 23px;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: all 0.33s ease-in-out;
+    -moz-transition: all 0.33s ease-in-out;
+    -o-transition: all 0.33s ease-in-out;
+    -ms-transition: all 0.33s ease-in-out;
+    transition: all 0.33s ease-in-out;
+    cursor: pointer;
+}
+
+.customradio_button_content {
+	position: relative;
+	width: 96px;
+	height: 23px;
+	left: -24px;
+}
+
+.customradio_content .customradio_button {
+	position: absolute;
+	top: 0px;
+	width: 72px;
+	height: 23px;
+}
+
+.customradio_content .customradio_button .areaOn {
+	width: 24px;
+	height: 23px;
+	float: left;
+	background: #8cc63f url('../img/bgCustomradio.png') no-repeat center left;
+}
+.customradio_content .customradio_button .button_active {
+	width: 24px;
+	height: 23px;
+	background-color: #f5f4f4;
+	float: left;
+}
+.customradio_content .customradio_button .areaOff {
+	width: 24px;
+	height: 23px;
+	float: left;
+	background: #ff4c5d url('../img/bgCustomradio.png') no-repeat center right;
+}
+
+.customradio_content.true {
+	border: 1px solid #8cc63f;
+}
+
+.customradio_content.true .customradio_button {
+	left: 24px;
+}
+.customradio_content.false {
+	border: 1px solid #ff4c5d;
+}
+
+.customradio_content.false .customradio_button {
+	left: 0px;
+}
+
+.customradio_content input[type="radio"] {
+	display: none;
+}
+
+/* ReadOnly */
+.customradio_content.readonly {	border: 1px solid #ddd; }
+
+.customradio_content.readonly .customradio_button .areaOn,
+.customradio_content.readonly .customradio_button .areaOff { background-color: #ddd; }

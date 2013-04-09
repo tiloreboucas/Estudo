@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:9090/ -->
+<html lang="pt-BR" manifest="../manifests/pdv.manifest" class="webkit chrome win js" style="overflow-y: scroll;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MarketUP</title>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link href="./item_files/reset.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/fonts.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/header.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/button.css" rel="stylesheet" type="text/css">          
+    <link href="./item_files/grid.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/form.css" rel="stylesheet" type="text/css">                
+    <link href="./item_files/paginator.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/scrollbar.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/jquery-ui-1.8.23.custom.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/jquery.Jcrop.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/jquery.customselect.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/jquery.customradio.css" rel="stylesheet" type="text/css">
+    <link href="./item_files/jquery.msgbox.css" rel="stylesheet" type="text/css">    
+    <link href="./item_files/geral.css" rel="stylesheet" type="text/css">
+
+    <script src="./item_files/css_browser_selector.js" type="text/javascript"></script>
+    <script src="./item_files/deployJava.js" type="text/javascript"></script><style>.cke{visibility:hidden;}</style><link href="./item_files/item.css" rel="stylesheet" type="text/css"><script src="./item_files/item.js" type="text/javascript"></script><script type="text/javascript" src="./item_files/config.js"></script><link rel="stylesheet" type="text/css" href="./item_files/editor.css"><script type="text/javascript" src="./item_files/pt-br.js"></script><script type="text/javascript" src="./item_files/styles.js"></script></head><body class="item"><embed id="deployJavaPlugin" type="application/java-deployment-toolkit" hidden="true">
+    <script src="./item_files/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="./item_files/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.tmpl.min.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.rc4.js" type="text/javascript"></script>
+    <script src="./item_files/highcharts.js" type="text/javascript"></script>
+    <script src="./item_files/fileuploader.js" type="text/javascript"></script>
+    <script src="./item_files/sjcl.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.color.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.Jcrop.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.printElement.min.js" type="text/javascript"></script>
+    <script src="./item_files/ckeditor.js" type="text/javascript"></script>
+
+    <script src="./item_files/jquery.customtabs.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.customselect.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.customradio.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.msgbox.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.formvalidator.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.loader.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.dashboard.js" type="text/javascript"></script>
+    <script src="./item_files/jquery.searchfilter.js" type="text/javascript"></script>
+    
+    <script src="./item_files/common.js" type="text/javascript"></script>
+    <script src="./item_files/localstoragedb.js" type="text/javascript"></script>
+    <!--<script src="./item_files/omega.js" type="text/javascript"></script>-->
+    <script src="./item_files/marketup.js" type="text/javascript"></script>  
+    <script src="./item_files/fields.js" type="text/javascript"></script>    
+
+    
+    <script src="./item_files/list.js" type="text/javascript"></script>
+    <script src="./item_files/form.js" type="text/javascript"></script>
+    <script src="./item_files/grid.js" type="text/javascript"></script>
+
+
+
+    <div class="Main">               
+        <section class="MainSection DashboardClose"><header class="MainHeader"><div class="headerTop">
+	<div class="headerFirstPart">
+		<div class="fl">
+			<div class="headerLogo"><a href="javascript:Mktup.Navigate('dashboard');void(0);"><h1>MarketUP</h1></a></div>
+			<div class="headerDate">
+				<span>Sexta,</span>
+				<span>05/04/2013</span>
+			</div>
+			<div class="headerTime"><span>16h46</span></div>
+		</div>
+		<div class="fr">
+			<div class="headerUser"><p class="nameUser">YCR Participações </p></div>
+			<div class="holdings"><p class="nameHolding">YCR Participações </p></div>
+			<button class="btHelp" title="Ajuda"></button>
+			<button class="btConfiguration" title="Configurações"></button>
+			<button class="btExit" title="Sair"></button>
+		</div>
+		<div class="cb"></div>
+	</div>
+	<div class="headerSecondtPart" style=""><nav class="menu">
+	<ul class="lstMenu">
+		<li><a href="javascript:void();" class="menu_x menu261" data-menu="{&#39;id_menu&#39;:261, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>Produtos</a>			<div class="subMenu">
+				<ul>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:528, &#39;id_menu_master&#39;:261, &#39;id_term_help&#39;:10915}" data-link="item"><span></span>Produtos/Serviços</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:278, &#39;id_menu_master&#39;:261, &#39;id_term_help&#39;:10916}" data-link="item_group"><span></span>Categorias</a></li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+		</li><li><a href="javascript:void();" class="menu_x menu1" data-menu="{&#39;id_menu&#39;:1, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>Vendas</a>			<div class="subMenu">
+				<ul>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:51, &#39;id_menu_master&#39;:1, &#39;id_term_help&#39;:10795}" data-link="sale_budget"><span></span>Orçamentos</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:52, &#39;id_menu_master&#39;:1, &#39;id_term_help&#39;:10922}" data-link="sale_order"><span></span>Pedidos</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:53, &#39;id_menu_master&#39;:1, &#39;id_term_help&#39;:10784}" data-link="client"><span></span>Clientes</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:407, &#39;id_menu_master&#39;:1, &#39;id_term_help&#39;:10919}" data-link="seller_commission"><span></span>Comissões</a></li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+		</li><li><a href="javascript:void();" class="menu_x menu235" data-menu="{&#39;id_menu&#39;:235, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>PDV</a>			<div class="subMenu">
+				<ul>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:242, &#39;id_menu_master&#39;:235, &#39;id_term_help&#39;:10930}" data-link="pdv_operation"><span></span>Operações PDV</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:388, &#39;id_menu_master&#39;:235, &#39;id_term_help&#39;:10826}" data-link="coupon"><span></span>Cupom</a></li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+		</li><li><a href="javascript:void();" class="menu_x menu6" data-menu="{&#39;id_menu&#39;:6, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>Faturamento</a>			<div class="subMenu">
+				<ul>
+					<li class="hasChild img_526"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:526, &#39;id_menu_master&#39;:6, &#39;id_term_help&#39;:10844}"><span></span>Faturamento</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:205, &#39;id_menu_master&#39;:526, &#39;id_term_help&#39;:10965}" data-link="invoice"><span></span>Nota Fiscal</a></li>                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:196, &#39;id_menu_master&#39;:526, &#39;id_term_help&#39;:10882}" data-link="invoice_nfe_control"><span></span>Controle de Status da NF</a></li>                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:631, &#39;id_menu_master&#39;:526, &#39;id_term_help&#39;:10883}" data-link="other_invoice"><span></span>Emissão de Outras NFs</a></li>				        </ul>
+</li>
+					<li class="hasChild img_27"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:27, &#39;id_menu_master&#39;:6, &#39;id_term_help&#39;:10845}"><span></span>Fiscal</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:194, &#39;id_menu_master&#39;:27, &#39;id_term_help&#39;:10966}" data-link="transaction_nature"><span></span>Natureza de Operação</a></li>                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:131, &#39;id_menu_master&#39;:27, &#39;id_term_help&#39;:10892}" data-link="tax_calc"><span></span>Cálculo Fiscal</a></li>				        </ul>
+</li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+		</li><li><a href="javascript:void();" class="menu_x menu2" data-menu="{&#39;id_menu&#39;:2, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>Compras</a>			<div class="subMenu">
+				<ul>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:48, &#39;id_menu_master&#39;:2, &#39;id_term_help&#39;:10796}" data-link="purchase_budget"><span></span>Orçamentos</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:212, &#39;id_menu_master&#39;:2, &#39;id_term_help&#39;:10921}" data-link="purchase_order"><span></span>Pedidos</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:50, &#39;id_menu_master&#39;:2, &#39;id_term_help&#39;:10923}" data-link="supplier"><span></span>Fornecedores</a></li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+		</li><li><a href="javascript:void();" class="menu_x menu4" data-menu="{&#39;id_menu&#39;:4, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>Estoque</a>			<div class="subMenu">
+				<ul>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:295, &#39;id_menu_master&#39;:4, &#39;id_term_help&#39;:10924}" data-link="stock_room_query"><span></span>Consulta de Estoque</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:438, &#39;id_menu_master&#39;:4, &#39;id_term_help&#39;:10797}" data-link="stock_room"><span></span>Movimentações</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:601, &#39;id_menu_master&#39;:4, &#39;id_term_help&#39;:10925}" data-link="purchase_order_query"><span></span>Pedidos de Compra em Aberto</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:603, &#39;id_menu_master&#39;:4, &#39;id_term_help&#39;:10926}" data-link="sale_order_query"><span></span>Pedidos de Venda em Aberto</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:604, &#39;id_menu_master&#39;:4, &#39;id_term_help&#39;:10953}" data-link="stock_location"><span></span>Local de Estoque</a></li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+		</li><li><a href="javascript:void();" class="menu_x menu3" data-menu="{&#39;id_menu&#39;:3, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>Financeiro</a>			<div class="subMenu">
+				<ul>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:415, &#39;id_menu_master&#39;:3, &#39;id_term_help&#39;:10804}" data-link="fin_cash_flow"><span></span>Fluxo de Caixa</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:461, &#39;id_menu_master&#39;:3, &#39;id_term_help&#39;:10803}" data-link="fin_entry"><span></span>Movimentação de Caixa</a></li>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:455, &#39;id_menu_master&#39;:3, &#39;id_term_help&#39;:10933}" data-link="fin_operation"><span></span>Histórico de Contas</a></li>
+					<li class="hasChild img_395"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:395, &#39;id_menu_master&#39;:3, &#39;id_term_help&#39;:10806}"><span></span>Recebimentos</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:737, &#39;id_menu_master&#39;:395, &#39;id_term_help&#39;:null}" data-link="fin_receivable"><span></span>Contas a Receber</a></li>                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:734, &#39;id_menu_master&#39;:395, &#39;id_term_help&#39;:null}" data-link="fin_revenue"><span></span>Contas Recebidas</a></li>				        </ul>
+</li>
+					<li class="hasChild img_396"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:396, &#39;id_menu_master&#39;:3, &#39;id_term_help&#39;:10805}"><span></span>Pagamentos</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:735, &#39;id_menu_master&#39;:396, &#39;id_term_help&#39;:null}" data-link="fin_payable"><span></span>Contas a Pagar</a></li>                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:736, &#39;id_menu_master&#39;:396, &#39;id_term_help&#39;:null}" data-link="fin_expenditure"><span></span>Contas Pagas</a></li>				        </ul>
+</li>
+					<li class="hasChild img_404"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:404, &#39;id_menu_master&#39;:3, &#39;id_term_help&#39;:10934}"><span></span>Cadastro</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:229, &#39;id_menu_master&#39;:404, &#39;id_term_help&#39;:10935}" data-link="fin_account"><span></span>Conta Corrente</a></li>                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:165, &#39;id_menu_master&#39;:404, &#39;id_term_help&#39;:10936}" data-link="fin_account_management"><span></span>Conta Master / Gerencial</a></li>                     <li><a href="javascript:void();" class="menu_z" data-menu="{&#39;id_menu&#39;:122, &#39;id_menu_master&#39;:404, &#39;id_term_help&#39;:10937}" data-link="payment_type"><span></span>Tipo de Pagamento</a></li>				        </ul>
+</li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+		</li><li class="toleft"><a href="javascript:void();" class="menu_x menu7" data-menu="{&#39;id_menu&#39;:7, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>Relatórios</a>			<div class="subMenu">
+				<ul>
+					<li class="hasChild img_695"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:695, &#39;id_menu_master&#39;:7, &#39;id_term_help&#39;:10942}"><span></span>Vendas</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:688, &#39;id_menu_master&#39;:695, &#39;id_term_help&#39;:10943}" data-link="sale_by_seller"><span></span>Vendas por vendedor</a></li>                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:689, &#39;id_menu_master&#39;:695, &#39;id_term_help&#39;:10944}" data-link="sale_by_payment"><span></span>Vendas por tipo de Pagamento</a></li>                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:694, &#39;id_menu_master&#39;:695, &#39;id_term_help&#39;:10945}" data-link="profit_by_product"><span></span>Lucratividade por Produto</a></li>				        </ul>
+</li>
+					<li class="hasChild img_697"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:697, &#39;id_menu_master&#39;:7, &#39;id_term_help&#39;:10954}"><span></span>Financeiro</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:692, &#39;id_menu_master&#39;:697, &#39;id_term_help&#39;:10940}" data-link="fin_payable"><span></span>Contas a Pagar</a></li>                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:693, &#39;id_menu_master&#39;:697, &#39;id_term_help&#39;:10941}" data-link="fin_receivable"><span></span>Contas a Receber</a></li>				        </ul>
+</li>
+					<li class="hasChild img_696"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:696, &#39;id_menu_master&#39;:7, &#39;id_term_help&#39;:10946}"><span></span>Compras</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:687, &#39;id_menu_master&#39;:696, &#39;id_term_help&#39;:10947}" data-link="purchase_by_period"><span></span>Compras Realizadas</a></li>				        </ul>
+</li>
+					<li class="hasChild img_698"><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:698, &#39;id_menu_master&#39;:7, &#39;id_term_help&#39;:10955}"><span></span>Estoque</a>						<ul class="subcategoryMenu">
+                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:690, &#39;id_menu_master&#39;:698, &#39;id_term_help&#39;:10973}" data-link="stock_location"><span></span>Localização e Status</a></li>                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:691, &#39;id_menu_master&#39;:698, &#39;id_term_help&#39;:10949}" data-link="stock_kardex"><span></span>Kardex</a></li>                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:686, &#39;id_menu_master&#39;:698, &#39;id_term_help&#39;:10950}" data-link="stock_low_itens"><span></span>Itens com Estoque Baixo</a></li>                     <li><a href="javascript:void();" class="menu_z report" data-menu="{&#39;id_menu&#39;:714, &#39;id_menu_master&#39;:698, &#39;id_term_help&#39;:10974}" data-link="sale_item_price"><span></span>Lista de Preços</a></li>				        </ul>
+</li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+		</li><li class="toleft"><a href="javascript:void();" class="menu_x menu236" data-menu="{&#39;id_menu&#39;:236, &#39;id_menu_master&#39;:0, &#39;id_term_help&#39;:null}"><span></span>RH</a>			<div class="subMenu">
+				<ul>
+					<li><a href="javascript:void();" class="menu_y" data-menu="{&#39;id_menu&#39;:54, &#39;id_menu_master&#39;:236, &#39;id_term_help&#39;:10952}" data-link="employee"><span></span>Funcionários</a></li>
+				</ul>
+				<div class="boxHelpMenu"></div>
+		    </div>
+	</li></ul>
+	<div class="cb"></div>
+</nav>
+<div class="statusPDV"><button type="button" style="visibility: visible; display: block;" title="Nenhum PDV configurado nesta máquina." data-isloading="false">DESABILITADO</button></div>
+<div class="cb"></div>
+</div>
+</div>
+<div class="overlay"></div><div class="headerDashboard dashboard close"><div class="dashboardShopping  dashboardContent">
+<div class="boxInfo">	<ul>
+		<li class="boxInfoOne">
+			<h6 class="titleBoxInfo"><span class="tit">Total comprado</span><span>Abril</span></h6>
+			<p><span class="val">R$&nbsp;0,00</span></p>
+<strong></strong>		</li>
+		<li class="boxInfoTwo">
+			<h6 class="titleBoxInfo">A receber até hoje</h6>
+			<p>44&nbsp;Pedidos</p>
+			<strong><span class="tit">Totalizando</span> <span class="val">R$&nbsp;91.989,61</span></strong>
+		</li>
+		<li class="boxInfoThree">
+			<h6 class="titleBoxInfo"></h6>
+			<p></p>
+			<strong><span class="first"><span class="tit">1</span><span class="val">Produto(s)</span></span>Abaixo do estoque mínimo</strong>
+		</li>
+		<li class="boxInfoFour">
+<h6 class="titleBoxInfoPurchase">Produtos críticos</h6>
+<table> <thead>  <tr>   <th width="120"><span>Produto</span></th><th width="50"><span>Saldo</span></th><th><span>Dias</span></th>  </tr>  <tr>   <td> </td><td> </td><td> </td>  </tr> </thead> <tbody>   <tr><td><span title="DVD-R Nipponic 4.7 GB/120 min">DVD-R Nipponic 4.7 GB/120 min</span></td><td title="Quantidade em Estoque">752</td><td title="Dias em média para terminar o seu estoque">11.800</td></tr>   <tr><td><span title="Lapis Faber-Castell 3B">Lapis Faber-Castell 3B</span></td><td title="Quantidade em Estoque">450</td><td title="Dias em média para terminar o seu estoque">2.000</td></tr>   <tr><td><span title="019558 - Tênis Soft Pimpolho - 3">019558 - Tênis Soft Pimpolho - 3</span></td><td title="Quantidade em Estoque">0</td><td title="Dias em média para terminar o seu estoque">0</td></tr>   <tr><td><span title="Tênis Nike Air">Tênis Nike Air</span></td><td title="Quantidade em Estoque">370</td><td title="Dias em média para terminar o seu estoque">370</td></tr> </tbody></table>		</li>
+	 </ul>
+ </div>
+</div>
+<div class="dashboardReading">
+	<button class="dashboardReadingButton" type="button"></button>
+	<p>dashboard</p>
+</div>
+<div class="cb"></div>
+</div></header><article class="MainContent">
+	<section class="pageContent">
+		<header class="pageHeader">
+			<div class="pageHGroup">
+				<h2>Produtos/Serviços</h2>
+			</div>
+			<div class="actionBar">
+					<div class="search form">
+						<input type="text" class="inputText bypass fieldSearch" placeholder="ENCONTRE">
+						<button type="button" class="button ok">ok</button>
+						<button type="button" class="advancedSearch">Filtros Avançados</button>
+<div class="advancedSearchBox"><ul> <li>     <button type="button" class="btFiltrar button button1">Filtrar</button> </li></ul></div></div><div class="buttonPanel">        <button type="button" class="actionButton backActionButton"></button></div>					<button type="button" class="addNew">Adicionar Novo</button>
+				</div>
+		</header>
+		<div class="pageMain" style="visibility: visible; display: block;" data-isloading="false"><article class="panelContent panelContentItem">
+    <header class="panelHeader">
+        <h3>Item</h3>
+    </header>
+    <div class="panelMain form">
+        <input type="hidden" id="item§id_item" value="1804" data-original_value="1804">
+        <div class="container_32">
+            <div class="itemStatus">
+                <div class="itemStatusGroup">
+                    <span class="title">Status:</span>
+                    <div class="customselect_main"><div class="customselect_container"><input type="hidden" class="customselect fixed" data-overload="1|Ativo,0|Inativo" id="item§in_active" value="1" data-original_value="1"><div class="customselect_label">Ativo</div><button type="button" class="customselect_button"></button><ul class="custonselect_list close"><li data-value="1"><span>Ativo</span></li><li data-value="0"><span>Inativo</span></li></ul></div></div>
+                    <span class="title">Estoque Atual:</span>
+                    <span class="quant bypass" id="item§_vl_current_item_stock" style="visibility: visible; display: block;" data-isloading="false">2432</span>
+                    <span class="legend">Disponíveis</span>
+                    <button type="button" class="button button4" id="item§bt_goto_sale_order">Vender</button>
+                    <button type="button" class="button button4" id="item§bt_goto_purchase_order">Comprar</button>
+                </div>
+            </div>
+            <div class="itemDetail">
+                <div class="itemDetailGroup">
+                    <div class="itemDetailGroupHeader">
+                        <div class="fieldsetItem">
+                            <span class="label">Tipo:</span>
+                            <div class="customselect_main"><div class="customselect_container"><input type="hidden" class="customselect fixed" data-overload="0|Produto, 1|Serviço" id="item§in_sevice" value="0" data-original_value="0"><div class="customselect_label">Produto</div><button type="button" class="customselect_button"></button><ul class="custonselect_list close"><li data-value="0"><span>Produto</span></li><li data-value=" 1"><span>Serviço</span></li></ul></div></div>
+                        </div>
+                        <div class="fieldsetItem">
+                            <span class="label"><img src="./item_files/barcode.gif"></span>
+                            <div class="msgbox_container"><div class="msgbox_main erro" style="bottom: 30px;">Item obrigatório<img class="msgbox_arrow" src="./item_files/arrow_down_erro.png" alt="" style="left: 60px;"></div><input type="text" class="inputText required preset onlynumber" max-lenght="13" id="item§ds_codebar" data-original_value="1126"></div>
+                        </div>
+                        <div class="fieldsetItem">
+                            <span class="label">Código Interno</span>
+                            <input type="text" class="inputText" id="item§ds_code">
+                        </div>
+                    </div>
+                    <div class="itemDetailGroupMain">
+                        <div class="itemDetailForm">
+                            <div class="msgbox_container"><div class="msgbox_main erro" style="bottom: 42px;">Item obrigatório<img class="msgbox_arrow" src="./item_files/arrow_down_erro.png" alt="" style="left: 60px;"></div><input type="text" class="inputText itemTitle editable required" readonly="readonly" id="item§ds_item" value="" style="width: 100%;" placeholder="Informe aqui o nome do produto" data-original_value="000020 - Macacão Bloomys Menina - M"></div>                           
+                            <div class="clear"></div>
+                            <div class="grid_6">
+                                <label class="fieldContent">
+                                    <span class="fieldTitle">Custo:</span>
+                                    <div class="msgbox_container"><div class="msgbox_main erro" style="bottom: 30px;">Item obrigatório<img class="msgbox_arrow" src="./item_files/arrow_down_erro.png" alt="" style="left: 60px;"></div><input type="text" class="inputText preset currency required" id="item§vl_item_cost" data-original_value="6,00" style="text-align: right;"></div>
+                                </label>
+                            </div>
+                            <div class="grid_6">
+                                <label class="fieldContent">
+                                    <span class="fieldTitle">Venda:</span>
+                                    <div class="msgbox_container"><div class="msgbox_main erro" style="bottom: 30px;">Item obrigatório<img class="msgbox_arrow" src="./item_files/arrow_down_erro.png" alt="" style="left: 60px;"></div><input type="text" class="inputText preset currency required" id="item§vl_value" data-original_value="12,00" style="text-align: right;"></div>
+                                </label>
+                            </div>
+                            <div class="grid_6">
+                                <label class="fieldContent">
+                                    <span class="fieldTitle">Margem:</span>
+                                    <strong class="percent" id="_vl_item_margin" style="visibility: visible; display: inline;" data-isloading="false">100%</strong>
+                                </label>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="grid_6">
+                                <label class="fieldContent">
+                                    <span class="fieldTitle">Marca:</span>
+                                    <div class="customselect_main"><div class="customselect_container"><input type="hidden" class="customselect add" id="item§id_brand" data-overload="8|itaquaquecetuba" value="8" data-original_value="8"><div class="customselect_label">itaquaquecetuba</div><button type="button" class="customselect_button"></button><ul class="custonselect_list close"><li data-value="8"><span>itaquaquecetuba</span></li></ul></div></div>                                 
+                                </label>
+                            </div>
+                            <div class="grid_6">
+                                <label class="fieldContent">
+                                    <span class="fieldTitle">Modelo:</span>
+                                    <input type="text" class="inputText" id="item§ds_model" value="">
+                                </label>
+                            </div>
+                            <div class="grid_6">
+                                <label class="fieldContent">
+                                    <span class="fieldTitle">Unidade:</span>
+                                    <div class="customselect_main required"><div class="customselect_container"><div class="msgbox_container"><div class="msgbox_main erro" style="bottom: 0px;">Item obrigatório<img class="msgbox_arrow" src="./item_files/arrow_down_erro.png" alt="" style="left: 60px;"></div><input type="hidden" class="customselect add required" id="item§id_item_unit" data-overload="1|Unidade" value="1" data-original_value="1" style=""></div><div class="customselect_label">Unidade</div><button type="button" class="customselect_button"></button><ul class="custonselect_list close"><li data-value="1"><span>Unidade</span></li></ul></div></div>                                 
+                                </label>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="image" style="visibility: visible; display: block;" data-isloading="false">
+                            <div class="keep_height"></div><img src="./item_files/___tmp___tmp_7896798601535.jpg" id="item§img§main_image" data-in_main="1" data-idx="7">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>    
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</article>
+
+<article class="panelContent estoque">
+    <header class="panelHeader">
+        <h3>Estoque</h3>
+
+        <div class="toggleArea">
+            <span class="legend">
+                Este produto movimenta estoque ?
+            </span>
+            <div class="customradio" id="item§in_stock_moves" data-original_value="1">
+                
+                
+            <div class="customradio_content true"><input type="radio" value="true" name="lojavirtual" checked="checked"><input type="radio" value="false" name="lojavirtual"><div class="customradio_button_content"><div class="customradio_button ui-draggable"><div class="areaOn"></div><div class="button_active"></div><div class="areaOff"></div></div></div></div></div>
+        </div>
+    </header>
+    <div class="panelMain form" style="">
+        <div class="container_32">
+            <div class="typeBox">
+                <div class="areaButton">
+                    <button type="button" id="btUnic" class="active">único</button>
+                    <button type="button" id="btGrid">grade</button>
+                </div>
+            </div>
+            <div class="typtSingle active">
+                <div class="fieldsetItem minimo">
+                    <span class="legend">Mínimo:</span>
+                    <div class="msgbox_container"><div class="msgbox_main hint" style="bottom: 30px;">Formato Inválido<img class="msgbox_arrow" src="./item_files/arrow_down_hint.png" alt="" style="left: 64px;"></div><input type="text" class="inputText preset positive float" id="item§vl_item_min_stock"></div>
+                </div>
+
+                <div class="fieldsetItem atual">
+                    <span class="legend">Atual:</span>
+                    <span id="item§_vl_current_item_stock2" style="visibility: visible; display: inline;" data-isloading="false"><strong>2432</strong></span>
+                </div>   
+
+                <div class="moveBox">
+                    <div class="title arrowTitle ">Movimentação</div>
+
+                    <div class="customselect_main"><div class="customselect_container"><input type="hidden" class="customselect fixed" data-overload="1|Entrada,-1|Saida" value="" id="item§stock§in_es"><div class="customselect_label"></div><button type="button" class="customselect_button"></button><ul class="custonselect_list close"><li data-value="1"><span>Entrada</span></li><li data-value="-1"><span>Saida</span></li></ul></div></div>
+
+                    <div class="fieldsetItem quant">
+                        <span class="legend">Qtde:</span>
+                        <div class="msgbox_container"><div class="msgbox_main hint" style="bottom: 30px;">Formato Inválido<img class="msgbox_arrow" src="./item_files/arrow_down_hint.png" alt="" style="left: 64px;"></div><input type="text" class="inputText preset positive integer" id="item§stock§vl_amount"></div>
+                    </div>
+
+                    <button type="button" class="button button1" id="item§stock§bt_move">ok</button>
+                </div>
+            </div>
+
+            <div class="typtGrid">
+                <div class="estqBox">
+                    <div class="title arrowTitle">Estoque</div>
+                    <button type="button" data-type="atual" class="active">Atual</button>
+                    <button type="button" data-type="minimo">Mínimo</button>
+                </div>   
+
+                <div class="prodBox">
+                    <div class="title arrowTitle">Pedidos</div>
+                    <button type="button" data-type="compra">Compra</button>
+                    <button type="button" data-type="venda">Venda</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxContentGrid">
+            <div class="gridNavigation">
+                <div class="title"><span>Tamanhos</span></div>
+                <div class="btRight" id="toRight"><button type="button"></button></div>
+                <div class="btLeft" id="toLeft"><button type="button"></button></div>
+            </div>
+            <div class="colorLegend">
+                <ul class="form">
+                    <li>
+                       <span class="fieldTitle">Azul</span>
+                       <span class="color t00"></span>
+                    </li>
+                    <li>
+                       <span class="fieldTitle">Verde</span>
+                       <span class="color t01"></span>
+                    </li>
+                    <li>
+                       <span class="fieldTitle">Vermelho</span>
+                       <span class="color t02"></span>
+                    </li>
+                    <li>
+                       <span class="fieldTitle">Amarelo com Listas Vermelhas e Roxas</span>
+                       <span class="color t03"></span>
+                    </li>
+                    <li>
+                       <span class="fieldTitle">Preto</span>
+                       <span class="color t04"></span>
+                    </li>
+                    <li>
+                       <label class="fieldContent">
+                           <span class="fieldTitle">Adicionar Cor</span>
+                           <button type="button" id="addColor" class="addButton">+</button>
+                       </label>
+                       <input type="hidden" id="custonSelectAdd" class="customselect add" data-overload="5|verde,1|amarelo,2|verde,3|vermelho,4|azul" data-label="Selecione uma cor" value="">
+                    </li>
+                </ul>
+            </div>
+            <div class="boxTable" id="preview_area">
+                <div class="scrolling">
+                    <div class="addTableBox">
+                        <table class="tableGrid" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th><span>pp</span></th>
+                                    <th><span>p</span></th>
+                                    <th><span>m</span></th>
+                                    <th><span>g</span></th>
+                                    <th><span>32/10/50</span></th>
+                                    <th><span>xg</span></th>
+                                    <th><span>pp</span></th>
+                                    <th><span>p</span></th>
+                                    <th><span>m</span></th>
+                                    <th><span>g</span></th>
+
+                                    <th><span>pp</span></th>
+                                    <th><span>p</span></th>
+                                    <th><span>m</span></th>
+                                    <th><span>g</span></th>
+                                    <th><span>32/10/50</span></th>
+                                    <th><span>xg</span></th>
+                                    <th><span>pp</span></th>
+                                    <th><span>p</span></th>
+                                    <th><span>m</span></th>
+                                    <th><span>g</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td>
+                                        <span><input type="text" class="inputText readonly" readonly value="10" /></span>
+                                        <div class="modalMove">
+                                            <span class="arrow"></span>
+                                            <div class="moveBox">
+                                                <div class="title arrowTitle ">Movimentação</div>
+
+                                                <input type="hidden" class="customselect fixed" data-overload="1|Entrada,-1|Saida" value="" id="custonMove" />
+
+                                                <div class="fieldsetItem quant">
+                                                    <span class="legend">Qtde:</span>
+                                                    <input type="text" class="inputText preset positive integer" id=""/>
+                                                </div>
+
+                                                <button type="button" class="button button1" id="Button1">ok</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                                                                                            
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="10" /></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                    <td><span><input type="text" class="inputText readonly" readonly value="" /></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="addGrig">
+                            <span><button type="button" class="addButton">+</button></span>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="buttonArea">
+                <div class="right"><button type="button" class="button mainButton">Gerar pedido</button></div>
+                <div class="cb"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hr">&nbsp;</div>
+</article>
+
+<article class="panelContent panelContentFiscal">
+    <header class="panelHeader">
+        <h3>Fiscal</h3>
+
+        <div class="toggleArea">
+            <span class="legend">
+                Habilitar emissão de NF para este produto ?
+            </span>
+            <div class="customradio" id="item§in_saleable" data-original_value="1">
+                
+                
+            <div class="customradio_content true"><input type="radio" value="true" name="lojavirtual" checked="checked"><input type="radio" value="false" name="lojavirtual"><div class="customradio_button_content"><div class="customradio_button ui-draggable"><div class="areaOn"></div><div class="button_active"></div><div class="areaOff"></div></div></div></div></div>
+        </div>
+    </header>
+    <div class="panelMain form" style="">
+        <div class="container_32">
+            <div class="fieldsetItem tipo">
+                <span class="legend">Tipo:</span>
+                <div class="customselect_main"><div class="customselect_container"><input type="hidden" class="customselect" data-overload="7|Produto Intermediário" id="item§id_item_type" value="7" data-original_value="7"><div class="customselect_label">Produto Intermediário</div><button type="button" class="customselect_button"></button><ul class="custonselect_list close"><li data-value="7"><span>Produto Intermediário</span></li></ul></div></div>
+            </div>
+
+            <div class="fieldsetItem ncm">
+                <span class="legend">NCM:</span>
+                <input type="text" class="inputText mktup_autocomplete ui-autocomplete-input" id="item§id_tax_ncm_code" value="" data-original_value="4051" data-id_value="4051" data-autocomplete_parameters="{&quot;tr&quot;:&quot;C&quot;,&quot;en&quot;:&quot;tax_ncm_code&quot;}" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                
+            </div>
+        </div>
+    </div>
+    <div class="hr">&nbsp;</div>
+</article>
+
+<article class="panelContent loja">
+    <header class="panelHeader">
+        <h3>loja Virtual</h3>
+
+        <div class="toggleArea">
+            <span class="legend">
+                Habilitar venda na loja virtual?
+            </span>
+            <div class="customradio" id="item§in_site" data-original_value="1">
+                
+                
+            <div class="customradio_content true"><input type="radio" value="true" name="lojavirtual" checked="checked"><input type="radio" value="false" name="lojavirtual"><div class="customradio_button_content"><div class="customradio_button ui-draggable"><div class="areaOn"></div><div class="button_active"></div><div class="areaOff"></div></div></div></div></div>
+        </div>
+    </header>
+    <div class="panelMain form" style="">
+        <div class="container_32">
+            <div class="formulario">
+                <div>
+                    <div class="categoria">
+                        <div class="cat">
+                            <div class="customselect_main"><div class="customselect_container"><input type="hidden" class="customselect add" data-label="Categoria" id="item§id_item_group" data-overload="55|Cama&amp;#44; Mesa e Banho" value="55" data-callback="clearItemSubgroup();" data-original_value="55"><div class="customselect_label">Cama, Mesa e Banho</div><button type="button" class="customselect_button"></button><ul class="custonselect_list close"><li data-value="55"><span>Cama, Mesa e Banho</span></li></ul></div></div></div>
+                        <div class="sub">
+                             <div class="customselect_main"><div class="customselect_container"><input type="hidden" class="customselect add" data-label="Subcategoria" id="item§id_item_subgroup" data-overload="72|Cama de Casal" value="72" data-field_filter="[{&#39;form_field&#39;:&#39;id_item_group&#39;}]" data-original_value="72"><div class="customselect_label">Cama de Casal</div><button type="button" class="customselect_button"></button><ul class="custonselect_list close"><li data-value="72"><span>Cama de Casal</span></li></ul></div></div></div>
+                    </div>
+                    <div class="detalhe">
+                        <label class="fieldContent produto">
+                            <span class="fieldTitle">Produto:</span>
+                            <input type="text" class="inputText" id="item§ds_item_site_name" data-original_value="000020 - Macacão Bloomys Menina - M">
+                        </label>
+                        <label class="fieldContent de">
+                            <span class="fieldTitle">De:</span>
+                            <div class="msgbox_container"><div class="msgbox_main hint" style="bottom: 30px;">Formato Inválido<img class="msgbox_arrow" src="./item_files/arrow_down_hint.png" alt="" style="left: 64px;"></div><input type="text" class="inputText preset currency" id="item§vl_site_list_price" data-original_value="1,00" style="text-align: right;"></div>
+                        </label>
+                        <label class="fieldContent por">
+                            <span class="fieldTitle">Por:</span>
+                            <div class="msgbox_container"><div class="msgbox_main hint" style="bottom: 30px;">Formato Inválido<img class="msgbox_arrow" src="./item_files/arrow_down_hint.png" alt="" style="left: 64px;"></div><input type="text" class="inputText preset currency" id="item§vl_site_price" data-original_value="10,00" style="text-align: right;"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="cb"></div>
+                <div>
+                    <div class="medidas">
+                        <label class="fieldContent altura">
+                            <span class="fieldTitle">Altura:</span>
+                            <div class="msgbox_container"><div class="msgbox_main hint" style="bottom: 30px;">Formato Inválido<img class="msgbox_arrow" src="./item_files/arrow_down_hint.png" alt="" style="left: 64px;"></div><input type="text" class="inputText preset positivefloat" id="item§vl_height" data-original_value="10,00"></div>
+                            <em>Centímetros</em>
+                        </label>
+                        <label class="fieldContent">
+                            <span class="fieldTitle">Largura:</span>
+                            <div class="msgbox_container"><div class="msgbox_main hint" style="bottom: 30px;">Formato Inválido<img class="msgbox_arrow" src="./item_files/arrow_down_hint.png" alt="" style="left: 64px;"></div><input type="text" class="inputText preset positivefloat" id="item§vl_width" data-original_value="50,00"></div>
+                            <em>Centímetros</em>
+                        </label>
+                        <label class="fieldContent">
+                            <span class="fieldTitle">Profundidade:</span>
+                            <div class="msgbox_container"><div class="msgbox_main hint" style="bottom: 30px;">Formato Inválido<img class="msgbox_arrow" src="./item_files/arrow_down_hint.png" alt="" style="left: 64px;"></div><input type="text" class="inputText preset positivefloat" id="item§vl_lenght" data-original_value="20,00"></div>
+                            <em>Centímetros</em>
+                        </label>
+                        <label class="fieldContent">
+                            <span class="fieldTitle">Peso:</span>
+                            <div class="msgbox_container"><div class="msgbox_main hint" style="bottom: 30px;">Formato Inválido<img class="msgbox_arrow" src="./item_files/arrow_down_hint.png" alt="" style="left: 64px;"></div><input type="text" class="inputText preset positivefloat" id="item§vl_gross_weight" data-original_value="15,00"></div>
+                            <em>Kilos</em>
+                        </label>
+                    </div>
+                    <div class="boxPreview">
+                        <div class="box_section">   
+                            <div class="box_container" style="width: 100px; height: 20px;">
+                                <div class="box_main_X">
+                                    <div class="box_main_Y">
+                                        <div class="box_main" style="width: 100px; height: 20px;">
+                                            <div class="box_side front" style="width: 100px; height: 20px; -webkit-transform: translateZ(20px);"></div>
+                                            <div class="box_side right" style="width: 40px; height: 20px; -webkit-transform: rotateY(-90deg) translateZ(-80px);"></div>
+                                            <div class="box_side top" style="width: 100px; height: 40px; -webkit-transform: rotateX(90deg) translateZ(20px);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="verticalAlign"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cb"></div>
+                <div class="especs">
+                    <ul><li class="active" data-index="0">DESCRIÇÃO</li><li data-index="1">GARANTIA</li><li data-index="2">ITENS INCLUSOS</li><li data-index="3">ESPECIFICAÇÕES</li></ul>
+                    <div class="editorsArea">
+                        <div class="active" data-index="0"><span id="item§ds_item_site_description" class="mktup_ckeditor" data-original_value="&lt;p&gt;000020 - Macac&amp;atilde;o Bloomys Menina - MM&lt;/p&gt;
+" data-ckeditor="editor1"><div id="cke_editor1" class="cke_1 cke cke_reset cke_chrome cke_editor_editor1 cke_ltr cke_browser_webkit" dir="ltr" lang="pt-br" role="application" aria-labelledby="cke_editor1_arialbl"><span id="cke_editor1_arialbl" class="cke_voice_label">Editor de Texto</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_1_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; -webkit-user-select: none;"><span id="cke_9" class="cke_voice_label">Barra de Ferramentas do Editor</span><span id="cke_1_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_9" onmousedown="return false;"><span id="cke_10" class="cke_toolbar" aria-labelledby="cke_10_label" role="toolbar"><span id="cke_10_label" class="cke_voice_label">Estilos Básicos</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_11" class="cke_button cke_button__bold cke_button_off " "="" href="javascript:void('Negrito')" title="Negrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_11_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(4,event);" onfocus="return CKEDITOR.tools.callFunction(5,event);" onmousedown="return CKEDITOR.tools.callFunction(6,event);" onclick="CKEDITOR.tools.callFunction(7,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -32px;">&nbsp;</span><span id="cke_11_label" class="cke_button_label cke_button__bold_label">Negrito</span></a><a id="cke_12" class="cke_button cke_button__italic cke_button_off " "="" href="javascript:void('Itálico')" title="Itálico" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_12_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(8,event);" onfocus="return CKEDITOR.tools.callFunction(9,event);" onmousedown="return CKEDITOR.tools.callFunction(10,event);" onclick="CKEDITOR.tools.callFunction(11,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -64px;">&nbsp;</span><span id="cke_12_label" class="cke_button_label cke_button__italic_label">Itálico</span></a><a id="cke_13" class="cke_button cke_button__underline cke_button_off " "="" href="javascript:void('Sublinhado')" title="Sublinhado" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_13_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(12,event);" onfocus="return CKEDITOR.tools.callFunction(13,event);" onmousedown="return CKEDITOR.tools.callFunction(14,event);" onclick="CKEDITOR.tools.callFunction(15,this);return false;"><span class="cke_button_icon cke_button__underline_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -192px;">&nbsp;</span><span id="cke_13_label" class="cke_button_label cke_button__underline_label">Sublinhado</span></a><a id="cke_14" class="cke_button cke_button__strike cke_button_off " "="" href="javascript:void('Tachado')" title="Tachado" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_14_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(16,event);" onfocus="return CKEDITOR.tools.callFunction(17,event);" onmousedown="return CKEDITOR.tools.callFunction(18,event);" onclick="CKEDITOR.tools.callFunction(19,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -96px;">&nbsp;</span><span id="cke_14_label" class="cke_button_label cke_button__strike_label">Tachado</span></a><a id="cke_15" class="cke_button cke_button__subscript cke_button_off " "="" href="javascript:void('Subscrito')" title="Subscrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_15_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(20,event);" onfocus="return CKEDITOR.tools.callFunction(21,event);" onmousedown="return CKEDITOR.tools.callFunction(22,event);" onclick="CKEDITOR.tools.callFunction(23,this);return false;"><span class="cke_button_icon cke_button__subscript_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -128px;">&nbsp;</span><span id="cke_15_label" class="cke_button_label cke_button__subscript_label">Subscrito</span></a><a id="cke_16" class="cke_button cke_button__superscript cke_button_off " "="" href="javascript:void('Sobrescrito')" title="Sobrescrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_16_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(24,event);" onfocus="return CKEDITOR.tools.callFunction(25,event);" onmousedown="return CKEDITOR.tools.callFunction(26,event);" onclick="CKEDITOR.tools.callFunction(27,this);return false;"><span class="cke_button_icon cke_button__superscript_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -160px;">&nbsp;</span><span id="cke_16_label" class="cke_button_label cke_button__superscript_label">Sobrescrito</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_17" class="cke_toolbar" aria-labelledby="cke_17_label" role="toolbar"><span id="cke_17_label" class="cke_voice_label">Paragrafo</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_18" class="cke_button cke_button__numberedlist cke_button_off " "="" href="javascript:void('Lista numerada')" title="Lista numerada" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_18_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(28,event);" onfocus="return CKEDITOR.tools.callFunction(29,event);" onmousedown="return CKEDITOR.tools.callFunction(30,event);" onclick="CKEDITOR.tools.callFunction(31,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -768px;">&nbsp;</span><span id="cke_18_label" class="cke_button_label cke_button__numberedlist_label">Lista numerada</span></a><a id="cke_19" class="cke_button cke_button__bulletedlist cke_button_off " "="" href="javascript:void('Lista sem números')" title="Lista sem números" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_19_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(32,event);" onfocus="return CKEDITOR.tools.callFunction(33,event);" onmousedown="return CKEDITOR.tools.callFunction(34,event);" onclick="CKEDITOR.tools.callFunction(35,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -704px;">&nbsp;</span><span id="cke_19_label" class="cke_button_label cke_button__bulletedlist_label">Lista sem números</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_21" class="cke_toolbar" aria-labelledby="cke_21_label" role="toolbar"><span id="cke_21_label" class="cke_voice_label">Estilos</span><span class="cke_toolbar_start"></span><span id="cke_20" class="cke_combo cke_combo__styles  cke_combo_off" role="presentation"><span id="cke_20_label" class="cke_combo_label">Estilo</span><a class="cke_combo_button" hidefocus="true" title="Estilos de Formatação" tabindex="-1" "="" href="javascript:void('Estilos de Formatação')" role="button" aria-labelledby="cke_20_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(37,event,this);" onmousedown="return CKEDITOR.tools.callFunction(39,event);" onfocus="return CKEDITOR.tools.callFunction(38,event);" onclick="CKEDITOR.tools.callFunction(36,this);return false;"><span id="cke_20_text" class="cke_combo_text cke_combo_inlinelabel">Estilo</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_22" class="cke_combo cke_combo__format  cke_combo_off" role="presentation"><span id="cke_22_label" class="cke_combo_label">Formatação</span><a class="cke_combo_button" hidefocus="true" title="Formatação" tabindex="-1" "="" href="javascript:void('Formatação')" role="button" aria-labelledby="cke_22_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(41,event,this);" onmousedown="return CKEDITOR.tools.callFunction(43,event);" onfocus="return CKEDITOR.tools.callFunction(42,event);" onclick="CKEDITOR.tools.callFunction(40,this);return false;"><span id="cke_22_text" class="cke_combo_text cke_combo_inlinelabel">Formatação</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_23" class="cke_combo cke_combo__font  cke_combo_off" role="presentation"><span id="cke_23_label" class="cke_combo_label">Fonte</span><a class="cke_combo_button" hidefocus="true" title="Fonte" tabindex="-1" "="" href="javascript:void('Fonte')" role="button" aria-labelledby="cke_23_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(45,event,this);" onmousedown="return CKEDITOR.tools.callFunction(47,event);" onfocus="return CKEDITOR.tools.callFunction(46,event);" onclick="CKEDITOR.tools.callFunction(44,this);return false;"><span id="cke_23_text" class="cke_combo_text cke_combo_inlinelabel">Fonte</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_24" class="cke_combo cke_combo__fontsize  cke_combo_off" role="presentation"><span id="cke_24_label" class="cke_combo_label">Tamanho</span><a class="cke_combo_button" hidefocus="true" title="Tamanho" tabindex="-1" "="" href="javascript:void('Tamanho')" role="button" aria-labelledby="cke_24_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(49,event,this);" onmousedown="return CKEDITOR.tools.callFunction(51,event);" onfocus="return CKEDITOR.tools.callFunction(50,event);" onclick="CKEDITOR.tools.callFunction(48,this);return false;"><span id="cke_24_text" class="cke_combo_text cke_combo_inlinelabel">Tamanho</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_25" class="cke_toolbar" aria-labelledby="cke_25_label" role="toolbar"><span id="cke_25_label" class="cke_voice_label">Cores</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_26" class="cke_button cke_button__textcolor cke_button_off " "="" href="javascript:void('Cor do Texto')" title="Cor do Texto" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_26_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(52,event);" onfocus="return CKEDITOR.tools.callFunction(53,event);" onmousedown="return CKEDITOR.tools.callFunction(54,event);" onclick="CKEDITOR.tools.callFunction(55,this);return false;"><span class="cke_button_icon cke_button__textcolor_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -544px;">&nbsp;</span><span id="cke_26_label" class="cke_button_label cke_button__textcolor_label">Cor do Texto</span><span class="cke_button_arrow"></span></a><a id="cke_27" class="cke_button cke_button__bgcolor cke_button_off " "="" href="javascript:void('Cor do Plano de Fundo')" title="Cor do Plano de Fundo" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_27_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(56,event);" onfocus="return CKEDITOR.tools.callFunction(57,event);" onmousedown="return CKEDITOR.tools.callFunction(58,event);" onclick="CKEDITOR.tools.callFunction(59,this);return false;"><span class="cke_button_icon cke_button__bgcolor_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -512px;">&nbsp;</span><span id="cke_27_label" class="cke_button_label cke_button__bgcolor_label">Cor do Plano de Fundo</span><span class="cke_button_arrow"></span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_1_contents" class="cke_contents cke_reset" role="presentation" style="height: 200px;"><span id="cke_31" class="cke_voice_label">Pressione ALT+0 para ajuda</span><iframe style="width: 692px; height: 100%;" class="cke_wysiwyg_frame cke_reset" frameborder="0" aria-describedby="cke_31" title="Editor de Texto,editor1" src="" tabindex="0" allowtransparency="true"></iframe></div><span id="cke_1_bottom" class="cke_bottom cke_reset_all" role="presentation" style="-webkit-user-select: none;"><span id="cke_1_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="Arraste para redimensionar" onmousedown="CKEDITOR.tools.callFunction(0, event)">◢</span><span id="cke_1_path_label" class="cke_voice_label">Caminho dos Elementos</span><span id="cke_1_path" class="cke_path" role="group" aria-labelledby="cke_1_path_label"><a id="cke_elementspath_8_1" href="javascript:void('body')" tabindex="-1" class="cke_path_item" title="Elemento body" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(2,1, event );" onclick="CKEDITOR.tools.callFunction(1,1); return false;" role="button" aria-label="Elemento body">body</a><a id="cke_elementspath_8_0" href="javascript:void('p')" tabindex="-1" class="cke_path_item" title="Elemento p" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(2,0, event );" onclick="CKEDITOR.tools.callFunction(1,0); return false;" role="button" aria-label="Elemento p">p</a><span class="cke_path_empty">&nbsp;</span></span></span></div></div></span></div>
+                        <div data-index="1"><span id="item§ds_item_site_warranty" class="mktup_ckeditor" data-original_value="&lt;p&gt;30 dias&lt;/p&gt;
+" data-ckeditor="editor2"><div id="cke_editor2" class="cke_2 cke cke_reset cke_chrome cke_editor_editor2 cke_ltr cke_browser_webkit" dir="ltr" lang="pt-br" role="application" aria-labelledby="cke_editor2_arialbl"><span id="cke_editor2_arialbl" class="cke_voice_label">Editor de Texto</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_2_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; -webkit-user-select: none;"><span id="cke_41" class="cke_voice_label">Barra de Ferramentas do Editor</span><span id="cke_2_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_41" onmousedown="return false;"><span id="cke_42" class="cke_toolbar" aria-labelledby="cke_42_label" role="toolbar"><span id="cke_42_label" class="cke_voice_label">Estilos Básicos</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_43" class="cke_button cke_button__bold cke_button_off " "="" href="javascript:void('Negrito')" title="Negrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_43_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(65,event);" onfocus="return CKEDITOR.tools.callFunction(66,event);" onmousedown="return CKEDITOR.tools.callFunction(67,event);" onclick="CKEDITOR.tools.callFunction(68,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -32px;">&nbsp;</span><span id="cke_43_label" class="cke_button_label cke_button__bold_label">Negrito</span></a><a id="cke_44" class="cke_button cke_button__italic cke_button_off " "="" href="javascript:void('Itálico')" title="Itálico" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_44_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(69,event);" onfocus="return CKEDITOR.tools.callFunction(70,event);" onmousedown="return CKEDITOR.tools.callFunction(71,event);" onclick="CKEDITOR.tools.callFunction(72,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -64px;">&nbsp;</span><span id="cke_44_label" class="cke_button_label cke_button__italic_label">Itálico</span></a><a id="cke_45" class="cke_button cke_button__underline cke_button_off " "="" href="javascript:void('Sublinhado')" title="Sublinhado" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_45_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(73,event);" onfocus="return CKEDITOR.tools.callFunction(74,event);" onmousedown="return CKEDITOR.tools.callFunction(75,event);" onclick="CKEDITOR.tools.callFunction(76,this);return false;"><span class="cke_button_icon cke_button__underline_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -192px;">&nbsp;</span><span id="cke_45_label" class="cke_button_label cke_button__underline_label">Sublinhado</span></a><a id="cke_46" class="cke_button cke_button__strike cke_button_off " "="" href="javascript:void('Tachado')" title="Tachado" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_46_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(77,event);" onfocus="return CKEDITOR.tools.callFunction(78,event);" onmousedown="return CKEDITOR.tools.callFunction(79,event);" onclick="CKEDITOR.tools.callFunction(80,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -96px;">&nbsp;</span><span id="cke_46_label" class="cke_button_label cke_button__strike_label">Tachado</span></a><a id="cke_47" class="cke_button cke_button__subscript cke_button_off " "="" href="javascript:void('Subscrito')" title="Subscrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_47_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(81,event);" onfocus="return CKEDITOR.tools.callFunction(82,event);" onmousedown="return CKEDITOR.tools.callFunction(83,event);" onclick="CKEDITOR.tools.callFunction(84,this);return false;"><span class="cke_button_icon cke_button__subscript_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -128px;">&nbsp;</span><span id="cke_47_label" class="cke_button_label cke_button__subscript_label">Subscrito</span></a><a id="cke_48" class="cke_button cke_button__superscript cke_button_off " "="" href="javascript:void('Sobrescrito')" title="Sobrescrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_48_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(85,event);" onfocus="return CKEDITOR.tools.callFunction(86,event);" onmousedown="return CKEDITOR.tools.callFunction(87,event);" onclick="CKEDITOR.tools.callFunction(88,this);return false;"><span class="cke_button_icon cke_button__superscript_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -160px;">&nbsp;</span><span id="cke_48_label" class="cke_button_label cke_button__superscript_label">Sobrescrito</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_49" class="cke_toolbar" aria-labelledby="cke_49_label" role="toolbar"><span id="cke_49_label" class="cke_voice_label">Paragrafo</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_50" class="cke_button cke_button__numberedlist cke_button_off " "="" href="javascript:void('Lista numerada')" title="Lista numerada" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_50_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(89,event);" onfocus="return CKEDITOR.tools.callFunction(90,event);" onmousedown="return CKEDITOR.tools.callFunction(91,event);" onclick="CKEDITOR.tools.callFunction(92,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -768px;">&nbsp;</span><span id="cke_50_label" class="cke_button_label cke_button__numberedlist_label">Lista numerada</span></a><a id="cke_51" class="cke_button cke_button__bulletedlist cke_button_off " "="" href="javascript:void('Lista sem números')" title="Lista sem números" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_51_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(93,event);" onfocus="return CKEDITOR.tools.callFunction(94,event);" onmousedown="return CKEDITOR.tools.callFunction(95,event);" onclick="CKEDITOR.tools.callFunction(96,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -704px;">&nbsp;</span><span id="cke_51_label" class="cke_button_label cke_button__bulletedlist_label">Lista sem números</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_53" class="cke_toolbar" aria-labelledby="cke_53_label" role="toolbar"><span id="cke_53_label" class="cke_voice_label">Estilos</span><span class="cke_toolbar_start"></span><span id="cke_52" class="cke_combo cke_combo__styles  cke_combo_off" role="presentation"><span id="cke_52_label" class="cke_combo_label">Estilo</span><a class="cke_combo_button" hidefocus="true" title="Estilos de Formatação" tabindex="-1" "="" href="javascript:void('Estilos de Formatação')" role="button" aria-labelledby="cke_52_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(98,event,this);" onmousedown="return CKEDITOR.tools.callFunction(100,event);" onfocus="return CKEDITOR.tools.callFunction(99,event);" onclick="CKEDITOR.tools.callFunction(97,this);return false;"><span id="cke_52_text" class="cke_combo_text cke_combo_inlinelabel">Estilo</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_54" class="cke_combo cke_combo__format  cke_combo_off" role="presentation"><span id="cke_54_label" class="cke_combo_label">Formatação</span><a class="cke_combo_button" hidefocus="true" title="Formatação" tabindex="-1" "="" href="javascript:void('Formatação')" role="button" aria-labelledby="cke_54_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(102,event,this);" onmousedown="return CKEDITOR.tools.callFunction(104,event);" onfocus="return CKEDITOR.tools.callFunction(103,event);" onclick="CKEDITOR.tools.callFunction(101,this);return false;"><span id="cke_54_text" class="cke_combo_text cke_combo_inlinelabel">Formatação</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_55" class="cke_combo cke_combo__font  cke_combo_off" role="presentation"><span id="cke_55_label" class="cke_combo_label">Fonte</span><a class="cke_combo_button" hidefocus="true" title="Fonte" tabindex="-1" "="" href="javascript:void('Fonte')" role="button" aria-labelledby="cke_55_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(106,event,this);" onmousedown="return CKEDITOR.tools.callFunction(108,event);" onfocus="return CKEDITOR.tools.callFunction(107,event);" onclick="CKEDITOR.tools.callFunction(105,this);return false;"><span id="cke_55_text" class="cke_combo_text cke_combo_inlinelabel">Fonte</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_56" class="cke_combo cke_combo__fontsize  cke_combo_off" role="presentation"><span id="cke_56_label" class="cke_combo_label">Tamanho</span><a class="cke_combo_button" hidefocus="true" title="Tamanho" tabindex="-1" "="" href="javascript:void('Tamanho')" role="button" aria-labelledby="cke_56_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(110,event,this);" onmousedown="return CKEDITOR.tools.callFunction(112,event);" onfocus="return CKEDITOR.tools.callFunction(111,event);" onclick="CKEDITOR.tools.callFunction(109,this);return false;"><span id="cke_56_text" class="cke_combo_text cke_combo_inlinelabel">Tamanho</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_57" class="cke_toolbar" aria-labelledby="cke_57_label" role="toolbar"><span id="cke_57_label" class="cke_voice_label">Cores</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_58" class="cke_button cke_button__textcolor cke_button_off " "="" href="javascript:void('Cor do Texto')" title="Cor do Texto" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_58_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(113,event);" onfocus="return CKEDITOR.tools.callFunction(114,event);" onmousedown="return CKEDITOR.tools.callFunction(115,event);" onclick="CKEDITOR.tools.callFunction(116,this);return false;"><span class="cke_button_icon cke_button__textcolor_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -544px;">&nbsp;</span><span id="cke_58_label" class="cke_button_label cke_button__textcolor_label">Cor do Texto</span><span class="cke_button_arrow"></span></a><a id="cke_59" class="cke_button cke_button__bgcolor cke_button_off " "="" href="javascript:void('Cor do Plano de Fundo')" title="Cor do Plano de Fundo" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_59_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(117,event);" onfocus="return CKEDITOR.tools.callFunction(118,event);" onmousedown="return CKEDITOR.tools.callFunction(119,event);" onclick="CKEDITOR.tools.callFunction(120,this);return false;"><span class="cke_button_icon cke_button__bgcolor_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -512px;">&nbsp;</span><span id="cke_59_label" class="cke_button_label cke_button__bgcolor_label">Cor do Plano de Fundo</span><span class="cke_button_arrow"></span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_2_contents" class="cke_contents cke_reset" role="presentation" style="height: 200px;"><span id="cke_63" class="cke_voice_label">Pressione ALT+0 para ajuda</span><iframe style="width: 0px; height: 100%;" class="cke_wysiwyg_frame cke_reset" frameborder="0" aria-describedby="cke_63" title="Editor de Texto,editor2" src="" tabindex="0" allowtransparency="true"></iframe></div><span id="cke_2_bottom" class="cke_bottom cke_reset_all" role="presentation" style="-webkit-user-select: none;"><span id="cke_2_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="Arraste para redimensionar" onmousedown="CKEDITOR.tools.callFunction(61, event)">◢</span><span id="cke_2_path_label" class="cke_voice_label">Caminho dos Elementos</span><span id="cke_2_path" class="cke_path" role="group" aria-labelledby="cke_2_path_label"><a id="cke_elementspath_40_1" href="javascript:void('body')" tabindex="-1" class="cke_path_item" title="Elemento body" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(63,1, event );" onclick="CKEDITOR.tools.callFunction(62,1); return false;" role="button" aria-label="Elemento body">body</a><a id="cke_elementspath_40_0" href="javascript:void('p')" tabindex="-1" class="cke_path_item" title="Elemento p" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(63,0, event );" onclick="CKEDITOR.tools.callFunction(62,0); return false;" role="button" aria-label="Elemento p">p</a><span class="cke_path_empty">&nbsp;</span></span></span></div></div></span></div>
+                        <div data-index="2"><span id="item§ds_item_site_delivery" class="mktup_ckeditor" data-original_value="&lt;p&gt;Macac&amp;atilde;o + babador brinde&lt;/p&gt;
+" data-ckeditor="editor3"><div id="cke_editor3" class="cke_3 cke cke_reset cke_chrome cke_editor_editor3 cke_ltr cke_browser_webkit" dir="ltr" lang="pt-br" role="application" aria-labelledby="cke_editor3_arialbl"><span id="cke_editor3_arialbl" class="cke_voice_label">Editor de Texto</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_3_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; -webkit-user-select: none;"><span id="cke_72" class="cke_voice_label">Barra de Ferramentas do Editor</span><span id="cke_3_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_72" onmousedown="return false;"><span id="cke_73" class="cke_toolbar" aria-labelledby="cke_73_label" role="toolbar"><span id="cke_73_label" class="cke_voice_label">Estilos Básicos</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_74" class="cke_button cke_button__bold cke_button_off " "="" href="javascript:void('Negrito')" title="Negrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_74_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(126,event);" onfocus="return CKEDITOR.tools.callFunction(127,event);" onmousedown="return CKEDITOR.tools.callFunction(128,event);" onclick="CKEDITOR.tools.callFunction(129,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -32px;">&nbsp;</span><span id="cke_74_label" class="cke_button_label cke_button__bold_label">Negrito</span></a><a id="cke_75" class="cke_button cke_button__italic cke_button_off " "="" href="javascript:void('Itálico')" title="Itálico" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_75_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(130,event);" onfocus="return CKEDITOR.tools.callFunction(131,event);" onmousedown="return CKEDITOR.tools.callFunction(132,event);" onclick="CKEDITOR.tools.callFunction(133,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -64px;">&nbsp;</span><span id="cke_75_label" class="cke_button_label cke_button__italic_label">Itálico</span></a><a id="cke_76" class="cke_button cke_button__underline cke_button_off " "="" href="javascript:void('Sublinhado')" title="Sublinhado" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_76_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(134,event);" onfocus="return CKEDITOR.tools.callFunction(135,event);" onmousedown="return CKEDITOR.tools.callFunction(136,event);" onclick="CKEDITOR.tools.callFunction(137,this);return false;"><span class="cke_button_icon cke_button__underline_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -192px;">&nbsp;</span><span id="cke_76_label" class="cke_button_label cke_button__underline_label">Sublinhado</span></a><a id="cke_77" class="cke_button cke_button__strike cke_button_off " "="" href="javascript:void('Tachado')" title="Tachado" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_77_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(138,event);" onfocus="return CKEDITOR.tools.callFunction(139,event);" onmousedown="return CKEDITOR.tools.callFunction(140,event);" onclick="CKEDITOR.tools.callFunction(141,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -96px;">&nbsp;</span><span id="cke_77_label" class="cke_button_label cke_button__strike_label">Tachado</span></a><a id="cke_78" class="cke_button cke_button__subscript cke_button_off " "="" href="javascript:void('Subscrito')" title="Subscrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_78_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(142,event);" onfocus="return CKEDITOR.tools.callFunction(143,event);" onmousedown="return CKEDITOR.tools.callFunction(144,event);" onclick="CKEDITOR.tools.callFunction(145,this);return false;"><span class="cke_button_icon cke_button__subscript_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -128px;">&nbsp;</span><span id="cke_78_label" class="cke_button_label cke_button__subscript_label">Subscrito</span></a><a id="cke_79" class="cke_button cke_button__superscript cke_button_off " "="" href="javascript:void('Sobrescrito')" title="Sobrescrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_79_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(146,event);" onfocus="return CKEDITOR.tools.callFunction(147,event);" onmousedown="return CKEDITOR.tools.callFunction(148,event);" onclick="CKEDITOR.tools.callFunction(149,this);return false;"><span class="cke_button_icon cke_button__superscript_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -160px;">&nbsp;</span><span id="cke_79_label" class="cke_button_label cke_button__superscript_label">Sobrescrito</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_80" class="cke_toolbar" aria-labelledby="cke_80_label" role="toolbar"><span id="cke_80_label" class="cke_voice_label">Paragrafo</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_81" class="cke_button cke_button__numberedlist cke_button_off " "="" href="javascript:void('Lista numerada')" title="Lista numerada" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_81_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(150,event);" onfocus="return CKEDITOR.tools.callFunction(151,event);" onmousedown="return CKEDITOR.tools.callFunction(152,event);" onclick="CKEDITOR.tools.callFunction(153,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -768px;">&nbsp;</span><span id="cke_81_label" class="cke_button_label cke_button__numberedlist_label">Lista numerada</span></a><a id="cke_82" class="cke_button cke_button__bulletedlist cke_button_off " "="" href="javascript:void('Lista sem números')" title="Lista sem números" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_82_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(154,event);" onfocus="return CKEDITOR.tools.callFunction(155,event);" onmousedown="return CKEDITOR.tools.callFunction(156,event);" onclick="CKEDITOR.tools.callFunction(157,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -704px;">&nbsp;</span><span id="cke_82_label" class="cke_button_label cke_button__bulletedlist_label">Lista sem números</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_84" class="cke_toolbar" aria-labelledby="cke_84_label" role="toolbar"><span id="cke_84_label" class="cke_voice_label">Estilos</span><span class="cke_toolbar_start"></span><span id="cke_83" class="cke_combo cke_combo__styles  cke_combo_off" role="presentation"><span id="cke_83_label" class="cke_combo_label">Estilo</span><a class="cke_combo_button" hidefocus="true" title="Estilos de Formatação" tabindex="-1" "="" href="javascript:void('Estilos de Formatação')" role="button" aria-labelledby="cke_83_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(159,event,this);" onmousedown="return CKEDITOR.tools.callFunction(161,event);" onfocus="return CKEDITOR.tools.callFunction(160,event);" onclick="CKEDITOR.tools.callFunction(158,this);return false;"><span id="cke_83_text" class="cke_combo_text cke_combo_inlinelabel">Estilo</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_85" class="cke_combo cke_combo__format  cke_combo_off" role="presentation"><span id="cke_85_label" class="cke_combo_label">Formatação</span><a class="cke_combo_button" hidefocus="true" title="Formatação" tabindex="-1" "="" href="javascript:void('Formatação')" role="button" aria-labelledby="cke_85_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(163,event,this);" onmousedown="return CKEDITOR.tools.callFunction(165,event);" onfocus="return CKEDITOR.tools.callFunction(164,event);" onclick="CKEDITOR.tools.callFunction(162,this);return false;"><span id="cke_85_text" class="cke_combo_text cke_combo_inlinelabel">Formatação</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_86" class="cke_combo cke_combo__font  cke_combo_off" role="presentation"><span id="cke_86_label" class="cke_combo_label">Fonte</span><a class="cke_combo_button" hidefocus="true" title="Fonte" tabindex="-1" "="" href="javascript:void('Fonte')" role="button" aria-labelledby="cke_86_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(167,event,this);" onmousedown="return CKEDITOR.tools.callFunction(169,event);" onfocus="return CKEDITOR.tools.callFunction(168,event);" onclick="CKEDITOR.tools.callFunction(166,this);return false;"><span id="cke_86_text" class="cke_combo_text cke_combo_inlinelabel">Fonte</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_87" class="cke_combo cke_combo__fontsize  cke_combo_off" role="presentation"><span id="cke_87_label" class="cke_combo_label">Tamanho</span><a class="cke_combo_button" hidefocus="true" title="Tamanho" tabindex="-1" "="" href="javascript:void('Tamanho')" role="button" aria-labelledby="cke_87_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(171,event,this);" onmousedown="return CKEDITOR.tools.callFunction(173,event);" onfocus="return CKEDITOR.tools.callFunction(172,event);" onclick="CKEDITOR.tools.callFunction(170,this);return false;"><span id="cke_87_text" class="cke_combo_text cke_combo_inlinelabel">Tamanho</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_88" class="cke_toolbar" aria-labelledby="cke_88_label" role="toolbar"><span id="cke_88_label" class="cke_voice_label">Cores</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_89" class="cke_button cke_button__textcolor cke_button_off " "="" href="javascript:void('Cor do Texto')" title="Cor do Texto" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_89_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(174,event);" onfocus="return CKEDITOR.tools.callFunction(175,event);" onmousedown="return CKEDITOR.tools.callFunction(176,event);" onclick="CKEDITOR.tools.callFunction(177,this);return false;"><span class="cke_button_icon cke_button__textcolor_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -544px;">&nbsp;</span><span id="cke_89_label" class="cke_button_label cke_button__textcolor_label">Cor do Texto</span><span class="cke_button_arrow"></span></a><a id="cke_90" class="cke_button cke_button__bgcolor cke_button_off " "="" href="javascript:void('Cor do Plano de Fundo')" title="Cor do Plano de Fundo" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_90_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(178,event);" onfocus="return CKEDITOR.tools.callFunction(179,event);" onmousedown="return CKEDITOR.tools.callFunction(180,event);" onclick="CKEDITOR.tools.callFunction(181,this);return false;"><span class="cke_button_icon cke_button__bgcolor_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -512px;">&nbsp;</span><span id="cke_90_label" class="cke_button_label cke_button__bgcolor_label">Cor do Plano de Fundo</span><span class="cke_button_arrow"></span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_3_contents" class="cke_contents cke_reset" role="presentation" style="height: 200px;"><span id="cke_94" class="cke_voice_label">Pressione ALT+0 para ajuda</span><iframe style="width: 0px; height: 100%;" class="cke_wysiwyg_frame cke_reset" frameborder="0" aria-describedby="cke_94" title="Editor de Texto,editor3" src="" tabindex="0" allowtransparency="true"></iframe></div><span id="cke_3_bottom" class="cke_bottom cke_reset_all" role="presentation" style="-webkit-user-select: none;"><span id="cke_3_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="Arraste para redimensionar" onmousedown="CKEDITOR.tools.callFunction(122, event)">◢</span><span id="cke_3_path_label" class="cke_voice_label">Caminho dos Elementos</span><span id="cke_3_path" class="cke_path" role="group" aria-labelledby="cke_3_path_label"><a id="cke_elementspath_71_1" href="javascript:void('body')" tabindex="-1" class="cke_path_item" title="Elemento body" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(124,1, event );" onclick="CKEDITOR.tools.callFunction(123,1); return false;" role="button" aria-label="Elemento body">body</a><a id="cke_elementspath_71_0" href="javascript:void('p')" tabindex="-1" class="cke_path_item" title="Elemento p" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(124,0, event );" onclick="CKEDITOR.tools.callFunction(123,0); return false;" role="button" aria-label="Elemento p">p</a><span class="cke_path_empty">&nbsp;</span></span></span></div></div></span></div>
+                        <div data-index="3"><span id="item§ds_item_site_specification" class="mktup_ckeditor" data-original_value="&lt;p&gt;100% Algod&amp;atilde;o&lt;/p&gt;
+" data-ckeditor="editor4"><div id="cke_editor4" class="cke_4 cke cke_reset cke_chrome cke_editor_editor4 cke_ltr cke_browser_webkit" dir="ltr" lang="pt-br" role="application" aria-labelledby="cke_editor4_arialbl"><span id="cke_editor4_arialbl" class="cke_voice_label">Editor de Texto</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_4_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; -webkit-user-select: none;"><span id="cke_103" class="cke_voice_label">Barra de Ferramentas do Editor</span><span id="cke_4_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_103" onmousedown="return false;"><span id="cke_104" class="cke_toolbar" aria-labelledby="cke_104_label" role="toolbar"><span id="cke_104_label" class="cke_voice_label">Estilos Básicos</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_105" class="cke_button cke_button__bold cke_button_off " "="" href="javascript:void('Negrito')" title="Negrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_105_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(187,event);" onfocus="return CKEDITOR.tools.callFunction(188,event);" onmousedown="return CKEDITOR.tools.callFunction(189,event);" onclick="CKEDITOR.tools.callFunction(190,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -32px;">&nbsp;</span><span id="cke_105_label" class="cke_button_label cke_button__bold_label">Negrito</span></a><a id="cke_106" class="cke_button cke_button__italic cke_button_off " "="" href="javascript:void('Itálico')" title="Itálico" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_106_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(191,event);" onfocus="return CKEDITOR.tools.callFunction(192,event);" onmousedown="return CKEDITOR.tools.callFunction(193,event);" onclick="CKEDITOR.tools.callFunction(194,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -64px;">&nbsp;</span><span id="cke_106_label" class="cke_button_label cke_button__italic_label">Itálico</span></a><a id="cke_107" class="cke_button cke_button__underline cke_button_off " "="" href="javascript:void('Sublinhado')" title="Sublinhado" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_107_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(195,event);" onfocus="return CKEDITOR.tools.callFunction(196,event);" onmousedown="return CKEDITOR.tools.callFunction(197,event);" onclick="CKEDITOR.tools.callFunction(198,this);return false;"><span class="cke_button_icon cke_button__underline_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -192px;">&nbsp;</span><span id="cke_107_label" class="cke_button_label cke_button__underline_label">Sublinhado</span></a><a id="cke_108" class="cke_button cke_button__strike cke_button_off " "="" href="javascript:void('Tachado')" title="Tachado" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_108_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(199,event);" onfocus="return CKEDITOR.tools.callFunction(200,event);" onmousedown="return CKEDITOR.tools.callFunction(201,event);" onclick="CKEDITOR.tools.callFunction(202,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -96px;">&nbsp;</span><span id="cke_108_label" class="cke_button_label cke_button__strike_label">Tachado</span></a><a id="cke_109" class="cke_button cke_button__subscript cke_button_off " "="" href="javascript:void('Subscrito')" title="Subscrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_109_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(203,event);" onfocus="return CKEDITOR.tools.callFunction(204,event);" onmousedown="return CKEDITOR.tools.callFunction(205,event);" onclick="CKEDITOR.tools.callFunction(206,this);return false;"><span class="cke_button_icon cke_button__subscript_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -128px;">&nbsp;</span><span id="cke_109_label" class="cke_button_label cke_button__subscript_label">Subscrito</span></a><a id="cke_110" class="cke_button cke_button__superscript cke_button_off " "="" href="javascript:void('Sobrescrito')" title="Sobrescrito" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_110_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(207,event);" onfocus="return CKEDITOR.tools.callFunction(208,event);" onmousedown="return CKEDITOR.tools.callFunction(209,event);" onclick="CKEDITOR.tools.callFunction(210,this);return false;"><span class="cke_button_icon cke_button__superscript_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -160px;">&nbsp;</span><span id="cke_110_label" class="cke_button_label cke_button__superscript_label">Sobrescrito</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_111" class="cke_toolbar" aria-labelledby="cke_111_label" role="toolbar"><span id="cke_111_label" class="cke_voice_label">Paragrafo</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_112" class="cke_button cke_button__numberedlist cke_button_off " "="" href="javascript:void('Lista numerada')" title="Lista numerada" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_112_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(211,event);" onfocus="return CKEDITOR.tools.callFunction(212,event);" onmousedown="return CKEDITOR.tools.callFunction(213,event);" onclick="CKEDITOR.tools.callFunction(214,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -768px;">&nbsp;</span><span id="cke_112_label" class="cke_button_label cke_button__numberedlist_label">Lista numerada</span></a><a id="cke_113" class="cke_button cke_button__bulletedlist cke_button_off " "="" href="javascript:void('Lista sem números')" title="Lista sem números" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_113_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(215,event);" onfocus="return CKEDITOR.tools.callFunction(216,event);" onmousedown="return CKEDITOR.tools.callFunction(217,event);" onclick="CKEDITOR.tools.callFunction(218,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -704px;">&nbsp;</span><span id="cke_113_label" class="cke_button_label cke_button__bulletedlist_label">Lista sem números</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_115" class="cke_toolbar" aria-labelledby="cke_115_label" role="toolbar"><span id="cke_115_label" class="cke_voice_label">Estilos</span><span class="cke_toolbar_start"></span><span id="cke_114" class="cke_combo cke_combo__styles  cke_combo_off" role="presentation"><span id="cke_114_label" class="cke_combo_label">Estilo</span><a class="cke_combo_button" hidefocus="true" title="Estilos de Formatação" tabindex="-1" "="" href="javascript:void('Estilos de Formatação')" role="button" aria-labelledby="cke_114_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(220,event,this);" onmousedown="return CKEDITOR.tools.callFunction(222,event);" onfocus="return CKEDITOR.tools.callFunction(221,event);" onclick="CKEDITOR.tools.callFunction(219,this);return false;"><span id="cke_114_text" class="cke_combo_text cke_combo_inlinelabel">Estilo</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_116" class="cke_combo cke_combo__format  cke_combo_off" role="presentation"><span id="cke_116_label" class="cke_combo_label">Formatação</span><a class="cke_combo_button" hidefocus="true" title="Formatação" tabindex="-1" "="" href="javascript:void('Formatação')" role="button" aria-labelledby="cke_116_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(224,event,this);" onmousedown="return CKEDITOR.tools.callFunction(226,event);" onfocus="return CKEDITOR.tools.callFunction(225,event);" onclick="CKEDITOR.tools.callFunction(223,this);return false;"><span id="cke_116_text" class="cke_combo_text cke_combo_inlinelabel">Formatação</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_117" class="cke_combo cke_combo__font  cke_combo_off" role="presentation"><span id="cke_117_label" class="cke_combo_label">Fonte</span><a class="cke_combo_button" hidefocus="true" title="Fonte" tabindex="-1" "="" href="javascript:void('Fonte')" role="button" aria-labelledby="cke_117_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(228,event,this);" onmousedown="return CKEDITOR.tools.callFunction(230,event);" onfocus="return CKEDITOR.tools.callFunction(229,event);" onclick="CKEDITOR.tools.callFunction(227,this);return false;"><span id="cke_117_text" class="cke_combo_text cke_combo_inlinelabel">Fonte</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_118" class="cke_combo cke_combo__fontsize  cke_combo_off" role="presentation"><span id="cke_118_label" class="cke_combo_label">Tamanho</span><a class="cke_combo_button" hidefocus="true" title="Tamanho" tabindex="-1" "="" href="javascript:void('Tamanho')" role="button" aria-labelledby="cke_118_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(232,event,this);" onmousedown="return CKEDITOR.tools.callFunction(234,event);" onfocus="return CKEDITOR.tools.callFunction(233,event);" onclick="CKEDITOR.tools.callFunction(231,this);return false;"><span id="cke_118_text" class="cke_combo_text cke_combo_inlinelabel">Tamanho</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_119" class="cke_toolbar" aria-labelledby="cke_119_label" role="toolbar"><span id="cke_119_label" class="cke_voice_label">Cores</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_120" class="cke_button cke_button__textcolor cke_button_off " "="" href="javascript:void('Cor do Texto')" title="Cor do Texto" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_120_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(235,event);" onfocus="return CKEDITOR.tools.callFunction(236,event);" onmousedown="return CKEDITOR.tools.callFunction(237,event);" onclick="CKEDITOR.tools.callFunction(238,this);return false;"><span class="cke_button_icon cke_button__textcolor_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -544px;">&nbsp;</span><span id="cke_120_label" class="cke_button_label cke_button__textcolor_label">Cor do Texto</span><span class="cke_button_arrow"></span></a><a id="cke_121" class="cke_button cke_button__bgcolor cke_button_off " "="" href="javascript:void('Cor do Plano de Fundo')" title="Cor do Plano de Fundo" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_121_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(239,event);" onfocus="return CKEDITOR.tools.callFunction(240,event);" onmousedown="return CKEDITOR.tools.callFunction(241,event);" onclick="CKEDITOR.tools.callFunction(242,this);return false;"><span class="cke_button_icon cke_button__bgcolor_icon" style="background-image:url(http://localhost:9090/js/libs/ckeditor/plugins/icons.png?t=CAPD);background-position:0 -512px;">&nbsp;</span><span id="cke_121_label" class="cke_button_label cke_button__bgcolor_label">Cor do Plano de Fundo</span><span class="cke_button_arrow"></span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_4_contents" class="cke_contents cke_reset" role="presentation" style="height: 200px;"><span id="cke_125" class="cke_voice_label">Pressione ALT+0 para ajuda</span><iframe style="width: 0px; height: 100%;" class="cke_wysiwyg_frame cke_reset" frameborder="0" aria-describedby="cke_125" title="Editor de Texto,editor4" src="" tabindex="0" allowtransparency="true"></iframe></div><span id="cke_4_bottom" class="cke_bottom cke_reset_all" role="presentation" style="-webkit-user-select: none;"><span id="cke_4_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="Arraste para redimensionar" onmousedown="CKEDITOR.tools.callFunction(183, event)">◢</span><span id="cke_4_path_label" class="cke_voice_label">Caminho dos Elementos</span><span id="cke_4_path" class="cke_path" role="group" aria-labelledby="cke_4_path_label"><a id="cke_elementspath_102_1" href="javascript:void('body')" tabindex="-1" class="cke_path_item" title="Elemento body" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(185,1, event );" onclick="CKEDITOR.tools.callFunction(184,1); return false;" role="button" aria-label="Elemento body">body</a><a id="cke_elementspath_102_0" href="javascript:void('p')" tabindex="-1" class="cke_path_item" title="Elemento p" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(185,0, event );" onclick="CKEDITOR.tools.callFunction(184,0); return false;" role="button" aria-label="Elemento p">p</a><span class="cke_path_empty">&nbsp;</span></span></span></div></div></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fotos">
+                <div class="album">
+                    <span class="capa" style="visibility: visible; display: block;" data-isloading="false"><span class="keep_height"></span><img src="./item_files/5023553117_40227d6676_z.jpg" id="item§img§normal_image_1" data-idx="0"></span>
+                    <span class="thumb" style="visibility: visible; display: inline-block;" data-isloading="false"><span class="keep_height"></span><img src="./item_files/coxacreme.jpg" id="item§img§normal_image_2" data-idx="1"></span>
+                    <span class="thumb" style="visibility: visible; display: inline-block;" data-isloading="false"><span class="keep_height"></span><img src="./item_files/batata-01(1).jpg" id="item§img§normal_image_3" data-idx="2"></span>
+                    <span class="thumb" style="visibility: visible; display: inline-block;" data-isloading="false"><span class="keep_height"></span><img src="./item_files/dsc06330.jpg" id="item§img§normal_image_4" data-idx="4"></span>
+                </div>
+
+                <div class="toggleArea">
+                    <span class="legend">Destacar na capa?</span>
+                    <div class="customradio" id="item§in_featured" data-original_value="1">
+                        
+                        
+                    <div class="customradio_content true"><input type="radio" value="true" name="lojavirtual" checked="checked"><input type="radio" value="false" name="lojavirtual"><div class="customradio_button_content"><div class="customradio_button ui-draggable"><div class="areaOn"></div><div class="button_active"></div><div class="areaOff"></div></div></div></div></div>
+                </div>
+
+                <div class="destaque" style="visibility: visible; display: block;" data-isloading="false"><div class="keep_height"></div><img src="./item_files/batata-01(1).jpg" id="item§img§featured_image" data-in_featured="1" data-idx="3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hr">&nbsp;</div>
+</article>
+
+<div class="notificationBar">
+    <div class="buttonPanel">
+        <button type="button" class="actionButton addActionButton"></button>
+    </div>
+    <div class="fr">      
+        <button type="button" class="button mainButton" id="item§bt_save">Salvar</button>
+    </div>
+   <div class="notification"><div class="ico"><span></span></div><p></p></div>
+    <div class="cb"></div>
+</div>
+</div>
+	</section>
+</article>
+</section>
+        <footer class="MainFooter"><div class="overlay"></div><div class="blackBar"></div></footer>
+    </div>  
+    <div id="dialogConfirm" class="dialog"><p class="tac">Deseja continuar essa ação?</p></div>
+    <script type="text/javascript">
+        var Mktup = null;
+        $(document).ready(function () {
+           Mktup = new MktUP_Instance();
+        });
+    </script>  
+
+
+<ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul></body></html>
+
+<script type="text/javascript">
+    var Move = function (elem, range) {
+        this.elem = elem;
+        this.range = range;
+
+        this.toLeft = function () { this.elem.scrollLeft -= this.range; };
+        this.toRight = function () { this.elem.scrollLeft += this.range; };
+        this.toUp = function () { this.elem.scrollTop -= this.range; };
+        this.toDown = function () { this.elem.scrollTop += this.range; };
+    };
+
+    var m = null;
+
+    m = new Move(document.getElementById('preview_area'), 70);
+
+    document.getElementById('toLeft').onclick = function () { m.toLeft(); }
+    document.getElementById('toRight').onclick = function () { m.toRight(); }
+
+    $(document).ready(function () {
+        $('#custonMove').customselect();
+
+        // Modo da barra ( modo Unico )
+        $('#btUnic').click(function () {
+            $('#btGrid').removeClass('active');
+            $(this).addClass('active');
+            $('.typtGrid').removeClass('active');
+            $('.typtSingle').addClass('active');
+            $('.boxContentGrid').hide();
+        });
+
+        // Modo da barra ( modo Grade )
+        $('#btGrid').click(function () {
+            $('#btUnic').removeClass('active');
+            $(this).addClass('active');
+            $('.typtSingle').removeClass('active');
+            $('.typtGrid').addClass('active');
+            $('.boxContentGrid').show();
+        });
+
+        // Tipo de estoque / tipo de pedido
+        $('.typtGrid button').each(function (i, item) {
+            $('.typtGrid button').click(function () {
+                $(item).removeClass('active');
+                $(this).addClass('active');
+
+                $('.tableGrid').removeAttr('class').addClass('tableGrid').addClass(this.dataset.type);
+            });
+        });
+
+        // Modo de edição dos campos
+        $('.tableGrid .inputText').click(function () {
+            if ($('.tableGrid').hasClass('minimum')) {
+                $(this).removeAttr('readonly');
+
+                $(this).focusout(function () {
+                    $(this).attr('readonly', 'readonly');
+                });
+            }
+        });
+
+        // Troca do botão adicionar pra o select com adição de conteúdo
+        $('#addColor').click(function () {
+            /* Inserindo nova cor */
+            $('#custonSelectAdd').customselect({
+                'onClick': function () {
+                    // Nova linha na tabela
+                    var q = $('.tableGrid tbody tr:first-child td').size();
+
+                    var htmlTabela = "<tr>";
+                    for (var i = 0; i < q; i++) { htmlTabela += "<td><span><input type='text' /></span></td>"; }
+                    htmlTabela = "</tr>";
+
+                    $(htmlTabela).appendTo(".tableGrid tbody");
+
+                    // Nova linha no indice
+                    var newObj = {
+                        id: Number(new Date()),
+                        text: this.search_input[0].value
+                    }
+
+                    var htmlLista = "<li><span class='fieldTitle'>" + this.search_input[0].value + "</span><span class='color'><img alt='' class='uploader_editImage' /><span/></li>";
+
+                    $(htmlLista).appendTo("ul");
+
+                    $('.uploader_editImage').click(function () {
+                        Mktup.crop();
+                    });
+
+                    $(this.target).customselect('addNewItem', newObj).customselect('clear');
+
+                    //ESCONDER SELECT EXIBIR ADD
+                    // $('#custonSelectAdd')[0].attr.main.hide()
+                }
+            });
+            $(this).parent().hide();
+        });
+
+        
+
+    });
+</script>

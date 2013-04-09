@@ -1,0 +1,26 @@
+.msgbox_container {
+	position: relative;
+}
+
+.msgbox_main {
+	-webkit-box-sizing: border-box; 
+	-webkit-appearance: none; 
+	color: #fff; 
+	font-family: Arial; 
+	font-weight: bold; 
+	font-size: 16px; 
+	border: none; 
+	border-radius: 3px; 
+	padding: 10px; 
+	-webkit-box-shadow: 2px 2px 1px 0px #d9d9d9; 
+	position: absolute;
+	left: 0px;
+	z-index: 3;
+	display: none;
+	white-space: nowrap;
+}
+
+.msgbox_main.hint { background-color: #8cc63f; }
+.msgbox_main.erro { background-color: #000; }
+
+.msgbox_main .msgbox_arrow { position: absolute; bottom: -9px; }

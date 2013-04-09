@@ -1,0 +1,70 @@
+/* reset */
+* { margin: 0; padding: 0; }
+ul { list-style: none; }
+a { text-decoration: none; outline: none; }
+img,
+fieldset { border: none; }
+button { cursor: pointer; }
+/* reset fim */
+
+/* atalhos */
+.fl { float: left; }
+.fr { float: right; }
+.cb { clear: both; }
+.dn { display: none; }
+.pa { position: absolute; }
+.pr { position: relative; }
+/* atalhos fim */
+
+/* Geral */
+body { background-color: #fff; }
+#page { font-family: Arial, Helvetica, Sans-serif; width: 998px; margin: 0 auto; }
+#main { width: 998px; }
+/* Geral fim */
+
+/* Header */
+header { width: 998px; height: 123px; position: fixed; z-index: 1000; }
+header .contentHeader { width: 998px; height: 123PX; }
+header .contentHeader .logo { position: absolute; top: 17px; left: 30px; }
+header .contentHeader { border-left: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; background: url("../img/barraFlutuanteGrande.png") repeat-x left top; }
+header .contentHeader h1 { width: 450px; height: 94px; float: left; }
+header .contentHeader h1 a .logoSmall { display: none; }
+header.headerSmall .contentHeader { background: url("../img/barraFlutuantePequeno.png") repeat-x left top; }
+header.headerSmall .contentHeader h1 a .logoBig { display: none; }
+header.headerSmall .contentHeader h1 a .logoSmall { display: block; }
+header .contentHeader a.button { float: right; background-color: #ffa200; width: 191px; height: 34px; line-height: 34px; text-align: center; color: #fff; text-transform: uppercase; margin: 7px 9px 0 0; font-family: Arial; font-size: 14px; font-weight: bold; border-radius: 3px; box-shadow: 1px 1px 10px -2px #000; }
+.ipad header .contentHeader a.button { box-shadow: none; }
+/* Header fim */
+
+/* Content */
+section { width: 998px; border: 1px solid #d7d7d7; border-top: none; }
+section .mainContent { height: 180px; }
+section .content { position: relative; width: 998px; border-top: 1px solid #d7d7d7;  background: -webkit-linear-gradient(top,#f2f2f2 10%,#fff 90%); }
+.gecko section .content { background: -moz-linear-gradient(top,#f2f2f2 10%,#fff 90%); }
+section .content .boxText { padding: 20px; }
+section .content p a { color: inherit; text-decoration: underline; }
+section .content .boxTitContent { width: 998px; text-align: center; z-index: 10;  position: absolute; top: -34px; }
+section .content .titContent { height: 64px; line-height: 64px; text-align: center; padding: 0 20px; color: #8dc341; font-size: 46px; text-transform: uppercase; background-color: #fff; border-radius: 3px; box-shadow: 4px 4px 18px -7px #000; display: inline; letter-spacing: -1px; }
+.ipad section .content .titContent { box-shadow: none; }
+section .content .titContent span { text-transform: lowercase; }
+section .content .subTitContent { text-align: center; margin: 60px 0 25px 0; font-size: 28px; font-weight: normal; }
+.content p { color: #000; font-size: 17px; line-height: 25px; margin: 0 auto 25px; }
+#main a.btMainSignUp { margin: 10px auto; display: block; width: 998px; background-color: #8dc341; height: 74px; line-height: 74px; text-align: center; color: #fff; text-transform: uppercase; font-family: Arial; font-size: 34px; font-weight: bold; border-radius: 3px; letter-spacing: -1px; }
+/* Content fim */
+
+/* Footer */
+footer{ height: 29px; padding-top: 10px; background: -webkit-linear-gradient(top, #fcfcfc 0, #f3f3f3 100%); border: 1px solid #f0f0f0; width: 998px; margin: 0 auto; }
+.gecko footer { background: -moz-linear-gradient(top,#fcfcfc 10%,#f3f3f3 100%); }
+.ie footer { background-color: #fcfcfc; }
+.android footer { margin-bottom: 25px; }
+footer nav { float: left; }
+footer nav a:first-child { border-left: none; padding-left: 10px; }
+footer nav a { color: #747474; border-left: 1px solid #d8d8d8; font: 12px/11px Arial; font-weight: bold; padding: 0 5px 0 5px; text-decoration: none; display: inline-block; text-transform: uppercase; height: 24px; }
+footer nav a.twitter { width: 20px; height: 24px; background: url("../img/socialMedia.gif") no-repeat 10px 0; text-indent: -99999px; margin-right: 5px; }
+footer nav a.facebook { width: 20px; background: url("../img/socialMedia.gif") no-repeat -20px 0; border-left: none; text-indent: -99999px; padding: 0; }
+footer nav span { display: inline-block; }
+footer div p { color: #747474; text-align: right; margin-right: 25px; font: bold 12px Arial; }
+#cadastro footer,
+#confirmacao footer,
+#comingSoon footer { margin-top: 10px; }
+/* Footer fim */

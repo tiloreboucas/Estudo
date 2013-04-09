@@ -1,0 +1,270 @@
+﻿
+<font face="arial" size="2" color="#000000">
+<font size="3"><b>Bem-vindo ao MarketUP!</b></font>
+<br><br>
+Agradecemos por aderir ao MarketUP, nosso sistema para gestão de empresas. Nossa empresa está localizada em 16154 Townshiplane, Delaware City, Delaware- USA. e prestamos nossos serviços com abrangência global. No Brasil somos representados comercialmente pela Nuvemsis Participações Ltda. localizada na Av. Paulista, 1274, 18a, São Paulo, SP, 01311-925, telefone: 3895-7038, CNPJ:13998916/0001-24. 
+<br><br>
+ESTE CONTRATO ENTRE VOCÊ E A MARKETUP REGULA SEU USO DO PRODUTO E SISTEMA (COLETIVAMENTE REFERIDOS COMO O "SERVIÇO"). É IMPORTANTE QUE ANTES DE CONCORDAR COM O ESSA CONTRATAÇÃO, VOCÊ LEIA E COMPREENDA OS TERMOS SEGUINTES: AO CLICAR EM "CONCORDO", VOCÊ ESTARÁ CONCORDANDO QUE ESTES TERMOS SE APLICARÃO CASO VOCÊ OPTE POR ACESSAR OU USAR O SISTEMA.
+<br><br>
+A MarketUP & Cia Ltd é a fornecedora do MarketUP que permite que você utilize o sistema na internet, disponibilizando uma gama de produtos de apoio à gestão e operação de negócios, sob os termos e condições previstos neste contrato. Assim que você se cadastrar, seu conteúdo será automaticamente enviado para e armazenado pela MarketUP & Cia Ltd, em diversas localidades e de diversas maneiras eletrônicas e até físicas.
+<br><br><br>
+<b>1.     Aceitação dos Termos</b>
+<br><br>
+1.1.    Para usar o sistema, o usuário deverá primeiro concordar com os Termos, sendo que caso não aceite esse contrato, o acesso ao MarketUP não será concedido.
+<br><br>
+1.2.    No caso de essa opção ser disponibilizada pelo MarketUP no cadastro da empresa, o usuário deve aceitar os Termos clicando para aceitar ou concordar com os mesmos.
+<br><br>
+1.3.    O usuário não poderá usar o sistema nem aceitar os Termos se:
+<br><br>
+1.3.1.   Não tiver idade legal e capacidade jurídica para celebrar o presente Contrato com a MarketUP; 
+<br><br>
+1.3.2.   For uma pessoa com restrições quanto ao recebimento de serviços impostas pelas leis aplicáveis, incluindo, mas não somente, as do país onde o usuário é residente ou a partir do qual utiliza o sistema.
+<br><br>
+Antes de continuar, o usuário deverá imprimir ou guardar uma cópia local dos Termos Universais em seus arquivos.
+<br><br><br>
+<b>2.     Requisitos para uso do sistema</b>
+<br><br>
+2.1.    O sistema está disponível apenas para indivíduos com 18 anos de idade ou mais. Se você tem 18 anos de idade ou mais, porém menos do que a idade de maioridade em seu país de residência, você deve rever este contrato juntamente com seus pais ou responsáveis para se certificar que você e seus pais ou responsáveis o compreendam e tenham a capacidade jurídica para celebrá-lo.
+<br><br>
+2.2.    Para usar o MarketUP você não pode ser uma pessoa legalmente proibida de utilizar o sistema sob as leis aplicáveis, incluindo as do país em que você reside ou de onde você usa o sistema. Ao aceitar este contrato, você declara que compreende e concorda com o exposto acima
+<br><br>
+2.3.    O uso do MarketUP exige dispositivos compatíveis, acesso à Internet, e poderá exigir atualizações periódicas; podendo ser afetado pelo desempenho destes fatores. Você concorda que atenderá a estes requisitos, que podem variar periodicamente. É sua responsabilidade a manutenção da compatibilidade com nossos sistemas. 
+<br><br><br>
+<b>3.     Não revender  o sistema</b>
+<br><br>
+Você concorda em não reproduzir, copiar, duplicar vender, revender, alugar ou comercializar o sistema (ou qualquer parte do mesmo) para nenhum fim e de qualquer forma, direto ou indireto, de fato ou de direito.
+<br><br><br>
+<b>4.     Objeto dos serviços </b>
+<br><br>
+4.1.    O presente contrato tem por objeto o licenciamento temporário, não exclusivo e não transferível, ao usuário pessoa física ou jurídica, de um conjunto de soluções para a gestão e operação de um negócio.
+<br><br>
+4.2.    A licença de uso do MarketUP será efetivada e controlada pela MarketUP & Cia Ltd., podendo ser rescindida a qualquer tempo, independentemente de motivação.
+<br><br>
+4.3.    O MarketUP foi desenvolvido para acesso e uso por meio de um browser WEB (navegador de Internet), não se comprometendo a dar qualquer suporte a nenhuma plataforma. Para obter maiores informações acesse: http://suporte.marketup.com
+<br><br>
+4.4.    O serviço de hospedagem necessário para o funcionamento do MarketUP são próprios ou de terceiros e serão contratados exclusivamente pela MarketUP & Cia Ltd, , assim como outros recursos e serviços que sejam considerados pela MarketUP & Cia Ltd, assim como aqueles necessários ao regular desenvolvimento do sistema, nos termos deste instrumento.
+<br><br><br>
+<b>5.     Declaração de direitos e responsabilidades</b>
+<br><br>
+Esta Declaração de direitos e responsabilidades ("Declaração", "Termos" ou "DDR") é baseada nos princípios da MarketUP & Cia Ltd, e são nossos termos de serviço que regem nosso relacionamento com os usuários e outras pessoas que interagem com o MarketUP. Ao usar ou acessar o MarketUP, você concorda com esta DDR. 
+<br><br>
+5.1.    A MarketUP & Cia Ltd preserva-se o direito de não manter as contas que não atendam aos seus critérios de segurança internos, ou que estejam em desacordo com as leis aplicáveis, em qualquer jurisdição, bem como a, independentemente de justificativa, desativar contas que, em seu entender, sejam utilizadas ou possam ser utilizadas para fins ilegais, imorais e/ou que possam não atender aos padrões éticos do MarketUP.
+<br><br>
+5.2.    É direito da MarketUP & Cia Ltd fazer atualizações no sistema de interface, estrutura, módulos, recursos e produtos, independentemente de qualquer aviso prévio e a qualquer tempo;
+<br><br>
+5.3.    Cabe a MarketUP & Cia Ltd o direito de descontinuar módulos, recursos e/ou produtos do sistema mediante aviso prévio com pelo menos um mês de antecedência;
+<br><br>
+5.4.    A MarketUP & Cia Ltd reserva-se ainda o direito de integrar a solução com outras empresas e/ou soluções diversas, independentemente de qualquer aviso prévio;
+<br><br>
+5.5.    Limitação de responsabilidade - Na extensão máxima permitida pela lei, a MarketUP & Cia Ltd não será responsável, direta ou indiretamente, de fato ou de direito, por quaisquer os danos, de qualquer natureza, sem qualquer limitação, tais como, mas não somente: danos por lucros cessantes, danos emergentes, interrupção nos negócios, perda de informações comerciais ou outras perdas pecuniárias, por todas as questões referentes aos tributos e taxas devidos e ou questões jurídicas e legais resultantes do uso, do não uso, da inabilidade no uso do sistema ou de erros ou falhas no referido sistema, ainda que a MarketUP & Cia Ltd tenha sido alertada acerca da possibilidade de ocorrência de tais danos;
+<br><br>
+5.6.    A MarketUP & Cia Ltd declara-se isenta de qualquer responsabilidade pelo uso do sistema, por sua má utilização,  por qualquer uso fraudulento e indevido ou ainda por erros nos cálculos e nos dados armazenados no sistema;
+<br><br>
+5.7.    O uso do sistema se dará por sua conta e risco. Nós fornecemos o sistema no estado em que se encontra sem garantias expressas ou implícitas. Não garantimos que o MarketUP ficará sempre seguro, protegido, sem erros, nem que o MarketUP sempre funcionará corretamente sem interrupções, atrasos ou imperfeições .
+<br><br><br>
+<b>6.     Política de Privacidade do MarketUP</b>
+<br><br>
+6.1.    Elaboramos nossa política de uso de dados para divulgar como você pode usar o MarketUP e como coletamos e podemos usar seu conteúdo e informações. 
+<br><br>
+6.2.    Você compreende que ao usar o sistema, você consente e concorda com a coleta e uso de todas as informações sobre você e seu uso do sistema de acordo com a Política de Privacidade. Você consente e concorda, ainda, que a MarketUP & Cia Ltd pode coletar, usar, transmitir, processar e manter informação relacionada à sua conta e empresa. A informação coletada pelo MarketUP quando você usa o sistema pode incluir também informação técnica ou de diagnóstico relacionada a seu uso que pode ser utilizada pela MarketUP & Cia Ltd  para apoiar, melhorar e aperfeiçoar os produtos e serviços do MarketUP. 
+<br><br>
+6.3.    Você compreende e concorda, ainda, que esta informação pode ser transferida para o Brasil e/ou outros países para armazenamento, processamento e uso pela MarketUP & Cia Ltd, suas afiliadas e/ou prestadoras de serviços.
+<br><br><br>
+<b>7.     Segurança da conta e senhas do usuário</b>
+<br><br>
+7.1.    O usuário concorda e compreende que será responsável por manter a confidencialidade das senhas associadas a qualquer conta que utilize para acessar o sistema.
+Dessa forma, o usuário concorda que será o único responsável perante o MarketUP e quaisquer terceiros, por todas as atividades que ocorram na respectiva conta.
+<br><br>
+7.2.    Se tomar conhecimento de qualquer utilização não autorizada da sua senha ou da sua conta, o usuário concorda em notificar imediatamente o http://suporte.marketup.com ou atendimento@marketup.com.
+<br><br><br>
+<b>8.     Sua Conta do MarketUP</b>
+<br><br>
+Você precisará se cadastrar no nosso sistema para poder criar sua conta do MarketUP.
+<br><br><br>
+<b>9.     Conteúdo e sua Conduta</b>
+<br><br>
+9.1.    Conteúdo
+<br><br>
+"Conteúdo" significa qualquer informação que possa ser gerada ou encontrada através do uso do sistema, tais como arquivos de dados, características do dispositivo e outros materiais semelhantes. Você compreende que todo o conteúdo é de responsabilidade exclusiva da pessoa de quem tal conteúdo se originou. Isto significa que você, e não a MarketUP & Cia Ltd, é exclusivamente responsável por qualquer conteúdo que você exporte, importe, poste, envie por e-mail, transmita, armazene ou de outra forma disponibilize através do seu uso do sistema. O MarketUP não controla o conteúdo postado através do sistema, nem garante sua precisão, integridade ou qualidade de tal conteúdo. Você entende e concorda que seu uso do sistema e qualquer conteúdo serão exclusivamente por seu próprio risco.
+<br><br>
+9.2.    Sua Conduta
+<br><br>
+9.2.1.   Você concorda que não utilizará o sistema para exportar, importar, postar, enviar por e-mail, transmitir, armazenar, ou de outra forma disponibilizar qualquer conteúdo que seja ilícito, vexatório, ameaçador, prejudicial, injurioso, difamatório, calunioso, abusivo, violento, obsceno, vulgar, invasivo da privacidade de terceiro, ocioso racial ou etnicamente ofensivo ou de outra forma censurável;
+<br><br>
+9.2.2.   Você concorda que não irá perseguir, assediar, ameaçar ou prejudicar qualquer terceiro;
+<br><br>
+9.2.3.   Você concorda que não irá solicitar informações pessoais ou de outra natureza de um menor (qualquer pessoa com menos de 18 anos ou qualquer outra idade que a legislação local defina como menor), incluindo, mas não se limitando ao seguinte: fotos, filmes, imagens, nome, completo ou incompleto, sobrenome, endereço, CEP, número de telefone, ou outros dados do menor;
+<br><br>
+9.2.4.   Você concorda que não fingirá ser qualquer indivíduo ou entidade que você não seja. Você não poderá personificar-se ou apresentar-se falsamente como outra pessoa (incluindo celebridades), entidade, outro usuário do MarketUP, funcionário da MarketUP & Cia Ltd, um líder cívico ou do governo, ou de outra forma falsear sua afiliação com uma pessoa ou entidade (O MarketUP reserva-se o direito de rejeitar ou bloquear qualquer ID ou endereço de e-mail que possam ser considerados como uma personificação ou deturpação de sua identidade, ou uma apropriação indevida do nome ou identidade de outra pessoa);
+<br><br>
+9.2.5.   Você concorda que não realizará qualquer violação de direito autoral ou outros direitos de propriedade intelectual (incluindo exportar qualquer conteúdo ao qual você não tenha o direito de exportar) ou divulgará qualquer segredo de negócio ou informação confidencial em violação a um contrato de confidencialidade, emprego ou não divulgação;
+<br><br>
+9.2.6.   Você concorda que não postará, enviará, transmitirá ou de outra forma disponibilizará quaisquer mensagens de e-mail não solicitadas ou autorizadas, propagandas, materiais promocionais, lixo eletrônico, spam, cartas correntes, incluindo, sem limitação, publicidade comercial de massa e anúncios informativos;
+<br><br>
+9.2.7.   Você concorda em não forjar qualquer cabeçalho de pacote TCP-IP ou qualquer parte de informação de cabeçalho em um e-mail ou postagem de grupo de notícias, ou de qualquer outra forma, inserir informação em um cabeçalho de forma a induzir os destinatários ao erro quanto à origem de qualquer conteúdo transmitido através do sistema ("spoofing");
+<br><br>
+9.2.8.   Você concorda em não exportar, postar, enviar por e-mail, transmitir armazenar ou de outra forma disponibilizar qualquer material que contenha vírus ou outro código de computador, arquivos ou programas elaborados para prejudicar, interferir ou limitar a operação normal do sistema (ou qualquer parte do mesmo).
+<br><br>
+9.2.9.   Você concorda em não interferir com ou interromper o sistema (incluindo acessar o MarketUP através de quaisquer meios automatizados, tais como scripts e rastreadores), ou quaisquer servidores ou redes conectados ao sistema, ou quaisquer políticas, requisitos ou regulamentos de redes conectadas ao sistema (incluindo qualquer acesso não autorizado a, uso ou monitoramento de dados ou tráfego nestes);
+<br><br>
+9.2.10.  Você concorda em não planejar ou executar qualquer atividade ilegal; 
+<br><br>
+9.2.11.  Você concorda em não reunir e armazenar informações dos usuários e ou do MarketUP para serem usadas em relação a qualquer uma das atividades acima expostas, sejam ilícitas ou não.
+<br><br><br>
+<b>10.  Disponibilidade do Sistema</b>
+<br><br>
+O sistema, ou qualquer recurso ou parte do mesmo, pode não estar disponível em todas as línguas ou em todos os países, e a MarketUP & Cia Ltd não declara que o sistema, ou qualquer recurso ou parte do mesmo, seja apropriado ou disponível para uso em qualquer localidade em particular. Na medida em que você opte por acessar e usar o sistema, você o faz de sua própria iniciativa e é responsável pelo cumprimento de quaisquer leis aplicáveis, incluindo, mas não se limitando a, quaisquer leis locais aplicáveis.
+<br><br><br>
+<b>11.  Sigilo e Confidencialidade</b>
+<br><br>
+A MarketUP & Cia Ltd concorda em manter como confidencial os dados privados do usuário, não podendo dar conhecimento a terceiros, seja sob qualquer motivo ou argumento, a não ser que previamente autorizado pelo usuário ou impelido a fazê-lo por determinação legal ou imposição judicial.
+<br><br>
+Outrossim, a MarketUP & Cia Ltd manterá informações sobre os seus dados, incluindo, mas não se limitando àquelas relativas ao registro da conta do MarketUP, sendo que deverá manter sigilo sobre as mesmas, e exigindo de seus empregados, prepostos, contratados, procedimento idêntico se não houver imposição por lei para o acesso a esses dados.
+<br><br><br>
+<b>12.  Aviso de Direito Autoral - DMCA (Lei de Direitos Autorais do Milênio Digital)</b>
+<br><br>
+Caso você acredite que qualquer conteúdo ao qual você reivindica seus direitos foi violado por qualquer um utilizando o sistema, por favor, contate a MarketUP & Cia Ltd, que poderá, a seu exclusivo critério, suspender e/ou cancelar contas de usuários que sejam considerados violadores recorrentes.
+<br><br><br>
+<b>13.  Cancelamento por você</b>
+<br><br>
+Você poderá cancelar sua conta e/ou parar de utilizar o Sistema a qualquer momento. Caso você deseje parar de usar o MarketUP em seu dispositivo, você pode cancelar sua conta MarketUP clicando no botão "Apagar conta", disponível na tela das configurações. Para cancelar sua conta entre em contato com: http://suporte.marketup.com.
+<br><br><br>
+<b>14.  Cancelamento pela MarketUP & Cia Ltd</b>
+<br><br>
+A MarketUP & Cia Ltd poderá, a qualquer tempo, e sem notificação prévia, imediatamente terminar ou suspender sua conta e/ou seu acesso ao sistema MarketUP se, em seu entender, tiver causas para tal cancelamento como, mas não somente:
+<br><br>
+14.1. Violações deste contrato ou outras políticas ou diretrizes ao qual este instrumento faça referência e/ou postadas no sistema;
+<br><br>
+14.2. Receber solicitação sua para cancelar ou excluir sua conta;
+<br><br>
+14.3. Receber solicitação e/ou ordem de autoridade legal, órgão judiciário ou outra entidade governamental;
+<br><br>
+14.4. Quando a prestação do serviço para você seja ou tenha se tornado ilícita;
+<br><br>
+14.5. Em virtude de problemas ou questões técnicas ou de segurança inesperadas;
+<br><br>
+14.6. Houver ou suspeitar de sua participação, direta ou indireta, em atividades fraudulentas ou ilegais. Tal cancelamento ou suspensão será feita pela MarketUP & Cia Ltd a seu exclusivo critério e a MarketUP & Cia Ltd não será responsável perante você ou quaisquer terceiros por quaisquer danos que possam resultar ou originar-se se tal cancelamento ou suspensão da sua conta e/ou acesso ao sistema MarketUP. 
+<br><br><br>
+<b>15.  Efeitos do Cancelamento</b>
+<br><br>
+Mediante o cancelamento da sua conta você perderá todo o acesso ao sistema e todas as partes do mesmo. Adicionalmente, após um período de tempo, o MarketUP deletará informações e dados armazenados em ou como parte de sua(s) conta(s). 
+<br><br><br>
+<b>16.  Direitos de propriedade</b>
+<br><br>
+16.1. O usuário reconhece e concorda que a MarketUP & Cia Ltd, detém todos os direitos legais, títulos e participações relativas ao sistema MarketUP, incluindo quaisquer direitos que subsistam no sistema (quer esses direitos estejam registrados ou não, e em qualquer parte do mundo onde esses direitos possam existir). Além disso, o usuário reconhece confidenciais que o sistema pode conter informações designadas pela MarketUP & Cia Ltd e que não as revelará sem o prévio consentimento escrito da MarketUP & Cia Ltd.
+<br><br>
+16.2. A menos que o usuário tenha concordado por escrito em contrato com a MarketUP & Cia Ltd, nada nos Termos lhe dá o direito de utilizar qualquer uma das marcas registradas, marcas comerciais, marcas de serviços, logotipos, nomes de domínios e outras características de marca especiais da MarketUP & Cia Ltd.
+<br><br>
+16.3.  Se lhe tiver sido concedido um direito explícito de utilização de qualquer uma dessas características de marca através de um contrato escrito em separado celebrado com a MarketUP & Cia Ltd., o usuário concorda que o uso dessas características será feito de acordo com esse contrato, com quaisquer cláusulas aplicáveis dos Termos e com as diretrizes de uso das características de marca do MarketUP, conforme possam ser atualizadas periodicamente.
+<br><br>
+16.4.  À exceção da licença limitada, a MarketUP & Cia Ltd reconhece e aceita que não obtém qualquer direito, título ou participação do usuário (ou dos seus licenciadores) de acordo com estes Termos relativamente a qualquer conteúdo que o usuário possa enviar publicar, transmitir ou apresentar nos serviços ou através deles, incluindo quaisquer direitos de propriedade intelectual que subsistam nesse conteúdo (quer esses direitos estejam registrados ou não, e em qualquer parte do mundo onde esses direitos possam existir). A menos que tenha acordado por escrito de outra forma com a MarketUP & Cia Ltd, o usuário concorda que é responsável por proteger e aplicar esses direitos e que a MarketUP & Cia Ltd não tem qualquer obrigação de fazê-lo em seu nome.
+<br><br>
+16.5. O usuário concorda que não removerá, ocultará e nem alterará quaisquer avisos de direitos de propriedade (incluindo avisos de direitos de autor e de marcas comerciais) que possam estar afixados ou contidos no sistema.
+<br><br><br>
+<b>17.   Backup do seu conteúdo</b>
+<br><br>
+O sistema MarketUP poderá realizar o backup dos dados alimentados no sistema. A MarketUP & Cia Ltd deverá usar suas habilidades razoáveis e devidos cuidados ao fornecer o sistema, mas a MarketUP & Cia Ltd não garante que qualquer conteúdo que você possa armazenar ou acessar através do sistema não estará sujeito a danos irrecuperáveis, inadvertidos, corrupção ou perda, declarando que não se responsabilizará pelas perdas ou danificações que podem ocorrer.
+<br><br><br>
+<b>18.   Licença do MarketUP</b>
+<br><br>
+18.1. O usuário retém direitos em relação ao conteúdo que enviar, publicar ou exibir no sistema ou através dele. Ao enviar, publicar ou exibir qualquer conteúdo, o usuário concede a MarketUP & Cia Ltd uma licença irrevogável, perpétua, mundial, isenta de royalties e não exclusiva de reproduzir, adaptar, modificar, traduzir, publicar, distribuir publicamente, exibir publicamente e distribuir qualquer conteúdo que o usuário enviar, publicar ou exibir no sistema MarketUP ou através dele. Essa licença tem como único objetivo permitir a MarketUP & Cia Ltd apresentar, distribuir e promover os serviços.
+<br><br>
+18.2. O usuário concorda que essa licença inclui o direito da MarketUP & Cia Ltd de disponibilizar esse conteúdo a outras empresas, organizações ou indivíduos com quem a MarketUP & Cia Ltd tenha relações para o fornecimento de serviços licenciados e para o uso desse conteúdo.
+O usuário compreende que a MarketUP & Cia Ltd, ao efetuar as etapas técnicas necessárias para fornecer o sistema MarketUP e os serviços aos nossos usuários, pode:
+<br><br>
+18.2.1.  Transmitir ou distribuir o seu conteúdo por várias redes públicas e em várias mídias de dados; 
+<br><br>
+18.2.2.  Efetuar as alterações necessárias ao conteúdo do usuário para ajustar e adaptar esse conteúdo aos requisitos técnicos de conexão de redes, dispositivos, serviços ou mídia. O usuário concorda que essa licença permitirá a MarketUP & Cia Ltd realizar tais ações
+<br><br>
+18.3. O usuário confirma e garante a MarketUP & Cia Ltd que tem todos os direitos, poderes e autoridade necessários para outorgar a licença citada anteriormente.
+<br><br><br>
+<b>19.   Indenização</b>
+<br><br>
+Você concorda em defender, indenizar e manter a MarketUP & Cia Ltd, suas afiliadas, subsidiárias, diretores, dirigentes, funcionários, agentes, sócios, contratantes e licenciantes livres de dano de qualquer reivindicação ou solicitação, incluindo honorários advocatícios razoáveis, feitos por um terceiro, relacionados a ou decorrentes de: 
+<br><br>
+19.1. Qualquer conteúdo que você submeta, poste, transmita ou de outra forma disponibilize através do sistema;
+<br><br>
+19.2. Seu uso do sistema;
+<br><br>
+19.3. Qualquer violação por você deste contrato;
+<br><br>
+19.4. Qualquer ação tomada pela MarketUP & Cia Ltd como parte de sua investigação de uma suspeita de violação deste contrato ou como resultado de sua descoberta ou decisão que uma violação a este contrato tenha ocorrido; ou
+<br><br>
+19.5. Sua violação a quaisquer direitos de terceiros. Isto significa que você não poderá processar a MarketUP & Cia Ltd, suas afiliadas, subsidiárias, diretores, dirigentes, funcionários, agentes, sócios, contratantes e licenciantes como resultado da decisão destes de remover ou recusar a processar qualquer informação ou conteúdo, de notificá-lo, de suspender ou cancelar seu acesso ao sistema MarketUP ou de tomar qualquer outra ação durante a investigação de uma suspeita de violação ou como resultado da conclusão da MarketUP & Cia Ltd que uma violação a este contrato tenha ocorrido. Esta renúncia e disposição sobre indenização se aplicam a todas as violações descritas em ou contempladas por este contrato. Esta obrigação sobreviverá à rescisão ou expiração deste contrato e/ou seu uso do sistema. Você reconhece que é responsável por todo o uso do sistema MarketUP através da sua conta e que este contrato se aplica a todo e qualquer uso dela. Você concorda em cumprir este contrato e em defender, indenizar e manter a MarketUP & Cia Ltd livre de e contra toda qualquer reivindicação e demanda decorrente de seu uso da conta, tenha sido ou não tal uso expressamente autorizado por você.
+<br><br><br>
+<b>20.   Contratação Eletrônica</b>
+<br><br>
+A utilização do sistema MarketUP inclui a capacidade para assinar contratos e/ou realizar transações eletronicamente.
+Você reconhece que suas submissões eletrônicas constituem sua concordância e intenção a ser vinculado por e pagar por tais contratos e transações. Sua concordância intenção para ser vinculado por submissões eletrônicas se aplicam a todos os registros relacionados a todas as transações que você realizar neste serviço, incluindo aviso de cancelamento, políticas, contratos e aplicações.
+De forma a acessar e reter seus registros eletrônicos poderá ser exigido que você possua determinados hardwares e/ou softwares que são de sua exclusiva responsabilidade.
+<br><br><br>
+<b>21.  Modificações</b>
+<br><br>
+A MarketUP & Cia Ltd reserva-se o direito de, a qualquer momento , modificar este contrato e impor termos e condições novas ou adicionais a seu uso do sistema. Caso você não concorde com estes, você deverá parar de usar o sistema e entrar em contato com o suporte ao cliente. Seu uso continuado do sistema será considerado como aceitação de tais modificações e termos e condições adicionais.
+<br><br><br>
+<b>22.  Notificações</b>
+<br><br>
+22.1. A MarketUP & Cia Ltd poderá enviar a você notificações relacionadas ao sistema, incluindo alterações deste contrato, enviado diretamente ao seu endereço de e-mail (e/ou outro endereço de e-mail alternativo associado com sua conta, se fornecido).
+<br><br>
+22.2. A alteração das condições aqui ajustadas será considerada como ato de mera tolerância e liberalidade, não acarretando nem sendo considerada como novação ou alteração das mesmas, posto que tal providência só tenha validade e surtirá efeitos permanentes para as partes se forem efetivadas através de instrumento específico. 
+<br><br>
+22.3. Todas as comunicações serão consideradas recebidas quando forem encaminhadas via internet para: http://suporte.marketup.com
+<br><br>
+22.4. O presente contrato vigerá, para todos os fins, havendo o aceite do usuário. 
+<br><br>
+22.5. O início da relação jurídica entre a MarketUP & Cia Ltd e os usuários passará a valer a partir da data de aceite do Termo de adesão pelo usuário.
+<br><br>
+22.6. O período de vigência do Termo de adesão, acima mencionado, não poderá em hipótese alguma, sobrepor, ou iniciar-se, antes da vigência deste contrato, tendo em vista que o presente contrato possui as premissas gerais e que compõem a estrutura da relação jurídica existente entre as partes.
+<br><br>
+22.7. O presente contrato poderá ser resilido a qualquer momento entre as partes mediante notificação escrita com 90 (noventa) dias de antecedência ou distrato a ser firmado entre as partes, sem prejuízo à vigência dos demais contratos firmados pela MarketUP & Cia Ltd e os outros usuários do sistema MarketUP.
+<br><br>
+22.8. O usuário poderá rescindir sua relação jurídica com a MarketUP & Cia Ltd, por meio de Termo de Rescisão a este contrato, e os demais documentos firmados entre as partes, sem que para tanto incida qualquer ônus ou penalidade, exceto quando previamente acordado entre as partes.
+<br><br>
+22.9. Ocorrendo qualquer das hipóteses, a parte prejudicada deverá informar à outra num prazo de 10 (dez) dias da ocorrência do evento, informando as medidas e o prazo necessários para restabelecimento e normalização pertinentes. 
+<br><br>
+22.10.   Fica eleito o foro de Delaware City, no condado de New Castle, USA, para dirimir quaisquer questões decorrentes deste instrumento, com renúncia de qualquer outro por mais privilegiado que seja. 
+<br><br>
+22.11. O presente contrato será rescindido de pleno direito e automaticamente, nas seguintes hipóteses:
+<br><br>
+22.11.1.  Decretação de falência ou deferimento de processamento de recuperação judicial de qualquer uma das partes; e
+<br><br>
+22.11.2.  Caso fortuito e força maior que perdurarem por mais de 30(trinta) dias e que atingirem diretamente a presente prestação de serviço.
+<br><br>
+Este Termo de compromisso constitui e reflete a vontade das partes contratantes, substituindo todas as demais propostas existentes e obrigando as partes, seus herdeiros ou sucessores, a qualquer tempo.
+<br><br><br>
+<b>23.  Disposições Gerais</b>
+<br><br>
+Este contrato constitui a integralidade do acordo entre você e a MarketUP & Cia Ltd, rege seu uso do sistema e substitui completamente quaisquer contratos anteriores entre você e a MarketUP & Cia Ltd com relação ao serviço. Caso qualquer trecho deste contrato venha a ser considerado inválido ou inexequível, este trecho será interpretado de uma forma consistente com a lei aplicável para refletir, tanto quanto forem possíveis, as intenções originais das partes, e os trechos restantes permanecerão em pleno vigor e efeito. A falha da MarketUP & Cia Ltd em exercer ou executar qualquer direito ou disposição deste contrato não deverá constituir uma renúncia a tal direito ou disposição. Você concorda que, exceto quando expressamente disposto em contrário neste contrato, não haverá qualquer terceiro beneficiário.
+<br><br>
+23.1.     Os usuários autorizam de forma irrevogável e irretratável a MarketUP & Cia Ltd e/ou a quem esta designar, a gravar as operações dos usuários, relativas aos serviços prestados pela MarketUP & Cia Ltd, e ainda utilizá-las como meio de prova ante as autoridades administrativas e/ou judiciais. 
+<br><br>
+23.2.     Apesar de, tecnicamente, os serviços serem passíveis de utilização a partir de qualquer parte do mundo, a relação entre o usuário e a MarketUP & Cia Ltd estará, em qualquer hipótese e independentemente do local de onde esteja sendo acessado o sistema MarketUP, sujeita à legislação dos Estados Unidos da América, ao presente contrato, e demais instrumentos firmados entre as partes. Não obstante, o usuário deverá informar-se sobre as leis, normas, regulamentos e jurisprudência do lugar no qual o sistema estiver sendo utilizado e cumpri-los rigorosamente.
+<br><br>
+23.3.     Aplicam-se a este instrumento as Leis vigentes no condado de New Castle, Estados Unidos da América.
+5 A tolerância por qualquer das partes em exercer qualquer de seus direitos sob o presente não deverá ser considerada renúncia ou novação, e não afetará o subsequente exercício de tal direito. Qualquer renúncia produzirá efeitos somente se for especificamente outorgada por escrito.
+<br><br>
+23.4.     As partes desde já acordam que a MarketUP & Cia Ltd poderá ceder, total ou parcialmente, os direitos e obrigações decorrentes do presente contrato, para qualquer outra empresa que seja sua controladora, controlada ou à ela coligada, compreendidos esses conceitos nos termos da legislação societária em vigor.
+<br><br>
+23.5.     Aos usuários não será permitido cederem, total ou parcialmente, os direitos e obrigações decorrentes do presente contrato, sob pena de rescisão imediata do contrato, e apuração dos danos sofridos.
+<br><br>
+23.6.     Na hipótese em que quaisquer termos ou disposições do presente contrato venham a ser declaradas nulas ou não aplicáveis, tal nulidade ou inexequibilidade não afetará o restante do contrato, que permanecerá em pleno vigor e eficácia, como se tais disposições jamais lhe houvessem sido incorporadas.
+<br><br>
+23.7.     O presente contrato não cria qualquer vínculo empregatício, societário, associativo, de representação, agenciamento, consórcio, joint-venture ou assemelhados entre as PARTES, arcando cada qual com suas respectivas obrigações nos termos do ordenamento jurídico em vigor.
+<br><br>
+23.8.     As PARTES não poderão ser responsabilizadas pelo não cumprimento de qualquer obrigação deste contrato, em razão de caso fortuito e força maior, decisões judiciais especificamente impeditivas, leis ou regulamentos expressamente proibitivos. Em tais hipóteses, o não cumprimento as obrigações aqui assumidas não será considerado inadimplemento contratual, não constituindo, portanto, motivo para a rescisão do presente instrumento, na medida em que o evento impeditivo seja temporário.
+<br><br>
+23.9.     Em caso de divergência entre os termos do presente contrato e as condições previstas no TERMO DE ADESÃO e em outros documentos firmados entre as PARTES, prevalecerá o contrato.
+<br><br>
+23.10. A MarketUP & Cia Ltd poderá, a seu exclusivo critério, modificar a qualquer momento este contrato, por meio de Termo Aditivo, que será registrado em cartório, sendo válido para todas as contratações posteriores à alteração.
+<br><br>
+23.11. Os usuários assumem o compromisso de envidar os melhores esforços para solucionar amigavelmente as controvérsias que surgirem por qualquer questão relativa ao contrato de uso do sistema, entre os usuários do sistema MarketUP e a MarketUP & Cia Ltd.
+<br><br>
+23.12. No caso de não chegarem a um acordo dentro de 30 (trinta) dias, os usuários autorizam a MarketUP & Cia Ltd a realizar a consignação extrajudicial dos valores ou ainda, a seu critério, a consignação destes numa das Varas do Foro Central do Condado de New Castle, estado de Delaware, Estados Unidos.
+<br><br>
+23.13. A MarketUP & Cia Ltd garante que o método, técnicas, softwares e todo e qualquer material utilizados para o desenvolvimento e conclusão de seus serviços não infringem qualquer marca, patente, direito autoral, segredo comercial ou quaisquer outros direitos de propriedade, ficando certo que os usuários responsabilizam-se perante o sistema MarketUP por qualquer ação, processo, notificação ou reclamação nesse sentido, arcando eventuais indenizações, despesas judiciais, extrajudiciais, custas e honorários advocatícios.
+16 Os usuários não poderão utilizar o nome, marca, logotipo, símbolo ou imagem da MarketUP & Cia Ltd em meios de comunicação, concorrências, licitações, publicidade própria ou quaisquer outros atos ou contratos como referência aos serviços prestados, sem a prévia autorização, por escrito, da MarketUP & Cia Ltd, exceto para cumprimento do objeto deste CONTRATO.
+<br><br>
+Os usuários declaram que têm ciência de que a MarketUP & Cia Ltd poderá ingressar com as medidas judiciais cabíveis contra eles, quando comprovado dano a este último, seja em razão de créditos indevidos ao usuário, devolução de valores indevidamente ao usuário, ou qualquer outro motivo, quando comprovado que este agiu de má fé, a fim de obter qualquer benefício sobre o MarketUP.
+<br><br>
+Este instrumento está registrado no Cartório de Títulos e Documentos e Civil de Pessoa Jurídica em Delaware City, estado de Delaware e entrará em vigor a partir do dia 01 de setembro de 2012, na data de seu registro para todos os usuários.
+</font>
