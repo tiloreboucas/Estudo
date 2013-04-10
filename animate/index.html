@@ -39,15 +39,14 @@
 				width: 100px; 
 				height: 100px; 
 				background: red; 
-				box-shadow: 0px 0px 5px #1c1e20; 
-				opacity: 0;
+				box-shadow: 0px 0px 5px #1c1e20;
 			}
 		</style>
 	</head>
 	<body>
 		<main>
 			<section class="AnimationArea">
-				<div class="AnimatedItem" id="item1" data-type="move" data-direction="x" data-start="0" data-end="500" data-speed="100"></div>
+				<div class="AnimatedItem" id="item1" data-type="move" data-direction="x" data-times="1" data-start="0" data-end="500" data-speed="2000"></div>
 			</section>
 			<button id="btn_play" type="button" class="">Start</button>
 			<button id="btn_stop" type="button" class="">Stop</button>
@@ -60,12 +59,11 @@
 				this.e = elem;
 
 				this.play = function(){
-					that.e.style["-webkit-animation"] = "movex 2s infinite linear";
+					that.e.style["-webkit-animation"] = "movex " + that.e.dataset.speed + "ms " + that.e.dataset.times + " linear";
 
 					var keyframes = '@-webkit-keyframes movex { '+
-                    	'0% { -webkit-transform: translate(0, 0); opacity: 1; }'+
-                    	'50% { -webkit-transform: translate(800px, 0); opacity: 1; }'+
-                    	'100% { -webkit-transform: translate(0, 0); opacity: 1; }'+
+                    	'0% { -webkit-transform: translate(' + that.e.dataset.start + 'px, 0); }'+
+                    	'100% { -webkit-transform: translate(' + that.e.dataset.end + 'px, 0); }'+
                     '}';
 
 					if( document.styleSheets && document.styleSheets.length ) {
@@ -77,6 +75,10 @@
 					}
 
 					that.e.style.webkitAnimationPlayState = "running";
+
+					that.e.addEventListener("webkitAnimationEnd", function () {
+						that.stop();
+					}, false);
 				};
 
 				this.resume = function(){ that.e.style.webkitAnimationPlayState = "running"; };
