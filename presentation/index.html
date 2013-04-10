@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Animate</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			html, body {
+				position: relative;
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
+
+				font-family: 'Lato', Times, 'Times New Roman', serif;
+				font-size: 36px;
+				font-weight: 200;
+				letter-spacing: -0.02em;
+
+				color: #eee;
+
+				width: 100%;
+				height: 100%;
+
+				min-height: 600px;
+			}
+
+			html {
+				background: #1c1e20;
+				background: -webkit-radial-gradient(center, ellipse cover, #555a5f 0%,#1c1e20 100%);
+			}
+
+			.slides {
+				position: absolute;
+				width: 985px;
+				height: 600px;
+				left: 50%;
+				top: 50%;
+				margin-left: -492px;
+				margin-top: -400px;
+				padding: 20px 0px;
+				text-align: center;
+				-webkit-transition: -webkit-perspective .4s ease;
+				-webkit-perspective: 600px;
+			 	-webkit-perspective-origin: 50% 25%;
+			}
+
+			.slides>section {
+				display: none;
+				position: absolute;
+				width: 985px;
+				min-height: 600px;
+				text-align: center;
+			    z-index: 10;
+				-webkit-transform-style: preserve-3d;
+				-webkit-transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+			}
+
+			.slides > section.past {
+				display: block;
+				opacity: 0;
+
+				-webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
+			}
+			.slides > section.future {
+				display: block;
+				opacity: 0;
+
+				-webkit-transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
+			}
+
+			.slides > section.current {
+				display: block;
+				z-index: 11;
+				opacity: 1;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4 {
+				margin: 0 0 20px 0;
+
+				color: #eee;
+
+				font-family: 'League Gothic', sans-serif;
+				line-height: 0.9em;
+				letter-spacing: 0.02em;
+
+				text-transform: uppercase;
+				text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+			}
+
+			h1 { font-size: 136px; 	}
+			h2 { font-size: 76px;	}
+			h3 { font-size: 56px;	}
+			h4 { font-size: 36px;	}
+
+			h1 {
+				text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+				color: #eee;
+				font-family: 'League Gothic', sans-serif;
+				text-transform: uppercase;
+				-webkit-transform: translateZ(0.00001px);
+			}
+			li { text-align: left;}
+
+			p { text-align: justify; }
+
+			iframe {
+				width: 985px;
+				height: 668px;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="slides">
+			<section data-page="1" class="current">
+				<h1>MarketUP</h1>
+				<img src="http://marketup.com/img/imgPdv.png" />
+				<h4>uma forma fácil e rápida de administrar o seu negócio</h4>
+			</section>
+			
+			<section data-page="2" class="future">
+				<h1>TOTALMENTE GRÁTIS</h1>
+				<img src="http://marketup.com/img/imgGratis.png" />
+				<h4>Sistema Completo de Gerenciamento para a pequena e média empresa</H4>
+			</section>
+			
+			<section data-page="3" class="future">
+				<h1>PDV</h1>
+				<ul class="mainList">
+                    <li><span>Funciona Offline (sem internet)</span></li>
+                    <li><span>Sem limite de número de PDVs</span></li>
+                    <li><span>Integrado com periféricos (leitores de cód. de barras, impressoras de cupom, etc)</span></li>
+                    <li><span>Interface simples e fácil de usar</span></li>
+                    <li><span>Utilize em qualquer computador ou tablet</span></li>
+                    <li><span>Controle de acesso por operador</span></li>
+                    <li><span>Suporta operações de Abertura, Fechamento, Sangria e Reforço</span></li>
+                    <li><span>Seu computador pifou ou simplesmente precisa de mais um PDV? Em minutos você já está com um novo PDV funcionando!</span></li>
+                </ul>
+			</section>
+
+			<section>
+				<iframe src="http://marketup.com/pdv/Pdv.html"></iframe>
+			</section>
+			
+			<section data-page="4" class="future">
+				<h1>NF-e INTEGRADA E GRATUITA</h1>
+				<p>O MarketUP está preparado para fazer o envio automático da Nota Fiscal eletrônica e/ou de serviço sempre que você desejar. Você escolhe quando e como quer enviar suas notas fiscais e pode controlar todo o fluxo de envio e autenticação do governo de forma fácil e rápida. Armazenamos também os XMLs das notas fiscais automaticamente para você.</p>
+			</section>
+
+			<section data-page="5" class="future">
+				<h1>DASHBOARD</h1>
+				<img src="http://marketup.com/img/imgDashboard.png" alt="Dashboard">
+				<p>Com gráficos interativos e atualização em tempo real, o Dashboard do MarketUP permite a você acompanhar o seu negócio de qualquer lugar, até mesmo pelo seu celular ou tablet. Através do Dashboard você terá acesso a diversos indicadores pensados para o seu negócio</p>
+			</section>
+
+			<section data-page="5" class="future">
+				<iframe src="http://marketup.com/dashboard/home2.html"></iframe>
+			</section>
+
+			<section data-page="6" class="future">
+				<h1>SUPORTE</h1>
+				<img src="http://marketup.com/img/imgSuport.png" alt="Suporte">
+				<p>A Equipe MarketUP oferece um pacote básico de suporte online totalmente gratuito. Nesse pacote você tem acesso a nossa central de atendimento web. Além disso, você terá acesso à uma base completa de perguntas e respostas. Caso não encontre a solução na nossa base de conhecimento (FAQ), nossos atendentes irão ajudá-lo através de e-mails, chat e até atendimento remoto se necessário.</p>
+			</section>
+
+			<section data-page="7" class="future">
+				<h1>SEGURANÇA</h1>
+				<img src="http://marketup.com/img/imgSeguranca.png" alt="Segurança">
+				<p>Os dados da sua empresa estarão armazenados na nuvem, em nossos modernos servidores. A segurança da sua informação é uma prioridade para nós, e por isso, seus dados estão criptografados e periodicamente são realizados backups. Suas informações são totalmente confidenciais (conforme nossa Política de Privacidade). Não divulgaremos os dados que identifiquem a sua empresa para nenhuma empresa terceira sem o seu consentimento. Você tem o direito de encerrar sua conta e fazer o download dos seus dados quando desejar.</p>
+			</section>
+		</main>
+		<script type="text/javascript">
+			var Presentation = function(){
+				var that = this;
+				this.elem = document.getElementsByTagName('main');
+				this.slides = document.querySelectorAll('main > section');
+				this.page = {
+					current: document.querySelector('[data-page="1"]')
+				}
+
+				this.toNext = function(){
+					if(that.page.current.nextElementSibling) {
+						that.page.current.classList.remove('current');
+						that.page.current.nextElementSibling.classList.remove('future');
+						that.page.current = that.page.current.nextElementSibling;
+						that.page.current.classList.add('current');
+						that.page.current.previousElementSibling.classList.add('past');
+					}
+				};
+
+				this.toPrev = function(){
+					if(that.page.current.previousElementSibling) {
+						that.page.current.classList.remove('current');
+						that.page.current.previousElementSibling.classList.remove('past');
+						that.page.current = that.page.current.previousElementSibling;
+						that.page.current.classList.add('current');
+						that.page.current.nextElementSibling.classList.add('future');
+					}
+				};
+			}
+
+			var p = new Presentation();
+
+			document.body.onkeydown = function(){
+				if(window.event.keyCode == 39) p.toNext();
+				else if(window.event.keyCode == 37) p.toPrev();
+			};
+		</script>
+	</body>
+</html>
