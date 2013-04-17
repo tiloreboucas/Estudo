@@ -1,0 +1,35 @@
+<script type="text/javascript">
+window.addEventListener('onorientationchange', function () {
+    if (window.orientation == -90) {
+        document.getElementById('orient').className = 'orientright';
+    }
+    if (window.orientation == 90) {
+        document.getElementById('orient').className = 'orientleft';
+    }
+    if (window.orientation == 0) {
+        document.getElementById('orient').className = '';
+    }
+}, true);
+</script>
+
+<style type="text/css">
+.orientleft {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin:160px 160px;
+    background-color: blue;
+}
+
+#orient {
+	background-color: red;
+}
+
+.orientright {
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin:230px 230px;
+    background-color: green;
+} 
+</style>
+
+<body id="orient">
+
+</body>
