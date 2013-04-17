@@ -1,0 +1,92 @@
+<form enctype="multipart/form-data" method="post" action="">
+    <div class="row">
+      <label for="fileToUpload">Select Files to Upload</label><br />
+      <input type="file" name="filesToUpload[]" id="filesToUpload"  accept="image/*" />
+      <output id="filesInfo"></output>
+
+    </div>
+  </form>
+
+<script type="text/javascript">
+
+function isMobile()  
+{  
+    var userAgent = navigator.userAgent.toLowerCase();  
+    if( userAgent.search(/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i)!= -1 )  
+        return true;  
+}  
+
+	if (window.File && window.FileReader && window.FileList && window.Blob) {
+    document.getElementById('filesToUpload').onchange = function(){
+        var files = document.getElementById('filesToUpload').files;
+        for(var i = 0; i < files.length; i++) {
+            resizeAndUpload(files[i]);
+        }
+    };
+} else {
+    alert('The File APIs are not fully supported in this browser.');
+}
+ 
+function resizeAndUpload(file) {
+var reader = new FileReader();
+    reader.onloadend = function() {
+ 
+    var tempImg = new Image();
+    tempImg.src = reader.result;
+    tempImg.onload = function() {
+ 
+        var MAX_WIDTH = 400;
+        var MAX_HEIGHT = 400;
+
+        var ratio = MAX_WIDTH / MAX_HEIGHT;
+
+        var tempW = tempImg.width;
+        var tempH = tempImg.height;
+
+        if (tempW > tempH) {
+            if (tempW > MAX_WIDTH) {
+               tempH *= MAX_WIDTH / tempW;
+               tempW = MAX_WIDTH;
+            }
+        } else {
+            if (tempH > MAX_HEIGHT) {
+               tempW *= MAX_HEIGHT / tempH;
+               tempH = MAX_HEIGHT;
+            }
+        }
+ 
+        var canvas = document.createElement('canvas');
+        //var canvas = document.getElementById('canvas');
+
+        var ctx = canvas.getContext("2d");
+        ctx.canvas.width = tempW;
+        ctx.canvas.height = tempH;
+
+        if(isMobile()) ctx.drawImage(this, 0, 0, tempW, tempH * 4);
+        else ctx.drawImage(this, 0, 0, tempW, tempH);
+
+        var dataURL = canvas.toDataURL("image/jpeg");
+ 
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(ev){
+            document.getElementById('filesInfo').innerHTML = 'Done!';
+        };
+ 
+        //xhr.open('POST', 'uploadResized.php', true);
+        //xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+
+        var span = document.createElement('span');
+		span.innerHTML = ['<img class="thumb" src="', dataURL,'" title=""/>'].join('');
+		document.getElementById('filesInfo').insertBefore(span, null);
+
+        //xhr.send(data);
+      }
+ 
+   }
+   reader.readAsDataURL(file);
+}
+
+</script>
+
+<style type="text/css">
+</style>
