@@ -81,8 +81,14 @@
 					}, false);
 				};
 
-				this.resume = function(){ that.e.style.webkitAnimationPlayState = "running"; };
-				this.pause = function(){ that.e.style.webkitAnimationPlayState = "paused"; };
+				this.resume = function(){ 
+					that.e.style.webkitAnimationPlayState = "running"; 
+				};
+				
+				this.pause = function(){
+					that.e.style.webkitAnimationPlayState = "paused"; 
+				};
+
 				this.stop = function(){ 
 					that.e.style["-webkit-animation"] = "";
 					that.e.style.webkitAnimationPlayState = "paused";
