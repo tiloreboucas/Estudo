@@ -54,11 +54,12 @@
 			<button id="btn_pause" type="button" class="">Pause</button>
 		</main>
 		<script type="text/javascript">
-			var Animate = function(elem){
+			var Animate = function(elem, callback){
 				var that = this;
-				this.e = elem;
+				that.e = elem;
+				that.callback = (callback != null && callback != undefined) ? callback : function(){};
 
-				this.play = function(){
+				this.start = function(){
 					that.e.style["-webkit-animation"] = "movex " + that.e.dataset.speed + "ms " + that.e.dataset.times + " linear";
 
 					var keyframes = '@-webkit-keyframes movex { '+
@@ -77,30 +78,54 @@
 					that.e.style.webkitAnimationPlayState = "running";
 
 					that.e.addEventListener("webkitAnimationEnd", function () {
-						that.stop();
+						that.end();
 					}, false);
 				};
 
 				this.resume = function(){ 
-					that.e.style.webkitAnimationPlayState = "running"; 
+					that.e.style.webkitAnimationPlayState = "running";
 				};
 				
 				this.pause = function(){
-					that.e.style.webkitAnimationPlayState = "paused"; 
-				};
-
-				this.stop = function(){ 
-					that.e.style["-webkit-animation"] = "";
 					that.e.style.webkitAnimationPlayState = "paused";
 				};
-			}
 
-			var a = new Animate(document.getElementById('item1'));
+				this.end = function(){ 
+					that.e.style["-webkit-animation"] = "";
+					that.e.style.webkitAnimationPlayState = "paused";
 
-			document.getElementById('btn_play').onclick = function(){ a.play(); }
-			document.getElementById('btn_stop').onclick = function(){ a.stop(); }
-			document.getElementById('btn_resume').onclick = function(){ a.resume(); }
-			document.getElementById('btn_pause').onclick = function(){ a.pause(); }
+					that.callback();
+				};
+
+				this.next = function(){
+					// todo..
+				};
+
+				this.prev = function(){
+					// todo..
+				};
+			};
+
+			var AnimationList = function(){
+				var that = this;
+				that.itens = [];
+
+				that.add = function(){
+					// todo..
+				};
+
+				that.remove = function(){
+					// todo..
+				};
+
+				that.playItem = function(item, callback){
+					// todo..
+				};
+
+				that.playList = function(){
+					// todo..
+				};
+			};
 		</script>
 	</body>
 </html>
