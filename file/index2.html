@@ -12,6 +12,7 @@
   </form>
 
 <script type="text/javascript">
+var isIphone = navigator.userAgent.indexOf("iPhone") != -1 ;
 var canvas;
 var ctx;
 var img64;
@@ -78,7 +79,7 @@ function resizeAndUpload(file) {
         ctx.canvas.width = tempW;
         ctx.canvas.height = tempH;
 
-        if(isMobile()) ctx.drawImage(this, 0, 0, tempW, tempH * 4);
+        if(isIphone) ctx.drawImage(this, 0, 0, tempW, tempH * 4);
         else ctx.drawImage(this, 0, 0, tempW, tempH);
 
         //var dataURL = canvas.toDataURL("image/jpeg");
@@ -92,8 +93,8 @@ function resizeAndUpload(file) {
         //xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
         //var span = document.createElement('span');
-		//span.innerHTML = ['<img class="thumb" src="', dataURL,'" title=""/>'].join('');
-		//document.getElementById('filesInfo').insertBefore(span, null);
+		    //span.innerHTML = ['<img class="thumb" src="', dataURL,'" title=""/>'].join('');
+		    //document.getElementById('filesInfo').insertBefore(span, null);
 
         //xhr.send(data);
       }
@@ -101,6 +102,8 @@ function resizeAndUpload(file) {
    }
    reader.readAsDataURL(file);
 }
+
+
 
 window.addEventListener("orientationchange", function() {
 	alert(window.orientation);
