@@ -6,17 +6,10 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 $.ajax({
-                    url : "http://www.mantosdofutebol.com.br/feed/",
-                    dataType : "xml",
+                    url : "http://www.areah.com.br/_w8.aspx",
+                    dataType : "json",
                     success : function(data){
-                        $('h1').text($(data).find("menu").text());
-                        var list = "";
-                        for(i=0;i<$(data).find("item").length;i++){
-                            var page = $(data).find("item").eq(i).attr("page"),
-                            id = $(data).find("item").eq(i).text();
-                            list += "<li><a href='"+page+"'>"+id+"</a></li>";
-                        }
-                        $('ul').html(list);
+                        console.log(data);
                     }
                 });
             });
