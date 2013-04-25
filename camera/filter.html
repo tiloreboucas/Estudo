@@ -1,0 +1,75 @@
+<style type="text/css">
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	video, img {
+		width: 250px;
+		height: 250px;
+		border: 1px solid black;
+		vertical-align: middle;
+	}
+
+	.grayscale { 
+		-webkit-filter: grayscale(1);
+		-moz-filter: grayscale(1); 
+		filter: grayscale(1);
+	}
+	
+	.sepia { 
+		-webkit-filter: sepia(1);
+		-moz-filter: sepia(1); 
+		filter: sepia(1); 
+	}
+	
+	.blur { 
+		-webkit-filter: blur(3px); 
+		-moz-filter: blur(3px); 
+		filter: blur(3px); 
+	}
+
+	.brightness {
+		-webkit-filter: brightness(150%); 
+		-moz-filter: brightness(150%); 
+		filter: brightness(150%); 
+	}
+</style>
+<video autoplay></video>
+<img src="">
+<canvas style="display:none;"></canvas>
+
+<script>
+	var video = document.querySelector('video');
+	var canvas = document.querySelector('canvas');
+	var ctx = canvas.getContext('2d');
+	var localMediaStream = null;
+
+	function hasGetUserMedia() { return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||	navigator.mozGetUserMedia || navigator.msGetUserMedia);	}
+	window.URL = window.URL || window.webkitURL;
+	navigator.getUserMedia  = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+	
+
+	function fallback(e) { video.src = 'fallbackvideo.webm'; }
+
+	function success(localMediaStream) { 
+		video.src = window.URL.createObjectURL(localMediaStream); 
+
+		var idx = 0;
+		var filters = ['grayscale', 'sepia', 'blur', 'brightness', ''];
+
+		function changeFilter(e) {
+			var el = e.target;
+			el.className = '';
+			var effect = filters[idx++ % filters.length];
+			if (effect) el.classList.add(effect);
+		}
+
+		video.addEventListener('click', changeFilter, false);
+	}
+
+	if (!navigator.getUserMedia) fallback();
+	else navigator.getUserMedia({video: true}, success, fallback);
+
+	
+</script>
