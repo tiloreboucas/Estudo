@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+<video id='video' autoplay></video>
+<script>
+	var video = document.querySelector('video');
+	navigator.webkitGetUserMedia({
+		video: true,
+		audio: true
+	}, function(localMediaStream){
+		video.src = window.URL.createObjectURL(localMediaStream);
+		video.onloadedmetadata = function(e) {
+			// Pronto
+		}
+	}, function(e){
+		alert('Fail');
+	});
+</script>
+
+
+</body>
+</html>
