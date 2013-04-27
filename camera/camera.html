@@ -13,7 +13,7 @@
 </style>
 
 <video autoplay></video>
-<img src="">
+<img src="" alt="" />
 <canvas style="display:none;"></canvas>
 
 <script>
@@ -35,6 +35,4 @@
 
 	if (!navigator.getUserMedia) fallback();
 	else navigator.getUserMedia({video: true}, success, fallback);
-
-	
 </script>
