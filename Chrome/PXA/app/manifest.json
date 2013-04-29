@@ -1,0 +1,11 @@
+{
+	"name": "MarketUP Serial",
+	"description": "Listar Portas Serial",
+	"version": "0.1",
+	"app": {
+		"background": {
+			"scripts": ["background.js"]
+		}
+	},
+	"permissions": ["serial", "usb", "http://www.areah.com.br/*"]
+}
