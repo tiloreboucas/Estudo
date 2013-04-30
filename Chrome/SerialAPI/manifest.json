@@ -1,11 +1,11 @@
 {
-	"name": "MarketUP Serial",
+	"name": "MarketUP",
 	"description": "Listar Portas Serial",
-	"version": "0.1",
+	"version": "0.3",
 	"app": {
 		"background": {
 			"scripts": ["background.js"]
 		}
 	},
-	"permissions": ["serial", "usb"]
+	"permissions": ["fullscreen", "serial", "usb"]
 }

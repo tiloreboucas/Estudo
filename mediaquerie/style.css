@@ -1,0 +1,54 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Portrait */
+@media only screen and (min-width : 320px) and (max-width : 479px) and (orientation : portrait) {
+	#main { width: 320px; background-color: red; }
+
+	img { width: 320px; }
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) and (orientation : portrait) {
+	#main { width: 480px; background-color: blue; }
+
+	img { width: 480px; }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+	#main { width: 768px; background-color: green; }
+
+	img { width: 768px; }
+}
+
+@media only screen and (min-width : 1025px) and (orientation : portrait) {
+	#main { width: 1024px; background-color: yellow; }
+
+	img { width: 1024px; }
+}
+
+/* landscape */
+@media only screen and (min-width : 320px) and (max-width : 479px) and (orientation : landscape) {
+	#main { width: 320px; background-color: red; }
+
+	img { width: 320px; }
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) and (orientation : landscape) {
+	#main { width: 480px; background-color: blue; }
+
+	img { width: 480px; }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+	#main { width: 768px; background-color: green; }
+
+	img { width: 768px; }
+}
+
+@media only screen and (min-width : 1025px) and (orientation : landscape) {
+	#main { width: 1024px; background-color: yellow; }
+
+	img { width: 1024px; }
+}

@@ -1,3 +1,4 @@
+/*
 var onGetPorts = function(ports) {
   for (var i=0; i < ports.length; i++) {
       if (ports[i] == "COM1") {
@@ -33,3 +34,6 @@ var onUsbEvent = function (event) {
 
 chrome.usb.findDevices(vendorId, productId, { "onEvent": onUsbEvent }, onDeviceFound);
 chrome.serial.getPorts(onGetPorts);
+*/
+
+//chrome.app.window.current().maximize();

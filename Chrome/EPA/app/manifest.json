@@ -1,0 +1,11 @@
+{
+	"name": "MarketUP APP",
+	"description": "App fullscreen",
+	"version": "0.1",
+	"app": {
+		"background": {
+			"scripts": ["background.js"]
+		}
+	},
+	"permissions": ["fullscreen"]
+}
