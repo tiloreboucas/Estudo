@@ -1,3 +1,4 @@
+
 <?php
     function XmlToJson($url) {
         $fileContents= file_get_contents($url);
@@ -16,9 +17,10 @@
         <script type="text/javascript"src="loader.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-                var str_PHP = '<?php print XmlToJson("http://www.mantosdofutebol.com.br/feed/index.php"); ?>';
-                Data = JSON.parse(str_PHP);
-                console.log(Data);
+                var str = '<?php print XmlToJson("http://www.mantosdofutebol.com.br/feed/index.php"); ?>';
+                
+                Data = JSON.parse(str);
+                //console.log(Data);
 
                 // Titulo
                 $("h1 a").html(Data.channel.title).attr('href', Data.channel.link);
